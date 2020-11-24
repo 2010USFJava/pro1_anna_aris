@@ -19,5 +19,10 @@ public class EmployeeTest {
 		String result=emp.getLastName();
 		assertEquals(result,"Smith");
 	}
+	
+	@Test
+	public void loginTest() {
+
+	}
 
 }

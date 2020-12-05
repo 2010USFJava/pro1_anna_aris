@@ -1,11 +1,12 @@
 package com.revature.dao;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import com.revature.model.Employee;
 
 public interface EmployeeDao {
-	Employee retriveEmployeeById();
-	void addNewEmployee(Employee employee);
-	ArrayList<Employee> retriveSubordinates();
+	Employee retriveEmployeeById(int id)  throws SQLException;
+	void addNewEmployee(Employee employee)  throws SQLException;
+	ArrayList<Employee> retriveSubordinatesById(int id)  throws SQLException;
 }

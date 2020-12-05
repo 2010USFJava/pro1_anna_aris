@@ -3,13 +3,20 @@ package com.revature.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.Data;
+import lombok.ToString;
+
+
+@Data
 public class Employee implements EmployeeInterface {
 	private int id;
 	private String firstName;
 	private String lastName;
 	private Employee supervisor;
 	private List <Employee> subordinates;
-	private DepartmentInt department;
+	private Department department;
+	
+	public Employee() {super();}
 	
 	public Employee(String firstName, String lastName) {
 		super();
@@ -86,13 +93,13 @@ public class Employee implements EmployeeInterface {
 	}
 	
 	@Override
-	public void setDepartment(DepartmentInt department) {
+	public void setDepartment(Department department) {
 		this.department=department;
 		
 	}
 
 	@Override
-	public DepartmentInt getDepartment() {
+	public Department getDepartment() {
 		return this.department;
 	}
 	

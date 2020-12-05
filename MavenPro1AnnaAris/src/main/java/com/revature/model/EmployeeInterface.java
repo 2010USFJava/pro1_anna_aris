@@ -20,8 +20,10 @@ public interface EmployeeInterface {
 	void addSubordinate(Employee emp); //used for populating list 1 at a time
 	List<Employee> getSubordiates();
 	
-	void setDepartment(DepartmentInt department);
-	DepartmentInt getDepartment();
+	void setDepartment(Department department);
+	Department getDepartment();
+	
+	
 	
 
 }

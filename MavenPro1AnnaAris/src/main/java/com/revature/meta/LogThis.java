@@ -11,7 +11,6 @@ public class LogThis {
 		FATAL,
 		INFO,
 		TRACE;
-		
 	}
 	
 	static Logger logger= LogManager.getLogger();

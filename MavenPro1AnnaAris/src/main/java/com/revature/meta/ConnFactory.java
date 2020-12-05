@@ -1,5 +1,6 @@
 package com.revature.meta;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
@@ -32,9 +33,11 @@ public class ConnFactory {
 			
 		} catch(SQLException e) {
 			e.printStackTrace();
+		} catch(FileNotFoundException e) {
+			e.printStackTrace();
 		} catch(IOException e) {
 			e.printStackTrace();
-		}
+		} 
 		
 		return conn;
 		

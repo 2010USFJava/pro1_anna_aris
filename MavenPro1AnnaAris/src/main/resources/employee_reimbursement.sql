@@ -60,7 +60,9 @@ insert into employees values(nextval('emp_id_seq'),'John','Fogerty',2,1);
 
 --select * from employees;
 --select * from supervisors;
---select * from supervisor_sub_relations;
+--select * from supervisor_sub_relations where sup_id=2;
+select * from departments where department_id=1;
+
 
 --	select supervisors.employee_id sup_id, employee.employee_id sub_id
 --	from employee

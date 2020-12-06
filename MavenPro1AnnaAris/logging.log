@@ -15,3 +15,60 @@
 [ERROR] 2020-12-05 16:13:16.001 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Department.equals(Object)" because the return value of "com.revature.model.Employee.getDepartment()" is null
 [ERROR] 2020-12-05 16:14:46.460 [main] LogThis - Null pointer exception in set department head
 [ERROR] 2020-12-05 16:14:46.463 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Department.equals(Object)" because the return value of "com.revature.model.Employee.getDepartment()" is null
+[INFO ] 2020-12-05 18:19:27.544 [main] LogThis - Employee: 9/t Reciving Supervisor Information
+[INFO ] 2020-12-05 18:19:28.285 [main] LogThis - Employee: 0/t Reciving Supervisor Information
+[ERROR] 2020-12-05 18:19:28.286 [main] LogThis - Null pointer Exception occured in EmployeeDaoImple retriveEmployeeById(int id)
+[ERROR] 2020-12-05 18:19:28.286 [main] LogThis - java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "supervisorId" is null
+[INFO ] 2020-12-05 18:19:28.286 [main] LogThis - Employee: 9/t Reciving Department Information
+[INFO ] 2020-12-05 18:19:29.067 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[DEBUG] 2020-12-05 18:19:29.067 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:20:15.953 [main] LogThis - Employee: 9/t Reciving Supervisor Information
+[INFO ] 2020-12-05 18:20:16.697 [main] LogThis - Employee: 0/t Reciving Supervisor Information
+[ERROR] 2020-12-05 18:20:16.698 [main] LogThis - Null pointer Exception occured in EmployeeDaoImple retriveEmployeeById(int id)
+[ERROR] 2020-12-05 18:20:16.698 [main] LogThis - java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "supervisorId" is null
+[INFO ] 2020-12-05 18:20:16.698 [main] LogThis - Employee: 9/t Reciving Department Information
+[INFO ] 2020-12-05 18:20:17.528 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[DEBUG] 2020-12-05 18:20:17.528 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:25:01.683 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:25:03.544 [main] LogThis - Employee: 0/t No Supervisor Information
+[INFO ] 2020-12-05 18:25:03.544 [main] LogThis - Employee: 0/t No Department Information
+[DEBUG] 2020-12-05 18:25:03.544 [main] LogThis - Emp: 0/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:25:03.545 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:25:05.196 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[DEBUG] 2020-12-05 18:25:05.196 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:29:58.601 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:30:00.375 [main] LogThis - Employee: 0/t No Supervisor Information
+[INFO ] 2020-12-05 18:30:00.375 [main] LogThis - Employee: 0/t No Department Information
+[INFO ] 2020-12-05 18:30:00.375 [main] LogThis - Checking for subordinate for 0
+[DEBUG] 2020-12-05 18:30:00.375 [main] LogThis - Emp: 0/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:30:00.375 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:30:01.939 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 18:30:01.940 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 18:30:01.940 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:30:32.818 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:30:33.604 [main] LogThis - Employee: 0/t No Supervisor Information
+[INFO ] 2020-12-05 18:30:33.605 [main] LogThis - Employee: 0/t No Department Information
+[INFO ] 2020-12-05 18:30:33.605 [main] LogThis - Checking for subordinate for 0
+[DEBUG] 2020-12-05 18:30:33.605 [main] LogThis - Emp: 0/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:30:33.605 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:30:34.359 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 18:30:34.360 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 18:30:34.360 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:38:14.736 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:38:14.739 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-05 18:38:14.740 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:38:15.501 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 18:38:15.501 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 18:38:15.502 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:39:29.607 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:39:29.612 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-05 18:39:29.612 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:39:30.429 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 18:39:30.622 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 18:39:30.622 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:40:02.655 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:40:02.658 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-05 18:40:02.658 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:40:03.779 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 18:40:03.779 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 18:40:03.779 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list

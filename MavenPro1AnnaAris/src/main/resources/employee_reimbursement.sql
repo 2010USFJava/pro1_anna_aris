@@ -64,6 +64,7 @@ select * from employees;
 select * from departments;
 
 update employees set department_id =1 where employee_id =7;
+select * from employees where employee_id =9;
 
 
 --	select supervisors.employee_id sup_id, employee.employee_id sub_id

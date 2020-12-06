@@ -34,10 +34,16 @@ public class EmployeeDaoImple implements EmployeeDao {
 				LogThis.logIt(LevelEnum.INFO, "Employee Id: " + id
 						+ " information already in runtime data. Runtime Data called instead of database call");
 				return RuntimeData.getEmployeeFromMap(id);
-			} else {
-
+			} else if(id==0){
+				LogThis.logIt(LevelEnum.INFO, "Employee Id: " + id+" Searching for Employee #0. Number does not go that low in SQL. Skipping");
+				return null;
+			} 
+			
+			else {
+				
+				
 				Connection conn = cf.getConnection();
-				String sql = "select * from employees where id=?";
+				String sql = "select * from employees where employee_id=?";
 				PreparedStatement ps = conn.prepareStatement(sql);
 				ps.setInt(1, id);
 				ResultSet rs = ps.executeQuery();
@@ -66,12 +72,20 @@ public class EmployeeDaoImple implements EmployeeDao {
 				*My fist instinct is to put a lazy loader in, but the current method I can think of isn't very efficient.
 				*I'll come back to this problem later if I have time.
 				*/
-				LogThis.logIt(LevelEnum.INFO, "Employee: " + id + "/t Reciving Supervisor Information");
-				emp.setSupervisor(retriveEmployeeById(supervisorId));
+				if(supervisorId!=null) {
+					LogThis.logIt(LevelEnum.INFO, "Employee: " + id + "/t Receiving Supervisor Information");
+					emp.setSupervisor(retriveEmployeeById(supervisorId));
+				} else {
+					LogThis.logIt(LevelEnum.INFO, "Employee: " + id + "/t No Supervisor Information");					
+				}
 				
-				
-				LogThis.logIt(LevelEnum.INFO, "Employee: " + id + "/t Reciving Department Information");
-				emp.setDepartment(deptDao.retriveDeptById(departId));
+				if(departId!=null) {
+					LogThis.logIt(LevelEnum.INFO, "Employee: " + id + "/t receiving Department Information");
+					emp.setDepartment(deptDao.retriveDeptById(departId));
+				} else {
+					LogThis.logIt(LevelEnum.INFO, "Employee: " + id + "/t No Department Information");
+				}
+
 				
 				// Add Subordinates
 				/*Currently have it set up to only return the subordinates if first implementation of this method.
@@ -136,6 +150,7 @@ public class EmployeeDaoImple implements EmployeeDao {
 
 	@Override
 	public ArrayList<Employee> retriveSubordinatesById(int id) throws SQLException {
+		LogThis.logIt(LevelEnum.INFO, "Checking for subordinate for "+id);
 		// First, I want to see if this info is already in my runtime data.
 		if (RuntimeData.checkIfInEmployeeMap(id)) {
 			Employee sup = RuntimeData.getEmployeeFromMap(id);
@@ -152,6 +167,7 @@ public class EmployeeDaoImple implements EmployeeDao {
 		
 		//Calling this after the avalialbe list check so I don't accidently overwrite an existing list
 		if (gotFirstLevelSubordinates) {
+			LogThis.logIt(LevelEnum.DEBUG, "Stopping Recursion for "+id);
 			return null;
 		}
 		

@@ -59,8 +59,18 @@ h3,h4,h5{
 
 .subArea h2{
   border-bottom: 1px solid black;
+}
 
+.formHolder {
+  display: block;
+  text-align: center;
+}
 
+.subArea  form{
+  display: inline-block;
+  margin-left: auto;
+  margin-right:auto;
+  text-align: left;
 }
 
 header{

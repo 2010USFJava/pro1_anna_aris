@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 import com.revature.dao.DepartmentDao;
@@ -99,22 +100,26 @@ public class EmployeeDaoImple implements EmployeeDao {
 
 		String sql ="insert into employees values(nextval('emp_id_seq'),?,?,?,?);";
 
-		PreparedStatement ps = conn.prepareStatement(sql);
+		PreparedStatement ps = conn.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
 
 		ps.setString(1, employee.getFirstName());
 		ps.setString(2, employee.getLastName());
 		Employee sup=employee.getSupervisor();
 		if(sup!=null) {
 			ps.setInt(3, sup.getId());	
+		} else {
+			ps.setNull(3,  java.sql.Types.INTEGER);
 		}
 		
 		Department dept = employee.getDepartment();
 		if(dept!=null) {
 			ps.setInt(4, dept.getId());	
+			} else {
+			ps.setInt(4,java.sql.Types.INTEGER);
 		}
 		
 		//update database
-		ps.executeQuery();
+		ps.executeUpdate();
 		
 		//update employee id to what popped out of the database
 		ResultSet keys=ps.getGeneratedKeys();
@@ -182,6 +187,21 @@ public class EmployeeDaoImple implements EmployeeDao {
 		gotFirstLevelSubordinates=false;
 		
 		return subordinates;
+	}
+
+	@Override
+	public void updateEmployeeDepartment(int empId, int deptId) throws SQLException {
+		Connection conn = cf.getConnection();
+		String sql="update employees set department_id=? where employee_id=?";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setInt(1, deptId);
+		ps.setInt(2, empId);
+		
+//		//update database
+		ps.executeUpdate();
+//		
+		//and make sure this update has happened internally as well
+		RuntimeData.getEmployeeFromMap(empId).setDepartment(RuntimeData.getDepartmentFromMap(deptId));
 	}
 
 }

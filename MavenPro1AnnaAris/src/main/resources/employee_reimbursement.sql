@@ -58,10 +58,12 @@ insert into employees values(nextval('emp_id_seq'),'Brittney','Spears',1,1);
 insert into employees values(nextval('emp_id_seq'),'Aretha','Franklin',2,1);
 insert into employees values(nextval('emp_id_seq'),'John','Fogerty',2,1);
 
---select * from employees;
+select * from employees;
 --select * from supervisors;
 --select * from supervisor_sub_relations where sup_id=2;
-select * from departments where department_id=1;
+select * from departments;
+
+update employees set department_id =1 where employee_id =7;
 
 
 --	select supervisors.employee_id sup_id, employee.employee_id sub_id

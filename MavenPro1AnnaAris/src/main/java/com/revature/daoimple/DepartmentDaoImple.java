@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import com.revature.dao.DepartmentDao;
 import com.revature.dao.EmployeeDao;
@@ -55,13 +56,23 @@ public class DepartmentDaoImple implements DepartmentDao {
 	@Override
 	public void addDepatment(Department department) throws SQLException {
 		Connection conn = cf.getConnection();
+		EmployeeDao empDao = new EmployeeDaoImple();
+		
+		//check if Employee is entered in the database already
+		//if less then 1, not in database
+		if(department.getDepartmentHead()!=null 
+				&& !RuntimeData.checkIfInDepartmentMap(department.getDepartmentHead().getId())
+				&& department.getDepartmentHead().getId()<1) {
+			empDao.addNewEmployee(department.getDepartmentHead());
+			
+		}
 
-		String sql ="insert into departments values(nextval('dep_id_seq'),?,?);";
-		PreparedStatement ps = conn.prepareStatement(sql);
+		String sql ="insert into departments values(nextval('dep_id_seq'),?,?)";
+		PreparedStatement ps = conn.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);
 		ps.setString(1, department.getName());
 		ps.setInt(2, department.getDepartmentHead().getId());
 		//update database
-		ps.executeQuery();
+		ps.executeUpdate();
 		
 		
 		//Update department id number
@@ -76,6 +87,11 @@ public class DepartmentDaoImple implements DepartmentDao {
 		//update runtime data
 		RuntimeData.addDepartmentToMap(department);
 		
+		//also update department head data with generated id from database
+		Employee head = department.getDepartmentHead();
+		if (head!=null) {
+			empDao.updateEmployeeDepartment(head.getId(),department.getId());	
+		}
 	}
 
 }

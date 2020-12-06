@@ -7,13 +7,13 @@ import lombok.Data;
 import lombok.ToString;
 
 
-@Data
+@Data @ToString
 public class Employee implements EmployeeInterface {
 	private int id;
 	private String firstName;
 	private String lastName;
-	private Employee supervisor;
-	private List <Employee> subordinates;
+	@ToString.Exclude private Employee supervisor;
+	@ToString.Exclude private List <Employee> subordinates;
 	private Department department;
 	
 	public Employee() {super();}
@@ -65,6 +65,10 @@ public class Employee implements EmployeeInterface {
 	@Override
 	public void setSupervisor(Employee emp) {
 		this.supervisor=emp;
+		//defaulting to setting supervisor's department to subordinate's department
+		if(department==null && supervisor!=null) {
+			this.department=supervisor.department;
+		}
 		
 	}
 	@Override
@@ -118,6 +122,26 @@ public class Employee implements EmployeeInterface {
 	}
 
 
+	public String getMinInfo() {
+		return "(id: "+getId()+" Name: "+getFirstName()+" "+getLastName()+")";
+	}
+	
+	//to string stuff
+	@ToString.Include
+	public String Supervisor() {
+		return supervisor.getMinInfo();
+	}
+	
+	@ToString.Include
+	public String Subordinates() {
+		String output="";
+		for (Employee each: subordinates) {
+			output= each.getMinInfo();
+		}
+		return output;
+	}
+	
+	
 	
 	
 }

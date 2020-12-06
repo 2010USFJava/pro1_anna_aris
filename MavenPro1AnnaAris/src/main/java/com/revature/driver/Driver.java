@@ -4,10 +4,11 @@ import java.sql.SQLException;
 
 import com.revature.dao.DepartmentDao;
 import com.revature.dao.EmployeeDao;
+import com.revature.dao.LoginDao;
 import com.revature.daoimple.DepartmentDaoImple;
 import com.revature.daoimple.EmployeeDaoImple;
+import com.revature.daoimple.LoginDaoImple;
 import com.revature.meta.RuntimeData;
-import com.revature.model.Department;
 import com.revature.model.Employee;
 
 public class Driver {
@@ -16,11 +17,12 @@ public class Driver {
 	public static void main(String[] args) {
 		EmployeeDao empDao = new EmployeeDaoImple();
 		DepartmentDao deptDao = new DepartmentDaoImple();
+		LoginDao loginDao = new LoginDaoImple();
 //		
 //		//		LogThis.logIt(LevelEnum.DEBUG, "Base Logger Test");
 //		System.out.println("Hello World");
 //		
-//		Employee emp = new Employee("Cora","Dog");
+
 //		Department dept = new Department("Blueberry",emp);
 //
 //		try {
@@ -32,14 +34,22 @@ public class Driver {
 //		
 ////		System.out.println(emp.toString());
 //		System.out.println(dept.toString());
-
+		Employee testEmp;
 		try {
-			empDao.retriveEmployeeById(9);
+			testEmp=loginDao.retrieveEmployeeByCredentials("greenonion", "strAwberry");
+//			loginDao.createNewLogin(testEmp, "greenonion", "strAwberry");
+			Employee emp = new Employee("Lord","Underfoot");
+			emp.setSupervisor(testEmp);
+			empDao.addNewEmployee(emp);
+			loginDao.createNewLogin(emp, "tiNycat", "meow");
+			
+		
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 //		
+		
 		System.out.println("*~*~*~*~*~*~*");
 		System.out.println(RuntimeData.getEmployeeFromMap(9));
 		System.out.println(RuntimeData.getDepartmentFromMap(207));

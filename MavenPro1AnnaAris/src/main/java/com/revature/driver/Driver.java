@@ -38,11 +38,11 @@ public class Driver {
 		try {
 			testEmp=loginDao.retrieveEmployeeByCredentials("greenonion", "strAwberry");
 //			loginDao.createNewLogin(testEmp, "greenonion", "strAwberry");
-			Employee emp = new Employee("Lord","Underfoot");
-			emp.setSupervisor(testEmp);
-			empDao.addNewEmployee(emp);
-			loginDao.createNewLogin(emp, "tiNycat", "meow");
-			
+//			Employee emp = new Employee("Lord","Underfoot");
+//			emp.setSupervisor(testEmp);
+//			empDao.addNewEmployee(emp);
+//			loginDao.createNewLogin(emp, "tiNycat", "meow");
+//			
 		
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

@@ -129,14 +129,26 @@ public class Employee implements EmployeeInterface {
 	//to string stuff
 	@ToString.Include
 	public String Supervisor() {
-		return supervisor.getMinInfo();
+		if (supervisor!=null) {
+
+			return supervisor.getMinInfo();
+		}else
+			return " None";
+					
 	}
+		
+		
 	
 	@ToString.Include
 	public String Subordinates() {
 		String output="";
+		
+		if (subordinates.isEmpty()) {
 		for (Employee each: subordinates) {
 			output= each.getMinInfo();
+		}
+		} else {
+			output="none";
 		}
 		return output;
 	}

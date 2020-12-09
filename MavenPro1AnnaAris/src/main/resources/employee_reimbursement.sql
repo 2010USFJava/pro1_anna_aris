@@ -65,7 +65,8 @@ increment by 1;
 --insert into employees values(nextval('emp_id_seq'),'Aretha','Franklin',2,1);
 --insert into employees values(nextval('emp_id_seq'),'John','Fogerty',2,1);
 --insert into logins values(1,'testuser','password');
-
+--select sub_id from supervisor_sub_relations;
+select * from logins where username='tinycat';
 
 select * from employees;
 ----select * from supervisors;

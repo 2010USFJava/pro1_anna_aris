@@ -70,6 +70,7 @@ public class Driver {
 			//testing that password is, in fact, case sensitive
 			loginDao.createNewLogin(empList[1], "greenonion", "strAwberry");
 			loginDao.createNewLogin(empList[2], "grumpy_old_man", "meow");
+			loginDao.createNewLogin(empList[3], "potter_harry4", "theOneAndOnly");
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

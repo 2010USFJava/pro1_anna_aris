@@ -1,6 +1,7 @@
 package com.revature.servlet;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
@@ -58,7 +59,7 @@ public class LoginServlet extends HttpServlet {
 			response.getWriter().write(mapper.writeValueAsString(emp));
 			
 			
-//			mapper.writeValue(Paths.get("employee.json").toFile(), emp);
+			mapper.writeValue(Paths.get("employee.json").toFile(), emp);
 		} catch (SQLException e) {
 //			doGet(request, response);
 			response.getWriter().append("SQLException at: ").append(request.getContextPath());

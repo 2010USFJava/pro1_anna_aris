@@ -88,4 +88,14 @@ public class LoginDaoImple implements LoginDao {
 		
 	}
 
+	@Override
+	public void checkIfUsernameExists(String username) throws SQLException {
+		Connection conn = cf.getConnection();
+		LogThis.logIt(LevelEnum.INFO, "Checking if username exists: "+username);
+		String sql = "select * from logins where username=?";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setString(1,username);
+		ps.executeUpdate();
+	}
+
 }

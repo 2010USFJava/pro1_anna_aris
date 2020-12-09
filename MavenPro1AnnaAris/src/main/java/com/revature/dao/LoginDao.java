@@ -10,6 +10,7 @@ public interface LoginDao {
 	public Employee retrieveEmployeeByCredentials(String username, String password) throws SQLException;
 	public void createNewLogin(Employee emp, String username, String password) throws SQLException;
 	public void updatePassword(Employee emp, String password) throws SQLException;
+	public void checkIfUsernameExists(String username) throws SQLException;
 	
 	//Add if extra time:
 	//it may make sense to check if employee is in the system to avoid dulpicate entries

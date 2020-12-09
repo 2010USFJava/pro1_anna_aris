@@ -121,13 +121,19 @@ public class Employee implements EmployeeInterface {
 	// to string stuff
 	@ToString.Include
 	public String Supervisor() {
-		if (supervisor != null) {
+		String output = "";
 
-			return supervisor.getMinInfo();
-		} else
-			return " None";
+		if (supervisor == null) {
+			output = "none";
 
+		} else {
+			output=supervisor.getMinInfo();
+
+		}
+		return output;
 	}
+
+
 
 	@ToString.Include
 	public String Subordinates() {

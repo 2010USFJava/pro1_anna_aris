@@ -29,12 +29,20 @@
 					<td>Password:</td><td><input id=passwordInput name=password type="password"></td>
 				</tr>
 			</table>
-	<input type="submit">
+	<button type="submit" onclick="showLoadingImage()">submit</button>
 	</form>
+<br>
+	<img class="loadingImage" src="https://annasbucket.s3.us-east-2.amazonaws.com/debugBears.gif" alt="">
 	</div>
 
 
 </div>
 
+<script type="text/javascript">
+  function showLoadingImage(){
+		var sheet = window.document.styleSheets[0];
+		sheet.insertRule('.loadingImage{display:inline}',sheet.cssRules.length);
+	}
+</script>
 </body>
 </html>

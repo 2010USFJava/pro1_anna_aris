@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.dao.LoginDao;
 import com.revature.daoimple.LoginDaoImple;
 import com.revature.model.Employee;
@@ -17,8 +19,13 @@ import com.revature.model.Employee;
  */
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private LoginDao loginDao=new LoginDaoImple();
-	
+	private static LoginDao loginDao;
+	static {
+
+		loginDao=new LoginDaoImple();
+		
+		
+	}
        
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -31,28 +38,46 @@ public class LoginServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 		response.getWriter().append("In Post method");
+		
 		try {
-			loginHelper(request,response);
-		} catch (SQLException e) {
+			Employee emp = loginHelper(request,response);
+			ObjectMapper mapper = new ObjectMapper();
 			
+			try {
+				System.out.println(mapper.writeValueAsString(emp));
+			} catch(JsonProcessingException e) {
+				 e.printStackTrace();
+			}
+//			response.getWriter().write(mapper.writeValueAsString(emp));
+			
+			
+//			mapper.writeValue(Paths.get("employee.json").toFile(), emp);
+		} catch (SQLException e) {
+			doGet(request, response);
 			response.getWriter().append("SQLException at: ").append(request.getContextPath());
 
 			e.printStackTrace();
 //			doGet(request, response);
 		} catch (IOException e) {
+			doGet(request, response);
 			response.getWriter().append("IOException at: ").append(request.getContextPath());
 
 			e.printStackTrace();
 //			doGet(request, response);
 //			e.printStackTrace();
 		}
+		
+		
+		
+		
 	}
 	
-	private void loginHelper(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
+	private Employee loginHelper(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
 		String username=request.getParameter("username");
 		String password=request.getParameter("password");
-		response.getWriter().append(username+" tried to log in");
+		response.getWriter().append(username+" tried to log in with the password "+password);
 		
 		Employee emp=loginDao.retrieveEmployeeByCredentials(username, password);
 		
@@ -64,6 +89,7 @@ public class LoginServlet extends HttpServlet {
 			output="Invalid Login";
 		}
 		response.getWriter().println(output);
+		return emp;
 		
 	}
 

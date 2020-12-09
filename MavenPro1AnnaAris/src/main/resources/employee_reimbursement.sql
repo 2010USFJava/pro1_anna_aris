@@ -59,23 +59,26 @@ increment by 1;
 
 
 --testdata
-insert into departments values(1,'Music');
-insert into employees values(nextval('emp_id_seq'),'Billy','Joel',null,1);
-insert into employees values(nextval('emp_id_seq'),'Brittney','Spears',1,1);
-insert into employees values(nextval('emp_id_seq'),'Aretha','Franklin',2,1);
-insert into employees values(nextval('emp_id_seq'),'John','Fogerty',2,1);
-insert into logins values(1,'testuser','password');
+--insert into departments values(1,'Music');
+--insert into employees values(nextval('emp_id_seq'),'Billy','Joel',null,1);
+--insert into employees values(nextval('emp_id_seq'),'Brittney','Spears',1,1);
+--insert into employees values(nextval('emp_id_seq'),'Aretha','Franklin',2,1);
+--insert into employees values(nextval('emp_id_seq'),'John','Fogerty',2,1);
+--insert into logins values(1,'testuser','password');
 
 
 select * from employees;
---select * from supervisors;
---select * from supervisor_sub_relations where sup_id=2;
-select * from departments;
-
-update employees set department_id =1 where employee_id =7;
-update logins set password='newpass'where employee_id=1;
-select * from employees where employee_id =9;
-select * from logins;
+----select * from supervisors;
+----select * from supervisor_sub_relations where sup_id=2;
+--select * from departments;
+--
+--update employees set department_id =1 where employee_id =7;
+--update logins set password='newpass'where employee_id=1;
+--select * from employees where employee_id =9;
+--select * from logins;
+--select employee_id from logins where username='greenonion' and password='strAwberry';
+--select employee_id from logins where username='testuser' and password='newpass';
+--select employee_id from logins;
 
 --select * from employees 
 --where employee_id =(

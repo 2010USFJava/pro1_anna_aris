@@ -144,3 +144,7 @@ button{
   font-family:cursive;
 
 }
+
+.loadingImage{
+	display: none;
+}

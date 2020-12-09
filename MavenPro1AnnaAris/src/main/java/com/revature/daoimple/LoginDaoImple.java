@@ -26,16 +26,16 @@ public class LoginDaoImple implements LoginDao {
 //		Make sure username info is all lowercase
 		username=username.toLowerCase();
 		Connection conn = cf.getConnection();
-		String sql="select employee_id "
-				+ "	from logins "
-				+ "	where username=? and password=?";
+		String sql="select employee_id from logins where username=? and password=?";
 		PreparedStatement ps = conn.prepareStatement(sql);
 		ps.setString(1, username);
 		ps.setString(2, password);
 		ResultSet rs = ps.executeQuery();
+		
 		int retrivedId=0;
 		while(rs.next()) {
 			retrivedId=rs.getInt(1);
+			break;
 		}
 		
 		//use id to get Employee
@@ -68,7 +68,7 @@ public class LoginDaoImple implements LoginDao {
 		String sql = "insert into logins values(?,?,?)";
 		PreparedStatement ps = conn.prepareStatement(sql);
 		ps.setInt(1, emp.getId());
-		ps.setString(2, username);
+		ps.setString(2, username.toLowerCase());
 		ps.setString(3, password);
 		ps.executeUpdate();
 

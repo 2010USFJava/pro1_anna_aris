@@ -52,8 +52,14 @@ public class Department implements DepartmentInt {
 
 	@ToString.Include
 	public String Deparment_Head() {
+		if(departmentHead==null) {
+			return " None";
+			
+		}else {
+		
 		return "(id=" + this.departmentHead.getId() + ": " + departmentHead.getFirstName() + " "
 				+ departmentHead.getLastName() + ")";
+	
+		}
 	}
-
 }

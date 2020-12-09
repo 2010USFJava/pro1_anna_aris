@@ -82,16 +82,11 @@ public class Employee implements EmployeeInterface {
 	}
 	@Override
 	public void addSubordinate(Employee emp) {
-		if (subordinates==null) {
-			subordinates=noSubordinateList();
-		}
 		subordinates.add(emp);
 	}
 	@Override
 	public List<Employee> getSubordiates() {
-		if (subordinates==null) {
-			subordinates=noSubordinateList();
-		}
+
 		
 		return subordinates;
 	}
@@ -108,19 +103,6 @@ public class Employee implements EmployeeInterface {
 	}
 	
 	
-	
-	//internal stuff
-	private ArrayList<Employee> noSubordinateList(){
-		//For lazy load
-		
-		//check database for subordinates
-		
-			//if an error occurs, let the user know in some way
-		
-		//otherwise return a new empty list
-		return new ArrayList<Employee>();
-	}
-
 
 	public String getMinInfo() {
 		return "(id: "+getId()+" Name: "+getFirstName()+" "+getLastName()+")";
@@ -143,12 +125,14 @@ public class Employee implements EmployeeInterface {
 	public String Subordinates() {
 		String output="";
 		
-		if (subordinates.isEmpty()) {
-		for (Employee each: subordinates) {
-			output= each.getMinInfo();
-		}
-		} else {
+	
+		if (subordinates==null||subordinates.isEmpty()) {
 			output="none";
+		
+		} else {
+			for (Employee each: subordinates) {
+				output= each.getMinInfo();}
+			
 		}
 		return output;
 	}

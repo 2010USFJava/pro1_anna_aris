@@ -12,6 +12,8 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.dao.LoginDao;
 import com.revature.daoimple.LoginDaoImple;
+import com.revature.meta.LogThis;
+import com.revature.meta.LogThis.LevelEnum;
 import com.revature.model.Employee;
 
 /**
@@ -46,22 +48,25 @@ public class LoginServlet extends HttpServlet {
 			ObjectMapper mapper = new ObjectMapper();
 			
 			try {
-				System.out.println(mapper.writeValueAsString(emp));
+				mapper.writeValueAsString(emp);
+
 			} catch(JsonProcessingException e) {
-				 e.printStackTrace();
+//				 e.printStackTrace();
+				LogThis.logIt(LevelEnum.ERROR, "JsonProcessingException e In LoginServletDoPost");
 			}
-//			response.getWriter().write(mapper.writeValueAsString(emp));
+			
+			response.getWriter().write(mapper.writeValueAsString(emp));
 			
 			
 //			mapper.writeValue(Paths.get("employee.json").toFile(), emp);
 		} catch (SQLException e) {
-			doGet(request, response);
+//			doGet(request, response);
 			response.getWriter().append("SQLException at: ").append(request.getContextPath());
 
 			e.printStackTrace();
 //			doGet(request, response);
 		} catch (IOException e) {
-			doGet(request, response);
+//			doGet(request, response);
 			response.getWriter().append("IOException at: ").append(request.getContextPath());
 
 			e.printStackTrace();

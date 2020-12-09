@@ -65,7 +65,9 @@ public class Driver {
 			
 
 
+			//testing that username will always be translated to lower case
 			loginDao.createNewLogin(empList[0], "tiNycat", "meow");
+			//testing that password is, in fact, case sensitive
 			loginDao.createNewLogin(empList[1], "greenonion", "strAwberry");
 			loginDao.createNewLogin(empList[2], "grumpy_old_man", "meow");
 			
@@ -97,7 +99,7 @@ public class Driver {
 		
 		
 		try {
-			testEmp=loginDao.retrieveEmployeeByCredentials("tiNycat", "meow");
+			testEmp=loginDao.retrieveEmployeeByCredentials(username, password);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -107,10 +109,10 @@ public class Driver {
 	}
 	
 	public static void main(String[] args) {
-		loadTestData();
+//		loadTestData();
 		
-//		Employee testEmp=testEmployeeLogin(TestEmployee.UNDERFOOT);
-//		System.out.println(testEmp);
+		Employee testEmp=testEmployeeLogin(TestEmployee.RUFAS);
+		System.out.println(testEmp);
 
 		
 		System.out.println("*~*~*~*~*~*~*");

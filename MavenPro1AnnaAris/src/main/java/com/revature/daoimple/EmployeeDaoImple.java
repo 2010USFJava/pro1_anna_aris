@@ -199,7 +199,7 @@ public class EmployeeDaoImple implements EmployeeDao {
 
 		try {
 			Connection conn = cf.getConnection();
-			String sql = "select * from supervisor_sub_relations where sup_id=?";
+			String sql = "select sub_id from supervisor_sub_relations where sup_id=?";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setInt(1, id);
 			ResultSet rs = ps.executeQuery();

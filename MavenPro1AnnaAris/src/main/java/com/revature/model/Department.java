@@ -1,7 +1,6 @@
 package com.revature.model;
 
-import com.revature.meta.LogThis;
-import com.revature.meta.LogThis.LevelEnum;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 import lombok.Getter;
@@ -20,6 +19,7 @@ public class Department implements DepartmentInt {
 	@Setter
 	private String name;
 	@ToString.Exclude
+	@JsonIgnore
 	private Employee departmentHead;
 
 	// constructor

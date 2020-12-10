@@ -1,3 +1,9 @@
+/*Author: Anna Carlson
+ * Original Project: Revature BootCamp Project 1: Employee Reimbursement Application
+ * Description: Model of an Employee with one supervisor and an unspecified number of subordinates.
+ * 
+ */
+
 package com.revature.model;
 
 import java.util.ArrayList;
@@ -9,19 +15,17 @@ import lombok.Data;
 import lombok.ToString;
 
 @Data
-@ToString
-public class Employee implements EmployeeInterface {
+public class Employee {
 	private int id;
 	private String firstName;
 	private String lastName;
-	@ToString.Exclude
 	@JsonIgnore
 	private Employee supervisor;
-	@ToString.Exclude
 	@JsonIgnore
 	private List<Employee> subordinates;
 	@JsonIgnore
 	private Department department;
+	private double funds=10000.00;
 
 	public Employee() {
 		super();
@@ -40,38 +44,33 @@ public class Employee implements EmployeeInterface {
 		this.supervisor = supervisor;
 	}
 
-	// interface items
-	@Override
 	public String getFirstName() {
 		return firstName;
 	}
 
-	@Override
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 
-	@Override
 	public String getLastName() {
 		return lastName;
 	}
-
-	@Override
+	
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 
-	@Override
+
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	@Override
+
 	public int getId() {
 		return id;
 	}
 
-	@Override
+
 	public void setSupervisor(Employee emp) {
 		this.supervisor = emp;
 		// defaulting to setting supervisor's department to subordinate's department
@@ -81,74 +80,119 @@ public class Employee implements EmployeeInterface {
 
 	}
 
-	@Override
+	
 	public Employee getSupervisor() {
 		return supervisor;
 	}
 
-	@Override
+
 	public void setSubordinates(List<Employee> empList) {
 		this.subordinates = empList;
 
 	}
 
-	@Override
+
 	public void addSubordinate(Employee emp) {
+		if(subordinates==null) {
+			subordinates=new ArrayList<Employee>();
+		}
 		subordinates.add(emp);
 	}
 
-	@Override
+
 	public List<Employee> getSubordiates() {
 
 		return subordinates;
 	}
 
-	@Override
+
 	public void setDepartment(Department department) {
 		this.department = department;
 
 	}
 
-	@Override
+
 	public Department getDepartment() {
 		return this.department;
 	}
 
-	public String getMinInfo() {
-		return "(id: " + getId() + " Name: " + getFirstName() + " " + getLastName() + ")";
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", supervisor="
+				+ toStringSuperier() + ", subordinates=" + toStringSubordinate() + ", department=" + department +", funds=" +funds + "]";
 	}
+	
+	public String toStringSubordinate() {
+		String output="";
+		if(subordinates!=null) {
+		for (Employee emp:subordinates) {
+			output+="Employee [id=" + emp.getId() + ", firstName=" + emp.getFirstName() + ", lastName=" + emp.getLastName()  +
+					", department=" + emp.getDepartment() +", funds=" +emp.getFunds() +"] , ";
+		}
+		}
+		return output;
+		
+	}
+	
+	public String toStringSuperier() {
+		String output="";
+		
+		//I don't think I need the department info for the supervisor
+		if(supervisor!=null) {
+		Employee emp =supervisor;
+			output+="Employee [id=" + emp.getId() + ", firstName=" + emp.getFirstName() + ", lastName=" + emp.getLastName()  +"] , ";
+		} else {
+			output = "None";
+		}
+		return output;
+		
+	}
+
+	public String toStringDepartmentHead() {
+
+		String output="";
+		Employee emp =this;
+			output+="Employee [id=" + emp.getId() + ", firstName=" + emp.getFirstName() + ", lastName=" + emp.getLastName()+"] , ";
+			
+		return output;
+	}
+	
+
+//	public String getMinInfo() {
+//		return "(id: " + getId() + " Name: " + getFirstName() + " " + getLastName() + ")";
+//	}
 
 	// to string stuff
-	@ToString.Include
-	public String Supervisor() {
-		String output = "";
+//	@ToString.Include
+//	public String Supervisor() {
+//		String output = "";
+//
+//		if (supervisor == null) {
+//			output = "none";
+//
+//		} else {
+//			output=supervisor.getMinInfo();
+//
+//		}
+//		return output;
+//	}
 
-		if (supervisor == null) {
-			output = "none";
-
-		} else {
-			output=supervisor.getMinInfo();
-
-		}
-		return output;
-	}
 
 
-
-	@ToString.Include
-	public String Subordinates() {
-		String output = "";
-
-		if (subordinates == null || subordinates.isEmpty()) {
-			output = "none";
-
-		} else {
-			for (Employee each : subordinates) {
-				output = each.getMinInfo();
-			}
-
-		}
-		return output;
-	}
+//	@ToString.Include
+//	public String Subordinates() {
+//		String output = "";
+//
+//		if (subordinates == null || subordinates.isEmpty()) {
+//			output = "none";
+//
+//		} else {
+//			for (Employee each : subordinates) {
+////				output = each.getMinInfo();
+//			}
+//
+//		}
+//		return output;
+//	}
 
 }

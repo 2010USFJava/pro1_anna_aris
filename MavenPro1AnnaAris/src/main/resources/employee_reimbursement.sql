@@ -15,6 +15,7 @@ first_name varchar,
 last_name varchar,
 supervisor_id integer,
 department_id integer,
+funds DOUBLE PRECISION,
 PRIMARY KEY(employee_id)
 );
 
@@ -66,9 +67,10 @@ increment by 1;
 --insert into employees values(nextval('emp_id_seq'),'John','Fogerty',2,1);
 --insert into logins values(1,'testuser','password');
 --select sub_id from supervisor_sub_relations;
-select * from logins where username='tinycat';
+select * from logins;
 
 select * from employees;
+select employee_id from logins where username='tinycat' and password='meow';
 ----select * from supervisors;
 ----select * from supervisor_sub_relations where sup_id=2;
 --select * from departments;

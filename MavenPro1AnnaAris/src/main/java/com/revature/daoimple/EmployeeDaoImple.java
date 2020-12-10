@@ -1,3 +1,9 @@
+/*Author: Anna Carlson
+ * Original Project: Revature BootCamp Project 1: Employee Reimbursement Application
+ * Description:  Postgress Implementation  for receiving and adding EMPLOYEE information to a database
+
+ */
+
 package com.revature.daoimple;
 
 import java.sql.Connection;
@@ -59,8 +65,8 @@ public class EmployeeDaoImple implements EmployeeDao {
 					emp.setLastName(rs.getString(3));
 					supervisorId = (rs.getInt(4));
 					departId = (rs.getInt(5));
+					emp.setFunds(rs.getDouble(6));
 					break;
-
 				}
 
 				// put current employee in database to avoid recursion problems
@@ -136,7 +142,7 @@ public class EmployeeDaoImple implements EmployeeDao {
 
 			Connection conn = cf.getConnection();
 
-			String sql = "insert into employees values(nextval('emp_id_seq'),?,?,?,?);";
+			String sql = "insert into employees values(nextval('emp_id_seq'),?,?,?,?,?);";
 
 			PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
@@ -155,6 +161,8 @@ public class EmployeeDaoImple implements EmployeeDao {
 			} else {
 				ps.setNull(4, java.sql.Types.INTEGER);
 			}
+			
+			ps.setDouble(5, employee.getFunds());
 
 			// update database
 			ps.executeUpdate();

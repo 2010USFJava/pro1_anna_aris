@@ -1,3 +1,9 @@
+/*Author: Anna Carlson
+ * Original Project: Revature BootCamp Project 1: Employee Reimbursement Application
+ * Description: To Aid in the Log in process
+ * Note: As of 12/10/2020. I have had no need to store this information on this side.
+ */
+
 package com.revature.model;
 
 import lombok.AllArgsConstructor;

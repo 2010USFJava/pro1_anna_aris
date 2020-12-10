@@ -1,3 +1,10 @@
+/*Author: Anna Carlson
+ * Source: Followed Tutorial from  J. "Matt" Knighten For base code
+ * Original Project: Revature BootCamp Project 1: Employee Reimbursement Application
+ * Description: Creates a connection with a database from information stored in the database.properties item,
+ * which is itself stored in src/main/resources
+ */
+
 package com.revature.meta;
 
 import java.io.FileNotFoundException;
@@ -10,54 +17,51 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class ConnFactory {
-	
+
 	private static ConnFactory cf;
-//	private String url="jdbc:postgresql://java2010usf.cfqfijvzidkq.us-east-2.rds.amazonaws.com:5432/postgres?currentSchema=employee_reimbursement";
-//	private String username="annacarl";
-//	private String password="hrMVnvuh9RETnA6";
+
 //	
 	private ConnFactory() {
 		super();
 	}
-	
+
 	public static synchronized ConnFactory getInstance() {
-		if(cf==null) {
-			cf=new ConnFactory();
+		if (cf == null) {
+			cf = new ConnFactory();
 		}
 		return cf;
-		
+
 	}
-	
+
 	public Connection getConnection() {
-		Connection conn=null;
+		Connection conn = null;
+
 		Properties prop = new Properties();
-		
 
 		try {
 			try {
 				Class.forName("org.postgresql.Driver");
 			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}  			
+			}
 			ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 			InputStream input = classLoader.getResourceAsStream("database.properties");
 			prop.load(input);
-			conn = DriverManager.getConnection(prop.getProperty("url"), prop.getProperty("username"), prop.getProperty("password"));
+			conn = DriverManager.getConnection(prop.getProperty("url"), prop.getProperty("username"),
+					prop.getProperty("password"));
 
-		} catch(SQLException e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-	
-		catch(FileNotFoundException e) {
+
+		catch (FileNotFoundException e) {
 			e.printStackTrace();
-		} catch(IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
-		} 
-		
+		}
+
 		return conn;
-		
-		
+
 	}
 
 }

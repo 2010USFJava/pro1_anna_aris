@@ -1,3 +1,8 @@
+/*Author: Anna Carlson
+ * Original Project: Revature BootCamp Project 1: Employee Reimbursement Application
+ * Description: Model of a department in an office.
+ */
+
 package com.revature.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -10,15 +15,16 @@ import lombok.ToString;
 
 @Data
 @NoArgsConstructor
-@ToString
-public class Department implements DepartmentInt {
+//@ToString
+//@ToString(of = {"id", "name","departmentHead.getId()"})
+public class Department {
 	@Getter
 	@Setter
 	private int id;
 	@Getter
 	@Setter
 	private String name;
-	@ToString.Exclude
+//	@ToString.Exclude
 	@JsonIgnore
 	private Employee departmentHead;
 
@@ -50,16 +56,10 @@ public class Department implements DepartmentInt {
 		return this.departmentHead;
 	}
 
-	@ToString.Include
-	public String Deparment_Head() {
-		if(departmentHead==null) {
-			return " None";
-			
-		}else {
-		
-		return "(id=" + this.departmentHead.getId() + ": " + departmentHead.getFirstName() + " "
-				+ departmentHead.getLastName() + ")";
-	
-		}
+	@Override
+	public String toString() {
+		return "Department [id=" + id + ", name=" + name + ", departmentHead=" + departmentHead.toStringDepartmentHead()+ "]";
 	}
+
+
 }

@@ -1,3 +1,8 @@
+/*Author: Anna Carlson
+ * Original Project: Revature BootCamp Project 1: Employee Reimbursement Application
+ * Description: Postgress Implementation for receiving and adding department information to a database
+ */
+
 package com.revature.daoimple;
 
 import java.sql.Connection;

@@ -1,6 +1,7 @@
 package com.revature.model;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -109,15 +110,16 @@ public class EmployeeTest {
 	}
 	
 	@Test
-	public void getDefaultEmptySubordinateList() {
+	public void getDefaultNullSubordinateList() {
 		Employee emp = new Employee("Joe","Smith",sup);
 		List<Employee> subList = emp.getSubordiates();
-		assertEquals(0,subList.size());
+		assertNull(subList);
 	}
 	
 	@Test
 	public void addToSubordinateList() {
 		Employee emp = new Employee("Joe","Smith",sup);
+
 		emp.addSubordinate(empA);
 		List<Employee> subList = emp.getSubordiates();
 		assertEquals(empA,subList.get(0));

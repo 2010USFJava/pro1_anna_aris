@@ -1,3 +1,11 @@
+/*Author: Anna Carlson
+ * Original Project: Revature BootCamp Project 1: Employee Reimbursement Application
+ * Description: Holds search results made during runtime. Make to save trips to database
+ * that would cost time. Transiant. 
+ * Note: Partly an experiment in Cashing and lazy loading. 
+ * Updates and modifications are recommended with future skill set.
+ */
+
 package com.revature.meta;
 
 import java.util.HashMap;

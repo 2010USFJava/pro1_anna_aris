@@ -15,7 +15,7 @@ import lombok.ToString;
 
 @Data
 @NoArgsConstructor
-//@ToString
+@ToString
 //@ToString(of = {"id", "name","departmentHead.getId()"})
 public class Department {
 	@Getter

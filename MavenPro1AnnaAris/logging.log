@@ -583,3 +583,162 @@
 [INFO ] 2020-12-10 12:16:08.966 [main] LogThis - Employee Id: 2 information already in runtime data. Runtime Data called instead of database call
 [INFO ] 2020-12-10 12:16:08.966 [main] LogThis - Checking for subordinate for 2
 [INFO ] 2020-12-10 12:16:09.710 [main] LogThis - Employee Logged In Emp#:2
+[DEBUG] 2020-12-10 14:19:18.066 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:25:58.169 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:31:03.606 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:35:41.328 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:36:55.912 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:36:55.928 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 14:39:58.219 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:39:58.235 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 14:39:58.236 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 14:43:14.557 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:43:14.573 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 14:43:14.573 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:17:50.807 [main] LogThis - Date:Sat Dec 14 18:00:00 CST 2019
+[DEBUG] 2020-12-10 15:17:50.811 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:17:50.827 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:17:50.828 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:19:29.590 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:19:29.606 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:19:29.606 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:23:14.647 [main] LogThis - Date:2019-12-15
+[DEBUG] 2020-12-10 15:23:14.651 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:23:14.665 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:23:14.665 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:24:17.661 [main] LogThis - Date:2019-12-15
+[DEBUG] 2020-12-10 15:24:17.665 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:24:17.678 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:24:17.679 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:26:10.524 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:26:10.540 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:26:10.540 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:38:50.888 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:38:50.911 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:38:50.911 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:38:50.911 [main] LogThis - In Print: title1
+[DEBUG] 2020-12-10 15:38:50.911 [main] LogThis - Date: title1
+[DEBUG] 2020-12-10 15:38:50.911 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:38:50.912 [main] LogThis - In Print: title2
+[DEBUG] 2020-12-10 15:38:50.912 [main] LogThis - Date: title2
+[DEBUG] 2020-12-10 15:38:50.915 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:38:50.915 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:39:23.534 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:39:23.557 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:39:23.560 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:39:23.560 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:46:17.053 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:46:17.087 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:46:17.088 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:46:53.431 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:46:53.462 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:46:53.462 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:46:53.462 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:46:53.463 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:46:53.463 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:46:53.463 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:46:53.463 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:46:53.466 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:46:53.466 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:48:22.029 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:48:22.061 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:48:22.061 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:49:51.514 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:49:51.545 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:49:51.546 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:50:35.544 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:50:35.569 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:50:35.573 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:50:35.573 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:51:27.781 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:51:27.810 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:51:27.811 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 16:03:47.189 [main] LogThis - Employee to JSON test: {"id":0,"firstName":"Lord","lastName":"Underfoot","supervisor":{"id":0,"firstName":"Rufas","lastName":"OldCat","supervisor":null,"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null},"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null}
+[DEBUG] 2020-12-10 16:05:14.931 [main] LogThis - Employee to JSON test: {"id":0,"firstName":"Lord","lastName":"Underfoot","supervisor":{"id":0,"firstName":"Rufas","lastName":"OldCat","supervisor":null,"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null},"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null}
+[DEBUG] 2020-12-10 16:05:14.934 [main] LogThis - Employee to JSON First Name: Lord
+[DEBUG] 2020-12-10 16:05:14.935 [main] LogThis - Employee to JSON Supervisor First Name: Lord
+[DEBUG] 2020-12-10 16:14:59.852 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 16:14:59.874 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 16:14:59.874 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 16:14:59.874 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 16:14:59.874 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 16:14:59.874 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 16:14:59.875 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 16:14:59.875 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 16:14:59.878 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 16:14:59.878 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 16:14:59.884 [main] LogThis - Employee to JSON test: {"id":0,"firstName":"Lord","lastName":"Underfoot","supervisor":{"id":0,"firstName":"Rufas","lastName":"OldCat","supervisor":null,"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null},"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null}
+[DEBUG] 2020-12-10 16:14:59.885 [main] LogThis - Employee to JSON First Name: Lord
+[DEBUG] 2020-12-10 16:14:59.885 [main] LogThis - Employee to JSON Supervisor First Name: Lord

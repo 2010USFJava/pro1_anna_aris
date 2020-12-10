@@ -21,11 +21,10 @@ public class Employee {
 	private String lastName;
 	@JsonIgnore
 	private Employee supervisor;
-	@JsonIgnore
-	private List<Employee> subordinates;
-	@JsonIgnore
 	private Department department;
 	private double funds=10000.00;
+	@JsonIgnore
+	private List<Employee> subordinates;
 
 	public Employee() {
 		super();
@@ -116,38 +115,38 @@ public class Employee {
 		return this.department;
 	}
 
-	@Override
-	public String toString() {
-		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", supervisor="
-				+ toStringSuperier() + ", subordinates=" + toStringSubordinate() + ", department=" + department +", funds=" +funds + "]";
-	}
-	
-	public String toStringSubordinate() {
-		String output="";
-		if(subordinates!=null) {
-		for (Employee emp:subordinates) {
-			output+="Employee [id=" + emp.getId() + ", firstName=" + emp.getFirstName() + ", lastName=" + emp.getLastName()  +
-					", department=" + emp.getDepartment() +", funds=" +emp.getFunds() +"] , ";
-		}
-		}
-		return output;
-		
-	}
-	
-	public String toStringSuperier() {
-		String output="";
-		
-		//I don't think I need the department info for the supervisor
-		if(supervisor!=null) {
-		Employee emp =supervisor;
-			output+="Employee [id=" + emp.getId() + ", firstName=" + emp.getFirstName() + ", lastName=" + emp.getLastName()  +"] , ";
-		} else {
-			output = "None";
-		}
-		return output;
-		
-	}
-
+//	@Override
+//	public String toString() {
+//		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", supervisor="
+//				+ toStringSuperier() + ", subordinates=" + toStringSubordinate() + ", department=" + department +", funds=" +funds + "]";
+//	}
+//	
+//	public String toStringSubordinate() {
+//		String output="";
+//		if(subordinates!=null) {
+//		for (Employee emp:subordinates) {
+//			output+="Employee [id=" + emp.getId() + ", firstName=" + emp.getFirstName() + ", lastName=" + emp.getLastName()  +
+//					", department=" + emp.getDepartment() +", funds=" +emp.getFunds() +"] , ";
+//		}
+//		}
+//		return output;
+//		
+//	}
+//	
+//	public String toStringSuperier() {
+//		String output="";
+//		
+//		//I don't think I need the department info for the supervisor
+//		if(supervisor!=null) {
+//		Employee emp =supervisor;
+//			output+="Employee [id=" + emp.getId() + ", firstName=" + emp.getFirstName() + ", lastName=" + emp.getLastName()  +"] , ";
+//		} else {
+//			output = "None";
+//		}
+//		return output;
+//		
+//	}
+//
 	public String toStringDepartmentHead() {
 
 		String output="";
@@ -156,43 +155,7 @@ public class Employee {
 			
 		return output;
 	}
-	
+//	
 
-//	public String getMinInfo() {
-//		return "(id: " + getId() + " Name: " + getFirstName() + " " + getLastName() + ")";
-//	}
-
-	// to string stuff
-//	@ToString.Include
-//	public String Supervisor() {
-//		String output = "";
-//
-//		if (supervisor == null) {
-//			output = "none";
-//
-//		} else {
-//			output=supervisor.getMinInfo();
-//
-//		}
-//		return output;
-//	}
-
-
-
-//	@ToString.Include
-//	public String Subordinates() {
-//		String output = "";
-//
-//		if (subordinates == null || subordinates.isEmpty()) {
-//			output = "none";
-//
-//		} else {
-//			for (Employee each : subordinates) {
-////				output = each.getMinInfo();
-//			}
-//
-//		}
-//		return output;
-//	}
 
 }

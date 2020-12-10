@@ -6,35 +6,39 @@
 
 package com.revature.driver;
 
-import java.sql.SQLException;
+import java.io.IOException;
 
-import com.revature.dao.DepartmentDao;
-import com.revature.dao.EmployeeDao;
-import com.revature.dao.LoginDao;
-import com.revature.daoimple.DepartmentDaoImple;
-import com.revature.daoimple.EmployeeDaoImple;
-import com.revature.daoimple.LoginDaoImple;
-import com.revature.driver.EmployeeTestData.TestEmployee;
-import com.revature.meta.RuntimeData;
-import com.revature.model.Department;
-import com.revature.model.Employee;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.revature.meta.JsonHelper;
 
 public class Driver {
 	
 	
 	public static void main(String[] args) {
 		EmployeeTestData testData= new EmployeeTestData();
+		
+		String jsonSource= "{ \"title\": \"Coder From Scratch\"}";
+		try {
+			JsonNode node = JsonHelper.parse(jsonSource);
+			node.get("title");
+			System.out.println(node);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
 //		loadTestData();
 //		
 //		Employee testEmp=testEmployeeLogin(TestEmployee.RUFAS);
 //		System.out.println(testEmp);
 
 		
-		System.out.println("*~*~*~*~*~*~*");
+//		System.out.println("*~*~*~*~*~*~*");
 //		System.out.println(RuntimeData.getEmployeeFromMap(9));
 //		System.out.println(RuntimeData.getDepartmentFromMap(207));
-		Employee testEmp=testData.testEmployeeLogin(TestEmployee.HARRY_POTTER);
-		System.out.println(testEmp);
+//		Employee testEmp=testData.testEmployeeLogin(TestEmployee.HARRY_POTTER);
+//		System.out.println(testEmp);
 
 		
 	}

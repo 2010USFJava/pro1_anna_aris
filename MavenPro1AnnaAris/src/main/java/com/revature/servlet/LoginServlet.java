@@ -16,9 +16,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.dao.LoginDao;
 import com.revature.daoimple.LoginDaoImple;
+import com.revature.meta.JsonHelper;
 import com.revature.meta.LogThis;
 import com.revature.meta.LogThis.LevelEnum;
 import com.revature.model.Employee;
@@ -48,33 +50,54 @@ public class LoginServlet extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		response.getWriter().append("In Post method");
-
+		
+		JsonNode node=null;
+		
 		try {
-			Employee emp = loginHelper(request, response);
-			ObjectMapper mapper = new ObjectMapper();
-
-			try {
-				mapper.writeValueAsString(emp);
-
-			} catch (JsonProcessingException e) {
-//				 e.printStackTrace();
-				LogThis.logIt(LevelEnum.ERROR, "JsonProcessingException e In LoginServletDoPost");
-			}
-
-			response.getWriter().write(mapper.writeValueAsString(emp));
-
-			mapper.writeValue(Paths.get("employee.json").toFile(), emp);
+			node =JsonHelper.toJson(loginHelper(request, response));
 		} catch (SQLException e) {
-			response.getWriter().append("SQLException at: ").append(request.getContextPath());
 			e.printStackTrace();
 		} catch (IOException e) {
-			response.getWriter().append("IOException at: ").append(request.getContextPath());
-
 			e.printStackTrace();
 		}
+//		
+		try {
+			String output=node.toString();
+			response.getWriter().write(node.toString());
+//			response.getWriter().println(output);
+		} catch (NullPointerException e) {
+			response.getWriter().append("Null Pointer Exception.");
+			e.printStackTrace();
+		}
+//		
+//		RequestDispatcher rd = request.getRequestDispatcher("landingPage.html");
+//		rd.forward(request, response);
+		
+//		try {
+//			Employee emp = loginHelper(request, response);
+//			ObjectMapper mapper = new ObjectMapper();
+//
+//			try {
+//				mapper.writeValueAsString(emp);
+//
+//			} catch (JsonProcessingException e) {
+////				 e.printStackTrace();
+//				LogThis.logIt(LevelEnum.ERROR, "JsonProcessingException e In LoginServletDoPost");
+//			}
+//
+//			response.getWriter().write(mapper.writeValueAsString(emp));
+//
+//			mapper.writeValue(Paths.get("employee.json").toFile(), emp);
+//		} catch (SQLException e) {
+//			response.getWriter().append("SQLException at: ").append(request.getContextPath());
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			response.getWriter().append("IOException at: ").append(request.getContextPath());
+//
+//			e.printStackTrace();
+//		}
 
-		RequestDispatcher rd = request.getRequestDispatcher("landingPage.html");
-		rd.forward(request, response);
+
 //		
 
 	}
@@ -84,18 +107,18 @@ public class LoginServlet extends HttpServlet {
 		LogThis.logIt(LevelEnum.INFO, "Starting Login Process");
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		response.getWriter().append(username + " tried to log in with the password " + password);
+		response.getWriter().append(username + " tried to log in with the password " + password+"\n");
 
 		Employee emp = loginDao.retrieveEmployeeByCredentials(username, password);
 
-		String output = "";
-		if (emp != null) {
-			output = ("Logged in user: " + emp);
-
-		} else {
-			output = "Invalid Login";
-		}
-		response.getWriter().println(output);
+//		String output = "";
+//		if (emp != null) {
+//			output = ("Logged in user: " + emp);
+//
+//		} else {
+//			output = "Invalid Login";
+//		}
+//		response.getWriter().println(output);
 		return emp;
 
 	}

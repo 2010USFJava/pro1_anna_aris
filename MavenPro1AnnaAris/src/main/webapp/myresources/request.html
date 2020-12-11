@@ -19,30 +19,26 @@
 	</header>
 	<div id="mainArea">
 		<div class="subArea">
-			<form method="GET"
-				action="http://localhost:8080/pro1AnnaAris/request.change">
+			<form method="GET" action="http://localhost:8080/pro1AnnaAris/request.change">
 				<div class="border border-dark" style="width: 80%; margin: auto;">
 					<legend>Event Details: </legend>
 					<div class="container">
 						<div class="row">
 							<div class="col">
-								<label>Event Date: <input type="text" id="date"
-									name="date" size="10" placeholder="mm/dd/yyyy"
+								<label>Event Date: <input type="date" id="date" name="date" 
 									required="required"></label>
 							</div>
 							<div class="col">
-								<label>Education Type: <input type="text" id="type"
-									name="type" required="required"></label>
+								<label>Education Type: <input type="text" id="type" name="type" required="required"></label>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col">
-								<label>Event Time: <input type="text" id="time"
-									name="time" size="5" placeholder="18:00" required="required"></label>
+								<label>Event Time: <input type="time" id="time" name="time" required="required"></label>
 							</div>
 							<div class="col">
-								<label>Event Cost: $<input type="text" id="cost"
-									name="cost" placeholder="0.00" required="required"></label>
+								<label>Event Cost: $<input type="number" min="0" step="100" id="cost"
+									name="cost" required="required"></label>
 							</div>
 						</div>
 						<div class="row">
@@ -63,11 +59,11 @@
 						<div class="row">
 							<div class="col">
 								<label>State: <input type="text" id="state" name="state"
-									size="2" required="required"></label>
+									maxlength="2" required="required"></label>
 							</div>
 							<div class="col">
-								<label>Zip Code: <input type="text" id="zip" name="zip"
-									size="5" required="required"></label>
+								<label>Zip Code: <input type="number" min="10000" max="99999" id="zip" name="zip"
+									maxlength="5" required="required"></label>
 							</div>
 						</div>
 						<div class="row">

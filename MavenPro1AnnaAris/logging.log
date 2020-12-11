@@ -1,1 +1,795 @@
 [DEBUG] 2020-11-24 11:52:05.041 [main] LogThis - Base Logger Test
+[ERROR] 2020-12-05 15:10:39.652 [main] LogThis - Null pointer exception in set department head
+[ERROR] 2020-12-05 15:10:39.655 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Department.equals(Object)" because the return value of "com.revature.model.Employee.getDepartment()" is null
+[ERROR] 2020-12-05 15:10:56.053 [main] LogThis - Null pointer exception in set department head
+[ERROR] 2020-12-05 15:10:56.056 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Department.equals(Object)" because the return value of "com.revature.model.Employee.getDepartment()" is null
+[ERROR] 2020-12-05 16:10:20.029 [main] LogThis - Null pointer exception in set department head
+[ERROR] 2020-12-05 16:10:20.032 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Department.equals(Object)" because the return value of "com.revature.model.Employee.getDepartment()" is null
+[ERROR] 2020-12-05 16:10:59.984 [main] LogThis - Null pointer exception in set department head
+[ERROR] 2020-12-05 16:10:59.987 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Department.equals(Object)" because the return value of "com.revature.model.Employee.getDepartment()" is null
+[ERROR] 2020-12-05 16:11:52.426 [main] LogThis - Null pointer exception in set department head
+[ERROR] 2020-12-05 16:11:52.429 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Department.equals(Object)" because the return value of "com.revature.model.Employee.getDepartment()" is null
+[ERROR] 2020-12-05 16:12:02.827 [main] LogThis - Null pointer exception in set department head
+[ERROR] 2020-12-05 16:12:02.830 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Department.equals(Object)" because the return value of "com.revature.model.Employee.getDepartment()" is null
+[ERROR] 2020-12-05 16:13:15.998 [main] LogThis - Null pointer exception in set department head
+[ERROR] 2020-12-05 16:13:16.001 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Department.equals(Object)" because the return value of "com.revature.model.Employee.getDepartment()" is null
+[ERROR] 2020-12-05 16:14:46.460 [main] LogThis - Null pointer exception in set department head
+[ERROR] 2020-12-05 16:14:46.463 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Department.equals(Object)" because the return value of "com.revature.model.Employee.getDepartment()" is null
+[INFO ] 2020-12-05 18:19:27.544 [main] LogThis - Employee: 9/t Reciving Supervisor Information
+[INFO ] 2020-12-05 18:19:28.285 [main] LogThis - Employee: 0/t Reciving Supervisor Information
+[ERROR] 2020-12-05 18:19:28.286 [main] LogThis - Null pointer Exception occured in EmployeeDaoImple retriveEmployeeById(int id)
+[ERROR] 2020-12-05 18:19:28.286 [main] LogThis - java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "supervisorId" is null
+[INFO ] 2020-12-05 18:19:28.286 [main] LogThis - Employee: 9/t Reciving Department Information
+[INFO ] 2020-12-05 18:19:29.067 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[DEBUG] 2020-12-05 18:19:29.067 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:20:15.953 [main] LogThis - Employee: 9/t Reciving Supervisor Information
+[INFO ] 2020-12-05 18:20:16.697 [main] LogThis - Employee: 0/t Reciving Supervisor Information
+[ERROR] 2020-12-05 18:20:16.698 [main] LogThis - Null pointer Exception occured in EmployeeDaoImple retriveEmployeeById(int id)
+[ERROR] 2020-12-05 18:20:16.698 [main] LogThis - java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "supervisorId" is null
+[INFO ] 2020-12-05 18:20:16.698 [main] LogThis - Employee: 9/t Reciving Department Information
+[INFO ] 2020-12-05 18:20:17.528 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[DEBUG] 2020-12-05 18:20:17.528 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:25:01.683 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:25:03.544 [main] LogThis - Employee: 0/t No Supervisor Information
+[INFO ] 2020-12-05 18:25:03.544 [main] LogThis - Employee: 0/t No Department Information
+[DEBUG] 2020-12-05 18:25:03.544 [main] LogThis - Emp: 0/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:25:03.545 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:25:05.196 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[DEBUG] 2020-12-05 18:25:05.196 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:29:58.601 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:30:00.375 [main] LogThis - Employee: 0/t No Supervisor Information
+[INFO ] 2020-12-05 18:30:00.375 [main] LogThis - Employee: 0/t No Department Information
+[INFO ] 2020-12-05 18:30:00.375 [main] LogThis - Checking for subordinate for 0
+[DEBUG] 2020-12-05 18:30:00.375 [main] LogThis - Emp: 0/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:30:00.375 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:30:01.939 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 18:30:01.940 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 18:30:01.940 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:30:32.818 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:30:33.604 [main] LogThis - Employee: 0/t No Supervisor Information
+[INFO ] 2020-12-05 18:30:33.605 [main] LogThis - Employee: 0/t No Department Information
+[INFO ] 2020-12-05 18:30:33.605 [main] LogThis - Checking for subordinate for 0
+[DEBUG] 2020-12-05 18:30:33.605 [main] LogThis - Emp: 0/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:30:33.605 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:30:34.359 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 18:30:34.360 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 18:30:34.360 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:38:14.736 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:38:14.739 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-05 18:38:14.740 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:38:15.501 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 18:38:15.501 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 18:38:15.502 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:39:29.607 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:39:29.612 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-05 18:39:29.612 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:39:30.429 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 18:39:30.622 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 18:39:30.622 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 18:40:02.655 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 18:40:02.658 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-05 18:40:02.658 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 18:40:03.779 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 18:40:03.779 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 18:40:03.779 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 20:47:26.349 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 20:47:26.352 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-05 20:47:26.352 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 20:47:27.098 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 20:47:27.098 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 20:47:27.098 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 20:50:46.933 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 20:50:46.936 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-05 20:50:46.936 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 20:50:47.683 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 20:50:47.683 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 20:50:47.683 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 20:50:48.689 [main] LogThis - Created user info(username:greenOnion) for Employee(id=9, firstName=Cora, lastName=Dog, supervisor=null, subordinates=[], department=Department(id=207, name=Blueberry, Deparment_Head=(id=9: Cora Dog)))
+[INFO ] 2020-12-05 20:51:51.520 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 20:51:51.523 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-05 20:51:51.523 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 20:51:52.280 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 20:51:52.280 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 20:51:52.280 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 20:51:53.012 [main] LogThis - Created user info(username:greenonion) for Employee(id=9, firstName=Cora, lastName=Dog, supervisor=null, subordinates=[], department=Department(id=207, name=Blueberry, Deparment_Head=(id=9: Cora Dog)))
+[INFO ] 2020-12-05 20:53:29.658 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 20:53:29.661 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-05 20:53:29.661 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 20:53:30.849 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 20:53:30.849 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 20:53:30.849 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 20:53:30.849 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-05 20:57:44.928 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 20:57:44.932 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[ERROR] 2020-12-05 20:57:44.932 [main] LogThis - Null pointer Exception occured in EmployeeDaoImple retriveEmployeeById(int id)
+[ERROR] 2020-12-05 20:57:44.932 [main] LogThis - java.lang.NullPointerException: Cannot read field "department" because "this.supervisor" is null
+[INFO ] 2020-12-05 20:58:36.530 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-05 20:58:36.533 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-05 20:58:36.533 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-05 20:58:38.436 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-05 20:58:38.436 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-05 20:58:38.436 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-05 20:58:38.436 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-05 20:58:41.072 [main] LogThis - Created user info(username:tiNycat) for Employee(id=10, firstName=Lord, lastName=Underfoot, supervisor=Employee(id=9, firstName=Cora, lastName=Dog, supervisor=null, subordinates=[], department=Department(id=207, name=Blueberry, Deparment_Head=(id=9: Cora Dog))), subordinates=null, department=Department(id=207, name=Blueberry, Deparment_Head=(id=9: Cora Dog)))
+[INFO ] 2020-12-07 08:21:05.526 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 08:21:05.529 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 08:21:05.529 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 08:21:06.765 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 08:21:06.765 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 08:21:06.765 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 08:21:06.765 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 08:22:10.489 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 08:22:10.492 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 08:22:10.492 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 08:22:11.235 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 08:22:11.235 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 08:22:11.235 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 08:22:11.235 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 08:23:56.626 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 08:23:56.629 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 08:23:56.629 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 08:23:57.398 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 08:23:57.399 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 08:23:57.399 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 08:23:57.399 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 08:24:27.371 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 08:24:27.374 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 08:24:27.374 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 08:24:28.287 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 08:24:28.287 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 08:24:28.287 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 08:24:28.288 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 08:31:15.084 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 08:31:15.087 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 08:31:15.087 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 08:31:17.363 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 08:31:17.363 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 08:31:17.364 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 08:31:17.364 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 09:12:09.157 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 09:12:09.160 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 09:12:09.160 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 09:12:27.186 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 09:12:27.186 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 09:12:27.186 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 09:12:27.186 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 09:18:01.587 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 09:18:01.590 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 09:18:01.591 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 09:18:05.452 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 09:18:05.452 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 09:18:05.452 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 09:18:05.453 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 09:30:51.259 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 09:30:51.264 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 09:30:51.264 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 09:30:58.302 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 09:30:58.305 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 09:30:58.306 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 09:30:59.355 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 09:30:59.355 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 09:30:59.356 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 09:30:59.356 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 09:31:14.357 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 09:31:14.360 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 09:31:14.360 [main] LogThis - Employee: 9/t receiving Department Information
+[ERROR] 2020-12-07 09:33:24.745 [main] LogThis - Null pointer Exception occured in EmployeeDaoImple retriveEmployeeById(int id)
+[ERROR] 2020-12-07 09:33:24.746 [main] LogThis - java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "conn" is null
+[ERROR] 2020-12-07 09:33:31.162 [main] LogThis - Null pointer Exception occured in EmployeeDaoImple retriveEmployeeById(int id)
+[ERROR] 2020-12-07 09:33:31.162 [main] LogThis - java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "conn" is null
+[INFO ] 2020-12-07 09:37:13.599 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 09:37:13.602 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 09:37:13.602 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 09:37:19.950 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 09:37:19.950 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 09:37:19.950 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 09:37:19.950 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 14:13:58.408 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 14:13:58.410 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 14:13:58.411 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 14:14:00.218 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 14:14:00.219 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 14:14:00.219 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 14:14:00.219 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 16:45:00.745 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 16:45:00.748 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 16:45:00.748 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 16:45:01.650 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 16:45:01.650 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 16:45:01.650 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 16:45:01.650 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 16:46:28.892 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 16:46:28.895 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 16:46:28.895 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 16:46:41.711 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 16:46:41.711 [main] LogThis - Checking for subordinate for 9
+[INFO ] 2020-12-07 16:46:42.649 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 16:46:42.649 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 16:49:17.238 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 16:49:17.241 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 16:49:17.241 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 16:49:37.762 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 16:49:37.762 [main] LogThis - Checking for subordinate for 9
+[INFO ] 2020-12-07 16:49:54.202 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 16:49:54.202 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-07 17:34:06.991 [main] LogThis - Failed Login Attempt. Username and Password do not match anything in database.
+[INFO ] 2020-12-07 17:38:30.845 [main] LogThis - Created user info(username:greenonion) for Employee(id=9, firstName=Lord, lastName=Underfoot, department=Department(id=204, name=Blueberry, Deparment_Head=(id=9: Lord Underfoot)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-07 17:39:25.734 [main] LogThis - Employee: 9/t Receiving Supervisor Information
+[INFO ] 2020-12-07 17:39:25.737 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-07 17:39:25.737 [main] LogThis - Employee: 9/t receiving Department Information
+[INFO ] 2020-12-07 17:39:31.333 [main] LogThis - Employee Id: 9 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-07 17:39:31.333 [main] LogThis - Checking for subordinate for 9
+[DEBUG] 2020-12-07 17:39:31.333 [main] LogThis - Emp: 9/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-07 17:39:31.333 [main] LogThis - Employee Logged In Emp#:9
+[INFO ] 2020-12-08 14:00:10.631 [main] LogThis - Created user info(username:tiNycat) for Employee(id=6, firstName=Lord, lastName=Underfoot, department=Department(id=200, name=Blueberry, Deparment_Head=(id=6: Lord Underfoot)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-08 14:04:16.719 [main] LogThis - Created user info(username:tiNycat) for Employee(id=8, firstName=Lord, lastName=Underfoot, department=Department(id=201, name=Blueberry, Deparment_Head=(id=8: Lord Underfoot)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-08 14:05:47.936 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-08 14:05:47.939 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 14:05:47.939 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-08 14:05:48.672 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[ERROR] 2020-12-08 14:05:48.673 [main] LogThis - Null pointer Exception occured in EmployeeDaoImple retriveEmployeeById(int id)
+[ERROR] 2020-12-08 14:05:48.673 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Employee.setDepartment(com.revature.model.Department)" because "departmentHead" is null
+[INFO ] 2020-12-08 14:22:19.444 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-08 14:22:19.448 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 14:22:19.448 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-08 14:22:20.441 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[ERROR] 2020-12-08 14:22:20.441 [main] LogThis - Null pointer Exception occured in EmployeeDaoImple retriveEmployeeById(int id)
+[ERROR] 2020-12-08 14:22:20.441 [main] LogThis - java.lang.NullPointerException: Cannot invoke "com.revature.model.Employee.setDepartment(com.revature.model.Department)" because "departmentHead" is null
+[INFO ] 2020-12-08 14:22:52.590 [main] LogThis - Failed Login Attempt. Username and Password do not match anything in database.
+[INFO ] 2020-12-08 14:23:46.302 [main] LogThis - Created user info(username:tiNycat) for Employee(id=10, firstName=Lord, lastName=Underfoot, department=Department(id=202, name=Blueberry, Deparment_Head=(id=10: Lord Underfoot)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-08 15:37:44.362 [main] LogThis - Failed Login Attempt. Username and Password do not match anything in database.
+[INFO ] 2020-12-08 15:44:21.187 [main] LogThis - Failed Login Attempt. Username and Password do not match anything in database.
+[INFO ] 2020-12-08 15:46:42.985 [main] LogThis - Created user info(username:tiNycat) for Employee(id=12, firstName=Lord, lastName=Underfoot, department=Department(id=203, name=Blueberry, Deparment_Head=(id=12: Lord Underfoot)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-08 15:46:44.023 [main] LogThis - Employee Logged In Emp#:12
+[INFO ] 2020-12-08 21:29:39.401 [main] LogThis - Created user info(username:tiNycat) for Employee(id=13, firstName=Lord, lastName=Underfoot, department=null, Supervisor=(id: 15 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-08 21:29:40.661 [main] LogThis - Created user info(username:greenonion) for Employee(id=14, firstName=Cora, lastName=Dog, department=null, Supervisor=(id: 13 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-08 21:29:42.135 [main] LogThis - Employee: 12/t Receiving Supervisor Information
+[INFO ] 2020-12-08 21:29:42.136 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 21:29:42.136 [main] LogThis - Employee: 12/t receiving Department Information
+[INFO ] 2020-12-08 21:29:44.316 [main] LogThis - Employee: 11/t Receiving Supervisor Information
+[INFO ] 2020-12-08 21:29:44.317 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 21:29:44.317 [main] LogThis - Employee: 11/t receiving Department Information
+[INFO ] 2020-12-08 21:29:44.317 [main] LogThis - Department Id: 203 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-08 21:29:44.317 [main] LogThis - Checking for subordinate for 11
+[DEBUG] 2020-12-08 21:29:44.317 [main] LogThis - Emp: 11/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-08 21:29:44.317 [main] LogThis - Checking for subordinate for 12
+[DEBUG] 2020-12-08 21:29:44.317 [main] LogThis - Emp: 12/tRan retriveSubordinatesById(int id) on Employee who already had subordinate list
+[INFO ] 2020-12-08 21:29:44.317 [main] LogThis - Employee Logged In Emp#:12
+[INFO ] 2020-12-08 21:34:14.957 [main] LogThis - Created user info(username:tiNycat) for Employee(id=20, firstName=Lord, lastName=Underfoot, department=null, Supervisor=(id: 22 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-08 21:34:21.250 [main] LogThis - Created user info(username:greenonion) for Employee(id=21, firstName=Cora, lastName=Dog, department=null, Supervisor=(id: 20 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-08 21:34:31.027 [main] LogThis - Employee: 12/t Receiving Supervisor Information
+[INFO ] 2020-12-08 21:34:31.027 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 21:34:31.027 [main] LogThis - Employee: 12/t receiving Department Information
+[INFO ] 2020-12-08 21:34:33.091 [main] LogThis - Employee: 11/t Receiving Supervisor Information
+[INFO ] 2020-12-08 21:34:33.091 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 21:34:33.092 [main] LogThis - Employee: 11/t receiving Department Information
+[INFO ] 2020-12-08 21:34:33.092 [main] LogThis - Department Id: 203 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-08 21:34:33.092 [main] LogThis - Checking for subordinate for 11
+[INFO ] 2020-12-08 21:34:34.093 [main] LogThis - Checking for subordinate for 12
+[INFO ] 2020-12-08 21:34:35.323 [main] LogThis - Employee Logged In Emp#:12
+[INFO ] 2020-12-08 21:37:47.865 [main] LogThis - Employee: 12/t Receiving Supervisor Information
+[INFO ] 2020-12-08 21:37:47.868 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 21:37:47.868 [main] LogThis - Employee: 12/t receiving Department Information
+[INFO ] 2020-12-08 21:37:58.165 [main] LogThis - Employee: 11/t Receiving Supervisor Information
+[INFO ] 2020-12-08 21:37:58.165 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 21:37:58.165 [main] LogThis - Employee: 11/t receiving Department Information
+[INFO ] 2020-12-08 21:37:58.165 [main] LogThis - Department Id: 203 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-08 21:37:58.165 [main] LogThis - Checking for subordinate for 11
+[INFO ] 2020-12-08 21:38:02.497 [main] LogThis - Checking for subordinate for 12
+[INFO ] 2020-12-08 21:38:10.241 [main] LogThis - Employee Logged In Emp#:12
+[INFO ] 2020-12-08 21:41:23.540 [main] LogThis - Employee: 12/t Receiving Supervisor Information
+[INFO ] 2020-12-08 21:41:23.543 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 21:41:23.543 [main] LogThis - Employee: 12/t receiving Department Information
+[INFO ] 2020-12-08 21:41:25.942 [main] LogThis - Employee: 11/t Receiving Supervisor Information
+[INFO ] 2020-12-08 21:41:25.943 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 21:41:25.943 [main] LogThis - Employee: 11/t receiving Department Information
+[INFO ] 2020-12-08 21:41:25.943 [main] LogThis - Department Id: 203 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-08 21:41:25.943 [main] LogThis - Checking for subordinate for 11
+[INFO ] 2020-12-08 21:41:26.820 [main] LogThis - Checking for subordinate for 12
+[INFO ] 2020-12-08 21:41:27.741 [main] LogThis - Employee Logged In Emp#:12
+[INFO ] 2020-12-08 21:43:23.107 [main] LogThis - Employee: 12/t Receiving Supervisor Information
+[INFO ] 2020-12-08 21:43:23.110 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 21:43:23.110 [main] LogThis - Employee: 12/t receiving Department Information
+[INFO ] 2020-12-08 21:43:24.814 [main] LogThis - Employee: 11/t Receiving Supervisor Information
+[INFO ] 2020-12-08 21:43:24.815 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 21:43:24.815 [main] LogThis - Employee: 11/t receiving Department Information
+[INFO ] 2020-12-08 21:43:24.815 [main] LogThis - Department Id: 203 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-08 21:43:24.815 [main] LogThis - Checking for subordinate for 11
+[INFO ] 2020-12-08 21:43:25.545 [main] LogThis - Checking for subordinate for 12
+[INFO ] 2020-12-08 21:43:26.256 [main] LogThis - Employee Logged In Emp#:12
+[INFO ] 2020-12-08 23:16:17.206 [main] LogThis - Employee: 12/t Receiving Supervisor Information
+[INFO ] 2020-12-08 23:16:17.210 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 23:16:17.210 [main] LogThis - Employee: 12/t receiving Department Information
+[INFO ] 2020-12-08 23:16:18.639 [main] LogThis - Employee: 11/t Receiving Supervisor Information
+[INFO ] 2020-12-08 23:16:18.639 [main] LogThis - Employee Id: 0 Searching for Employee #0. Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 23:16:18.639 [main] LogThis - Employee: 11/t receiving Department Information
+[INFO ] 2020-12-08 23:16:18.640 [main] LogThis - Department Id: 203 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-08 23:16:18.640 [main] LogThis - Checking for subordinate for 11
+[INFO ] 2020-12-08 23:16:19.338 [main] LogThis - Checking for subordinate for 12
+[INFO ] 2020-12-08 23:16:20.090 [main] LogThis - Employee Logged In Emp#:12
+[INFO ] 2020-12-08 23:47:42.059 [main] LogThis - Employee: 12/t Receiving Supervisor Information
+[INFO ] 2020-12-08 23:47:42.063 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 23:47:42.063 [main] LogThis - Employee: 12/t receiving Department Information
+[INFO ] 2020-12-08 23:47:43.507 [main] LogThis - Employee: 11/t Receiving Supervisor Information
+[INFO ] 2020-12-08 23:47:43.507 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-08 23:47:43.507 [main] LogThis - Employee: 11/t receiving Department Information
+[INFO ] 2020-12-08 23:47:43.508 [main] LogThis - Department Id: 203 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-08 23:47:43.508 [main] LogThis - Checking for subordinate for 11
+[INFO ] 2020-12-08 23:47:44.247 [main] LogThis - Checking for subordinate for 12
+[INFO ] 2020-12-08 23:47:44.999 [main] LogThis - Employee Logged In Emp#:12
+[INFO ] 2020-12-08 23:50:58.382 [main] LogThis - Created user info(username:tiNycat) for Employee(id=27, firstName=Lord, lastName=Underfoot, department=null, Supervisor=(id: 29 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-08 23:50:59.241 [main] LogThis - Created user info(username:greenonion) for Employee(id=28, firstName=Cora, lastName=Dog, department=null, Supervisor=(id: 27 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-08 23:51:00.019 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=29, firstName=Rufas, lastName=OldCat, department=Department(id=210, name=Pet Food, Deparment_Head=(id=29: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-08 23:54:21.452 [main] LogThis - Created user info(username:tiNycat) for Employee(id=34, firstName=Lord, lastName=Underfoot, department=Department(id=213, name=Pet Food, Deparment_Head=(id=36: Rufas OldCat)), Supervisor=(id: 36 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-08 23:54:22.865 [main] LogThis - Created user info(username:greenonion) for Employee(id=35, firstName=Cora, lastName=Dog, department=Department(id=213, name=Pet Food, Deparment_Head=(id=36: Rufas OldCat)), Supervisor=(id: 34 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-08 23:54:27.358 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=36, firstName=Rufas, lastName=OldCat, department=Department(id=213, name=Pet Food, Deparment_Head=(id=36: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-08 23:56:50.332 [main] LogThis - Created user info(username:tiNycat) for Employee(id=44, firstName=Lord, lastName=Underfoot, department=Department(id=216, name=Pet Food, Deparment_Head=(id=46: Rufas OldCat)), Supervisor=(id: 46 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-08 23:56:52.835 [main] LogThis - Created user info(username:greenonion) for Employee(id=45, firstName=Cora, lastName=Dog, department=Department(id=216, name=Pet Food, Deparment_Head=(id=46: Rufas OldCat)), Supervisor=(id: 44 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-08 23:56:54.267 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=46, firstName=Rufas, lastName=OldCat, department=Department(id=216, name=Pet Food, Deparment_Head=(id=46: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-08 23:58:07.708 [main] LogThis - Created user info(username:tiNycat) for Employee(id=8, firstName=Lord, lastName=Underfoot, department=Department(id=200, name=Pet Food, Deparment_Head=(id=10: Rufas OldCat)), Supervisor=(id: 10 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-08 23:58:09.033 [main] LogThis - Created user info(username:greenonion) for Employee(id=9, firstName=Cora, lastName=Dog, department=Department(id=200, name=Pet Food, Deparment_Head=(id=10: Rufas OldCat)), Supervisor=(id: 8 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-08 23:58:11.119 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=10, firstName=Rufas, lastName=OldCat, department=Department(id=200, name=Pet Food, Deparment_Head=(id=10: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-08 23:58:53.182 [main] LogThis - Created user info(username:tiNycat) for Employee(id=18, firstName=Lord, lastName=Underfoot, department=Department(id=203, name=Pet Food, Deparment_Head=(id=20: Rufas OldCat)), Supervisor=(id: 20 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-08 23:58:54.273 [main] LogThis - Created user info(username:greenonion) for Employee(id=19, firstName=Cora, lastName=Dog, department=Department(id=203, name=Pet Food, Deparment_Head=(id=20: Rufas OldCat)), Supervisor=(id: 18 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-08 23:58:55.994 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=20, firstName=Rufas, lastName=OldCat, department=Department(id=203, name=Pet Food, Deparment_Head=(id=20: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-09 00:00:30.729 [main] LogThis - Created user info(username:tiNycat) for Employee(id=8, firstName=Lord, lastName=Underfoot, department=Department(id=200, name=Pet Food, Deparment_Head=(id=10: Rufas OldCat)), Supervisor=(id: 10 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-09 00:00:34.624 [main] LogThis - Created user info(username:greenonion) for Employee(id=9, firstName=Cora, lastName=Dog, department=Department(id=200, name=Pet Food, Deparment_Head=(id=10: Rufas OldCat)), Supervisor=(id: 8 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-09 00:00:37.101 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=10, firstName=Rufas, lastName=OldCat, department=Department(id=200, name=Pet Food, Deparment_Head=(id=10: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-09 00:12:57.633 [main] LogThis - Created user info(username:tiNycat) for Employee(id=18, firstName=Lord, lastName=Underfoot, department=Department(id=203, name=Pet Food, Deparment_Head=(id=21: Rufas OldCat)), Supervisor=(id: 21 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-09 00:13:00.387 [main] LogThis - Created user info(username:greenonion) for Employee(id=19, firstName=Cora, lastName=Dog, department=Department(id=203, name=Pet Food, Deparment_Head=(id=21: Rufas OldCat)), Supervisor=(id: 18 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-09 00:13:03.416 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=21, firstName=Rufas, lastName=OldCat, department=Department(id=203, name=Pet Food, Deparment_Head=(id=21: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-09 00:14:55.266 [main] LogThis - Created user info(username:tiNycat) for Employee(id=4, firstName=Lord, lastName=Underfoot, department=Department(id=200, name=Pet Food, Deparment_Head=(id=6: Rufas OldCat)), Supervisor=(id: 6 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-09 00:14:57.116 [main] LogThis - Created user info(username:greenonion) for Employee(id=5, firstName=Cora, lastName=Dog, department=Department(id=200, name=Pet Food, Deparment_Head=(id=6: Rufas OldCat)), Supervisor=(id: 4 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-09 00:14:59.728 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=6, firstName=Rufas, lastName=OldCat, department=Department(id=200, name=Pet Food, Deparment_Head=(id=6: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-09 00:24:35.042 [main] LogThis - When adding a new Employee, found the department ID did not exist.
+[INFO ] 2020-12-09 00:24:44.837 [main] LogThis - When adding a new Employee, found the department ID did not exist.
+[INFO ] 2020-12-09 00:25:10.058 [main] LogThis - When adding a new Employee, found the department ID did not exist.
+[INFO ] 2020-12-09 00:25:44.477 [main] LogThis - Created user info(username:tiNycat) for Employee(id=4, firstName=Lord, lastName=Underfoot, department=Department(id=200, name=Pet Food, Deparment_Head=(id=6: Rufas OldCat)), Supervisor=(id: 6 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-09 00:25:48.227 [main] LogThis - Created user info(username:greenonion) for Employee(id=5, firstName=Cora, lastName=Dog, department=Department(id=200, name=Pet Food, Deparment_Head=(id=6: Rufas OldCat)), Supervisor=(id: 4 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-09 00:25:56.932 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=6, firstName=Rufas, lastName=OldCat, department=Department(id=200, name=Pet Food, Deparment_Head=(id=6: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-09 00:29:22.097 [main] LogThis - When adding a new Employee, found the department ID did not exist.
+[INFO ] 2020-12-09 00:29:37.246 [main] LogThis - When adding a new Employee, found the department ID did not exist.
+[INFO ] 2020-12-09 00:29:53.464 [main] LogThis - When adding a new Employee, found the department ID did not exist.
+[INFO ] 2020-12-09 00:30:06.463 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 00:30:06.463 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 00:30:11.158 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 00:30:13.277 [main] LogThis - Created user info(username:tiNycat) for Employee(id=4, firstName=Lord, lastName=Underfoot, department=Department(id=200, name=Pet Food, Deparment_Head=(id=1: Rufas OldCat)), Supervisor=(id: 1 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-09 00:30:16.602 [main] LogThis - Created user info(username:greenonion) for Employee(id=5, firstName=Cora, lastName=Dog, department=Department(id=200, name=Pet Food, Deparment_Head=(id=1: Rufas OldCat)), Supervisor=(id: 4 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-09 00:30:18.321 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=1, firstName=Rufas, lastName=OldCat, department=Department(id=200, name=Pet Food, Deparment_Head=(id=1: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-09 00:48:08.844 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 00:48:08.847 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 00:48:12.450 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 00:48:12.450 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 00:48:14.058 [main] LogThis - Created user info(username:tiNycat) for Employee(id=11, firstName=Lord, lastName=Underfoot, department=Department(id=203, name=Pet Food, Deparment_Head=(id=8: Rufas OldCat)), Supervisor=(id: 8 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-09 00:48:15.208 [main] LogThis - Created user info(username:greenonion) for Employee(id=12, firstName=Cora, lastName=Dog, department=Department(id=203, name=Pet Food, Deparment_Head=(id=8: Rufas OldCat)), Supervisor=(id: 11 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-09 00:48:16.924 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=8, firstName=Rufas, lastName=OldCat, department=Department(id=203, name=Pet Food, Deparment_Head=(id=8: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-09 00:50:13.634 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 00:50:13.637 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 00:50:15.154 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 00:50:15.155 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 00:50:15.892 [main] LogThis - Created user info(username:tiNycat) for Employee(id=4, firstName=Lord, lastName=Underfoot, department=Department(id=200, name=Pet Food, Deparment_Head=(id=1: Rufas OldCat)), Supervisor=(id: 1 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-09 00:50:16.675 [main] LogThis - Created user info(username:greenonion) for Employee(id=5, firstName=Cora, lastName=Dog, department=Department(id=200, name=Pet Food, Deparment_Head=(id=1: Rufas OldCat)), Supervisor=(id: 4 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-09 00:50:17.425 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=1, firstName=Rufas, lastName=OldCat, department=Department(id=200, name=Pet Food, Deparment_Head=(id=1: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-09 09:41:41.258 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 09:41:41.261 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 09:41:42.807 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 09:41:42.807 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-09 09:41:43.570 [main] LogThis - Created user info(username:tiNycat) for Employee(id=11, firstName=Lord, lastName=Underfoot, department=Department(id=203, name=Pet Food, Deparment_Head=(id=8: Rufas OldCat)), Supervisor=(id: 8 Name: Rufas OldCat), Subordinates=none)
+[INFO ] 2020-12-09 09:41:44.342 [main] LogThis - Created user info(username:greenonion) for Employee(id=12, firstName=Cora, lastName=Dog, department=Department(id=203, name=Pet Food, Deparment_Head=(id=8: Rufas OldCat)), Supervisor=(id: 11 Name: Lord Underfoot), Subordinates=none)
+[INFO ] 2020-12-09 09:41:45.154 [main] LogThis - Created user info(username:grumpy_old_man) for Employee(id=8, firstName=Rufas, lastName=OldCat, department=Department(id=203, name=Pet Food, Deparment_Head=(id=8: Rufas OldCat)), Supervisor= None, Subordinates=none)
+[INFO ] 2020-12-09 09:42:09.613 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-09 09:42:10.413 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-09 09:42:10.413 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-09 09:42:10.414 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-09 09:42:11.181 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:42:11.181 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-09 09:42:11.927 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:42:11.928 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-09 09:42:11.928 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:42:11.928 [main] LogThis - Checking for subordinate for 4
+[INFO ] 2020-12-09 09:42:12.633 [main] LogThis - Employee Id: 4 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:42:12.634 [main] LogThis - Employee Logged In Emp#:4
+[INFO ] 2020-12-09 09:42:30.928 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-09 09:42:31.710 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-09 09:42:31.710 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-09 09:42:31.710 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-09 09:42:32.461 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:42:32.461 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-09 09:42:33.255 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:42:33.256 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-09 09:42:33.256 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:42:33.256 [main] LogThis - Checking for subordinate for 4
+[INFO ] 2020-12-09 09:42:34.022 [main] LogThis - Employee Id: 4 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:42:34.022 [main] LogThis - Employee Logged In Emp#:4
+[INFO ] 2020-12-09 09:43:56.147 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-09 09:43:56.868 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-09 09:43:56.868 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-09 09:43:56.868 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-09 09:43:58.029 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:43:58.029 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-09 09:43:58.778 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:43:58.779 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-09 09:43:58.779 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:43:58.779 [main] LogThis - Checking for subordinate for 4
+[INFO ] 2020-12-09 09:43:59.509 [main] LogThis - Employee Id: 4 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:43:59.509 [main] LogThis - Employee Logged In Emp#:4
+[INFO ] 2020-12-09 09:44:19.319 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-09 09:44:20.081 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-09 09:44:20.081 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-09 09:44:20.081 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-09 09:44:20.896 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:44:20.897 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-09 09:44:21.745 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:44:21.746 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-09 09:44:21.746 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:44:21.746 [main] LogThis - Checking for subordinate for 4
+[INFO ] 2020-12-09 09:44:22.500 [main] LogThis - Employee Id: 4 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:44:22.500 [main] LogThis - Employee Logged In Emp#:4
+[INFO ] 2020-12-09 09:47:31.558 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-09 09:47:31.562 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-09 09:47:31.562 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-09 09:47:32.325 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:47:32.325 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-09 09:47:33.098 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:47:33.098 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-09 09:55:59.897 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-09 09:55:59.900 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-09 09:55:59.900 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-09 09:56:00.671 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:56:00.671 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-09 09:56:02.257 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-09 09:56:02.257 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:56:02.257 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-09 09:56:02.257 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 09:56:02.258 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-09 09:56:02.258 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-09 09:56:02.258 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-09 16:03:34.384 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-09 16:03:34.387 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-09 16:03:34.387 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-09 16:03:35.124 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 16:03:35.125 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-09 16:03:36.597 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-09 16:03:36.597 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 16:03:36.597 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-09 16:03:36.598 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-09 16:03:36.598 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-09 16:03:36.598 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-09 16:03:36.598 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-10 09:14:13.147 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-10 09:14:13.150 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-10 09:14:13.151 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-10 09:14:14.013 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 09:14:14.013 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-10 09:14:16.509 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-10 09:14:16.509 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 09:14:16.509 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-10 09:14:16.509 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 09:14:16.509 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-10 09:14:16.509 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-10 09:14:16.617 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-10 09:40:14.937 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-10 09:40:14.941 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-10 09:40:14.941 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-10 09:40:15.664 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 09:40:15.665 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-10 09:40:17.170 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-10 09:40:17.170 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 09:40:17.170 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-10 09:40:17.171 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 09:40:17.171 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-10 09:40:17.171 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-10 09:40:17.171 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-10 10:55:42.704 [main] LogThis - Failed Login Attempt. Username and Password do not match anything in database.
+[INFO ] 2020-12-10 10:59:24.858 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 10:59:24.861 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 10:59:26.345 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 10:59:26.345 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:00:29.289 [main] LogThis - Failed Login Attempt. Username and Password do not match anything in database.
+[INFO ] 2020-12-10 11:01:17.720 [main] LogThis - Failed Login Attempt. Username and Password do not match anything in database.
+[INFO ] 2020-12-10 11:02:01.979 [main] LogThis - Failed Login Attempt. Username and Password do not match anything in database.
+[INFO ] 2020-12-10 11:08:00.817 [main] LogThis - Failed Login Attempt. Username and Password do not match anything in database.
+[INFO ] 2020-12-10 11:12:13.560 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-10 11:12:14.295 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-10 11:12:14.295 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-10 11:12:14.295 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-10 11:12:14.986 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:12:14.986 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-10 11:12:15.731 [main] LogThis - Employee Id: 4 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:12:15.731 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-10 11:12:15.731 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:12:15.732 [main] LogThis - Checking for subordinate for 4
+[INFO ] 2020-12-10 11:12:17.207 [main] LogThis - Employee: 5/t Receiving Supervisor Information
+[INFO ] 2020-12-10 11:12:17.207 [main] LogThis - Employee Id: 4 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:12:17.207 [main] LogThis - Employee: 5/t receiving Department Information
+[INFO ] 2020-12-10 11:12:17.207 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:12:17.207 [main] LogThis - Checking for subordinate for 5
+[DEBUG] 2020-12-10 11:12:17.207 [main] LogThis - Stopping Recursion for 5
+[INFO ] 2020-12-10 11:12:17.207 [main] LogThis - Employee Logged In Emp#:4
+[INFO ] 2020-12-10 11:13:02.118 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:13:02.121 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:13:03.616 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:13:03.616 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:13:04.361 [main] LogThis - Created user info(username:tiNycat) for Employee [id=11, firstName=Lord, lastName=Underfoot, supervisor=Employee [id=8, firstName=Rufas, lastName=OldCat] , , subordinates=, department=Department [id=203, name=Pet Food, departmentHead=Employee [id=8, firstName=Rufas, lastName=OldCat] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:13:05.380 [main] LogThis - Created user info(username:greenonion) for Employee [id=12, firstName=Cora, lastName=Dog, supervisor=Employee [id=11, firstName=Lord, lastName=Underfoot] , , subordinates=, department=Department [id=203, name=Pet Food, departmentHead=Employee [id=8, firstName=Rufas, lastName=OldCat] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:13:06.112 [main] LogThis - Created user info(username:grumpy_old_man) for Employee [id=8, firstName=Rufas, lastName=OldCat, supervisor=None, subordinates=, department=Department [id=203, name=Pet Food, departmentHead=Employee [id=8, firstName=Rufas, lastName=OldCat] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:13:06.887 [main] LogThis - Created user info(username:potter_harry4) for Employee [id=9, firstName=Harry, lastName=Potter, supervisor=None, subordinates=, department=Department [id=204, name=Mysteries, departmentHead=Employee [id=9, firstName=Harry, lastName=Potter] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:13:08.331 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-10 11:13:09.057 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-10 11:13:09.057 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-10 11:13:09.057 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-10 11:13:09.748 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:13:09.766 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-10 11:13:10.454 [main] LogThis - Employee Id: 4 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:13:10.454 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-10 11:13:10.454 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:13:10.454 [main] LogThis - Checking for subordinate for 4
+[INFO ] 2020-12-10 11:13:11.885 [main] LogThis - Employee: 5/t Receiving Supervisor Information
+[INFO ] 2020-12-10 11:13:11.885 [main] LogThis - Employee Id: 4 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:13:11.885 [main] LogThis - Employee: 5/t receiving Department Information
+[INFO ] 2020-12-10 11:13:11.885 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:13:11.885 [main] LogThis - Checking for subordinate for 5
+[DEBUG] 2020-12-10 11:13:11.885 [main] LogThis - Stopping Recursion for 5
+[INFO ] 2020-12-10 11:13:11.885 [main] LogThis - Employee Logged In Emp#:4
+[INFO ] 2020-12-10 11:14:47.221 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:14:47.224 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:14:48.688 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:14:48.688 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:14:49.411 [main] LogThis - Created user info(username:tiNycat) for Employee [id=18, firstName=Lord, lastName=Underfoot, supervisor=Employee [id=15, firstName=Rufas, lastName=OldCat] , , subordinates=, department=Department [id=206, name=Pet Food, departmentHead=Employee [id=15, firstName=Rufas, lastName=OldCat] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:14:50.186 [main] LogThis - Created user info(username:greenonion) for Employee [id=19, firstName=Cora, lastName=Dog, supervisor=Employee [id=18, firstName=Lord, lastName=Underfoot] , , subordinates=, department=Department [id=206, name=Pet Food, departmentHead=Employee [id=15, firstName=Rufas, lastName=OldCat] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:14:50.918 [main] LogThis - Created user info(username:grumpy_old_man) for Employee [id=15, firstName=Rufas, lastName=OldCat, supervisor=None, subordinates=, department=Department [id=206, name=Pet Food, departmentHead=Employee [id=15, firstName=Rufas, lastName=OldCat] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:14:51.678 [main] LogThis - Created user info(username:potter_harry4) for Employee [id=16, firstName=Harry, lastName=Potter, supervisor=None, subordinates=, department=Department [id=207, name=Mysteries, departmentHead=Employee [id=16, firstName=Harry, lastName=Potter] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:14:53.137 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-10 11:14:53.860 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-10 11:14:53.860 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-10 11:14:53.860 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-10 11:14:54.621 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:14:54.621 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-10 11:14:55.380 [main] LogThis - Employee Id: 4 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:14:55.381 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-10 11:14:55.381 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:14:55.381 [main] LogThis - Checking for subordinate for 4
+[INFO ] 2020-12-10 11:14:56.826 [main] LogThis - Employee: 5/t Receiving Supervisor Information
+[INFO ] 2020-12-10 11:14:56.826 [main] LogThis - Employee Id: 4 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:14:56.827 [main] LogThis - Employee: 5/t receiving Department Information
+[INFO ] 2020-12-10 11:14:56.827 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:14:56.827 [main] LogThis - Checking for subordinate for 5
+[DEBUG] 2020-12-10 11:14:56.827 [main] LogThis - Stopping Recursion for 5
+[INFO ] 2020-12-10 11:14:56.827 [main] LogThis - Employee Logged In Emp#:4
+[INFO ] 2020-12-10 11:16:43.985 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:16:43.988 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:16:45.446 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:16:45.446 [main] LogThis - Attempted to add an Employee who already had an ID. Skipping
+[INFO ] 2020-12-10 11:16:46.142 [main] LogThis - Created user info(username:tiNycat) for Employee [id=4, firstName=Lord, lastName=Underfoot, supervisor=Employee [id=1, firstName=Rufas, lastName=OldCat] , , subordinates=, department=Department [id=200, name=Pet Food, departmentHead=Employee [id=1, firstName=Rufas, lastName=OldCat] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:16:46.883 [main] LogThis - Created user info(username:greenonion) for Employee [id=5, firstName=Cora, lastName=Dog, supervisor=Employee [id=4, firstName=Lord, lastName=Underfoot] , , subordinates=, department=Department [id=200, name=Pet Food, departmentHead=Employee [id=1, firstName=Rufas, lastName=OldCat] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:16:47.611 [main] LogThis - Created user info(username:grumpy_old_man) for Employee [id=1, firstName=Rufas, lastName=OldCat, supervisor=None, subordinates=, department=Department [id=200, name=Pet Food, departmentHead=Employee [id=1, firstName=Rufas, lastName=OldCat] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:16:48.305 [main] LogThis - Created user info(username:potter_harry4) for Employee [id=2, firstName=Harry, lastName=Potter, supervisor=None, subordinates=, department=Department [id=201, name=Mysteries, departmentHead=Employee [id=2, firstName=Harry, lastName=Potter] , ], funds=10000.0]
+[INFO ] 2020-12-10 11:16:49.067 [main] LogThis - Employee Logged In Emp#:4
+[INFO ] 2020-12-10 11:17:09.588 [main] LogThis - Employee: 2/t Receiving Supervisor Information
+[INFO ] 2020-12-10 11:17:09.591 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-10 11:17:09.592 [main] LogThis - Employee: 2/t receiving Department Information
+[INFO ] 2020-12-10 11:17:10.329 [main] LogThis - Employee Id: 2 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:17:10.329 [main] LogThis - Checking for subordinate for 2
+[INFO ] 2020-12-10 11:17:11.029 [main] LogThis - Employee Logged In Emp#:2
+[INFO ] 2020-12-10 11:41:13.637 [main] LogThis - Employee: 2/t Receiving Supervisor Information
+[INFO ] 2020-12-10 11:41:13.642 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-10 11:41:13.642 [main] LogThis - Employee: 2/t receiving Department Information
+[INFO ] 2020-12-10 11:41:14.379 [main] LogThis - Employee Id: 2 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 11:41:14.379 [main] LogThis - Checking for subordinate for 2
+[INFO ] 2020-12-10 11:41:15.141 [main] LogThis - Employee Logged In Emp#:2
+[INFO ] 2020-12-10 12:16:08.096 [main] LogThis - Employee: 2/t Receiving Supervisor Information
+[INFO ] 2020-12-10 12:16:08.099 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-10 12:16:08.100 [main] LogThis - Employee: 2/t receiving Department Information
+[INFO ] 2020-12-10 12:16:08.966 [main] LogThis - Employee Id: 2 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 12:16:08.966 [main] LogThis - Checking for subordinate for 2
+[INFO ] 2020-12-10 12:16:09.710 [main] LogThis - Employee Logged In Emp#:2
+[DEBUG] 2020-12-10 14:19:18.066 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:25:58.169 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:31:03.606 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:35:41.328 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:36:55.912 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:36:55.928 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 14:39:58.219 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:39:58.235 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 14:39:58.236 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 14:43:14.557 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 14:43:14.573 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 14:43:14.573 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:17:50.807 [main] LogThis - Date:Sat Dec 14 18:00:00 CST 2019
+[DEBUG] 2020-12-10 15:17:50.811 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:17:50.827 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:17:50.828 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:19:29.590 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:19:29.606 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:19:29.606 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:23:14.647 [main] LogThis - Date:2019-12-15
+[DEBUG] 2020-12-10 15:23:14.651 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:23:14.665 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:23:14.665 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:24:17.661 [main] LogThis - Date:2019-12-15
+[DEBUG] 2020-12-10 15:24:17.665 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:24:17.678 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:24:17.679 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:26:10.524 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:26:10.540 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:26:10.540 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:38:50.888 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:38:50.911 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:38:50.911 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:38:50.911 [main] LogThis - In Print: title1
+[DEBUG] 2020-12-10 15:38:50.911 [main] LogThis - Date: title1
+[DEBUG] 2020-12-10 15:38:50.911 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:38:50.912 [main] LogThis - In Print: title2
+[DEBUG] 2020-12-10 15:38:50.912 [main] LogThis - Date: title2
+[DEBUG] 2020-12-10 15:38:50.915 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:38:50.915 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:39:23.534 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:39:23.556 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:39:23.557 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:39:23.560 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:39:23.560 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:46:17.053 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:46:17.084 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:46:17.087 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:46:17.088 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:46:53.431 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:46:53.462 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:46:53.462 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:46:53.462 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:46:53.463 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:46:53.463 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:46:53.463 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:46:53.463 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:46:53.466 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:46:53.466 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:48:22.029 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:48:22.057 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:48:22.061 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:48:22.061 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:49:51.514 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:49:51.542 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:49:51.545 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:49:51.546 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:50:35.544 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:50:35.569 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:50:35.570 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:50:35.573 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:50:35.573 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 15:51:27.781 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 15:51:27.807 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 15:51:27.810 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 15:51:27.811 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 16:03:47.189 [main] LogThis - Employee to JSON test: {"id":0,"firstName":"Lord","lastName":"Underfoot","supervisor":{"id":0,"firstName":"Rufas","lastName":"OldCat","supervisor":null,"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null},"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null}
+[DEBUG] 2020-12-10 16:05:14.931 [main] LogThis - Employee to JSON test: {"id":0,"firstName":"Lord","lastName":"Underfoot","supervisor":{"id":0,"firstName":"Rufas","lastName":"OldCat","supervisor":null,"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null},"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null}
+[DEBUG] 2020-12-10 16:05:14.934 [main] LogThis - Employee to JSON First Name: Lord
+[DEBUG] 2020-12-10 16:05:14.935 [main] LogThis - Employee to JSON Supervisor First Name: Lord
+[DEBUG] 2020-12-10 16:14:59.852 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 16:14:59.874 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 16:14:59.874 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 16:14:59.874 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 16:14:59.874 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 16:14:59.874 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 16:14:59.875 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 16:14:59.875 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 16:14:59.878 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 16:14:59.878 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 16:14:59.884 [main] LogThis - Employee to JSON test: {"id":0,"firstName":"Lord","lastName":"Underfoot","supervisor":{"id":0,"firstName":"Rufas","lastName":"OldCat","supervisor":null,"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null},"department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordinates":null,"subordiates":null}
+[DEBUG] 2020-12-10 16:14:59.885 [main] LogThis - Employee to JSON First Name: Lord
+[DEBUG] 2020-12-10 16:14:59.885 [main] LogThis - Employee to JSON Supervisor First Name: Lord
+[INFO ] 2020-12-10 16:56:47.229 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-10 16:56:47.235 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-10 16:56:47.235 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-10 16:56:48.628 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 16:56:48.629 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-10 16:56:51.803 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-10 16:56:51.803 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 16:56:51.803 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-10 16:56:51.803 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 16:56:51.803 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-10 16:56:51.803 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-10 16:56:51.803 [main] LogThis - Employee Logged In Emp#:1
+[DEBUG] 2020-12-10 16:57:50.465 [main] LogThis - Pojo Title: Coder From Scratch
+[DEBUG] 2020-12-10 16:57:50.490 [main] LogThis - Author Scenario 1:Rui
+[DEBUG] 2020-12-10 16:57:50.490 [main] LogThis - Book: title1
+[DEBUG] 2020-12-10 16:57:50.490 [main] LogThis - In Print: true
+[DEBUG] 2020-12-10 16:57:50.490 [main] LogThis - Date: 2019-12-25
+[DEBUG] 2020-12-10 16:57:50.491 [main] LogThis - Book: title2
+[DEBUG] 2020-12-10 16:57:50.491 [main] LogThis - In Print: false
+[DEBUG] 2020-12-10 16:57:50.491 [main] LogThis - Date: 2019-01-01
+[DEBUG] 2020-12-10 16:57:50.494 [main] LogThis - {"title":"Testing 123"}
+[DEBUG] 2020-12-10 16:57:50.494 [main] LogThis - {
+  "title" : "Testing 123"
+}
+[DEBUG] 2020-12-10 16:57:50.500 [main] LogThis - Employee to JSON test: {"id":0,"firstName":"Lord","lastName":"Underfoot","department":{"id":0,"name":"Pet Food"},"funds":10000.0,"subordiates":null}
+[DEBUG] 2020-12-10 16:57:50.501 [main] LogThis - Employee to JSON First Name: Lord
+[DEBUG] 2020-12-10 16:57:50.501 [main] LogThis - Employee to JSON Supervisor First Name: Lord
+[INFO ] 2020-12-10 16:59:13.424 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-10 16:59:13.427 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-10 16:59:13.428 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-10 16:59:14.165 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 16:59:14.165 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-10 16:59:16.052 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-10 16:59:16.052 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 16:59:18.461 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-10 16:59:18.462 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 16:59:18.462 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-10 16:59:18.462 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-10 16:59:18.462 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-10 20:19:22.892 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-10 20:19:22.895 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-10 20:19:22.895 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-10 20:19:29.803 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 20:19:29.803 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-10 20:19:53.523 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-10 20:19:53.523 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 20:19:53.523 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-10 20:19:53.523 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-10 20:19:53.523 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-10 20:19:53.523 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-10 20:19:53.524 [main] LogThis - Employee Logged In Emp#:1

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+
+<header>
+<h1>Login</h1>
+
+		<nav>
+			<a class="navItem" href="home">
+					Home
+			</a>
+		</nav>
+</header>
+<div id="mainArea">
+	<h2 id=localTitle>Login Page</h2>
+
+	<div class="subArea formHolder">
+		<form action="login" method="POST">
+			<table>
+				<tr>
+					<td>Username:</td><td><input id=usernameInput name=username type="text"></td>
+				</tr>
+				<tr>
+					<td>Password:</td><td><input id=passwordInput name=password type="password"></td>
+				</tr>
+			</table>
+	<button type="submit" onclick="showLoadingImage()">submit</button>
+	</form>
+<br>
+	<img class="loadingImage" src="https://annasbucket.s3.us-east-2.amazonaws.com/loading_30.gif" alt="">
+	</div>
+
+
+</div>
+
+<script type="text/javascript">
+  function showLoadingImage(){
+		var sheet = window.document.styleSheets[0];
+		sheet.insertRule('.loadingImage{display:inline}',sheet.cssRules.length);
+	}
+</script>
+</body>
+</html>

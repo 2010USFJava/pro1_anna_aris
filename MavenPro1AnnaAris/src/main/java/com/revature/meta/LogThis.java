@@ -1,3 +1,13 @@
+/*Original Source Code: J. "Matt" Knighten
+ * Modifier: Anna Carlson
+ * Modifican: Switch Statement changed from Strings to Enums
+ * Original Project: Revature BootCamp Project 1: Employee Reimbursement Application
+ * Description: LogManager functions to improve utility.
+ * Note: LogManager is used to display information while the program is
+ * running. It takes up fewer resources then System.out.println() during runtime
+ * and save the data in a file: in this case called logging.log
+ */
+
 package com.revature.meta;
 
 import org.apache.logging.log4j.LogManager;
@@ -11,7 +21,6 @@ public class LogThis {
 		FATAL,
 		INFO,
 		TRACE;
-		
 	}
 	
 	static Logger logger= LogManager.getLogger();

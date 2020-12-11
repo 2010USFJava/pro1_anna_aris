@@ -27,26 +27,17 @@
 
 <div id="mainArea">
   <div class="subArea">
-<% string boardSize = request.getAttribute("employeeJson"); %>
+    
+    <p id=json_fname>First Name</p>
 
 	<p id=demo></p>
-	<button onClick="loadDoc()">ClickMe</button>
+	<button onClick="clickMe()">ClickMe</button>
 
   </div>
 
 </div>
 
-<script>
-function loadDoc() {
-	  var xhttp = new XMLHttpRequest();
-	  xhttp.onreadystatechange = function() {
-	    if (this.readyState == 4 && this.status == 200) {
-	     document.getElementById("demo").innerHTML = this.responseText;
-	    }
-	  };
-	  xhttp.open("GET", "ajax_info.txt", true);
-	  xhttp.send();
-	}
+<script src="JavaScript/employee.js">
 </script>
 
 

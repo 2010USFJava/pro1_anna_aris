@@ -1,6 +1,8 @@
 package com.revature.servlet;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -42,6 +44,11 @@ public class LandingPageServlet extends HttpServlet {
 		response.getWriter().print("\nFirst Name "+fName);
 		response.getWriter().print(" Last Name "+lName);
 //		response.getWriter().print(node.toString());s
+		
+//		RequestDispatcher rd = request.getRequestDispatcher("landingPage.html");
+//		rd.forward(request, response);
+		
+		
 	}
 
 }

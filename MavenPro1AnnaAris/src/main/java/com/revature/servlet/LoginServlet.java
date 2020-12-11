@@ -66,6 +66,7 @@ public class LoginServlet extends HttpServlet {
 			HttpSession session = request.getSession();
 			//expriment later to see if node can be moved without being in stream format
 			session.setAttribute("employeeJson", node);
+			session.setAttribute("employeeJsonString", node.toString());
 //			response.getWriter().println(output);
 		} catch (NullPointerException e) {
 			response.getWriter().append("Null Pointer Exception.");

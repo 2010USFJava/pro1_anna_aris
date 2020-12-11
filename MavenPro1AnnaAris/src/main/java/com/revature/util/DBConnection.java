@@ -8,16 +8,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
+import com.revature.meta.LogThis;
+import com.revature.meta.LogThis.LevelEnum;
+
 public class DBConnection {
 	private static DBConnection db;
-	
-	static {
-		try {
-			Class.forName("org.postgresql.Driver");
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-	}
+
 	
 	private DBConnection() {
 		
@@ -29,6 +25,12 @@ public class DBConnection {
 		return db;
 	}
 	public Connection getConnection() {
+		try {
+			Class.forName("org.postgresql.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
 		Connection connect = null;
 		Properties prop = new Properties();
 		try {
@@ -36,6 +38,7 @@ public class DBConnection {
 			InputStream input = classLoader.getResourceAsStream("database.properties");
 			prop.load(input);
 //			prop.load(new FileReader("database.properties"));
+			LogThis.logIt(LevelEnum.DEBUG, prop.getProperty("url"));
 			connect = DriverManager.getConnection(prop.getProperty("url"), prop.getProperty("user"), prop.getProperty("password"));
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -5,6 +5,7 @@
 
 package com.revature.servlet;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -66,13 +67,15 @@ public class LoginServlet extends HttpServlet {
 			HttpSession session = request.getSession();
 			//expriment later to see if node can be moved without being in stream format
 			session.setAttribute("employeeJson", node);
-			session.setAttribute("employeeJsonString", node.toString());
+			session.setAttribute("employeeJsonString", JsonHelper.stringify(node));
 //			response.getWriter().println(output);
 		} catch (NullPointerException e) {
 			response.getWriter().append("Null Pointer Exception.");
 			e.printStackTrace();
 		}
-//		
+
+
+		saveJsonFile(node);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("welcome");
 		rd.forward(request, response);
@@ -128,6 +131,10 @@ public class LoginServlet extends HttpServlet {
 //		response.getWriter().println(output);
 		return emp;
 
+	}
+	
+	private void saveJsonFile(JsonNode jsonNode) {
+//		JsonHelper.parse(jsonNode);
 	}
 
 }

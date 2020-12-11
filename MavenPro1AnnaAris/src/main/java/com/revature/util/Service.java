@@ -11,10 +11,10 @@ public class Service {
 	public static String addRequest(Request reqForm) {
 		try {
 			rdi.insertNewRequest(reqForm);
-			return "formSubmitted.html";
+			return "myresources/html/formSubmitted.html";
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return "incomplete.html";
+		return "myresources/html/incomplete.html";
 	}
 }

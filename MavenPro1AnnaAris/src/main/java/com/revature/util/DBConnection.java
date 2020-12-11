@@ -1,8 +1,8 @@
 package com.revature.util;
 
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -10,6 +10,14 @@ import java.util.Properties;
 
 public class DBConnection {
 	private static DBConnection db;
+	
+	static {
+		try {
+			Class.forName("org.postgresql.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
 	
 	private DBConnection() {
 		
@@ -24,7 +32,10 @@ public class DBConnection {
 		Connection connect = null;
 		Properties prop = new Properties();
 		try {
-			prop.load(new FileReader("database.properties"));
+			ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+			InputStream input = classLoader.getResourceAsStream("database.properties");
+			prop.load(input);
+//			prop.load(new FileReader("database.properties"));
 			connect = DriverManager.getConnection(prop.getProperty("url"), prop.getProperty("user"), prop.getProperty("password"));
 		} catch (SQLException e) {
 			e.printStackTrace();

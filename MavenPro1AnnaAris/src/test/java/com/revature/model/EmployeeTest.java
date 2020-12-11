@@ -47,8 +47,7 @@ public class EmployeeTest {
 		String result=emp.getLastName();
 		assertEquals(result,"Smith");
 	}
-	
-	@Test
+
 	public void lNameSet() {
 		Employee emp = new Employee("Joe","Smith",sup);
 		emp.setLastName("Martin");
@@ -130,8 +129,4 @@ public class EmployeeTest {
 	
 	
 	
-	
-	
-	
-
 }

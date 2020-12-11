@@ -6,7 +6,6 @@
 package com.revature.servlet;
 
 import java.io.IOException;
-import java.nio.file.Paths;
 import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
@@ -14,10 +13,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.dao.LoginDao;
 import com.revature.daoimple.LoginDaoImple;
 import com.revature.meta.JsonHelper;
@@ -61,15 +59,23 @@ public class LoginServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 //		
+
 		try {
 			String output=node.toString();
 			response.getWriter().write(node.toString());
+			HttpSession session = request.getSession();
+			//expriment later to see if node can be moved without being in stream format
+			session.setAttribute("employeeJson", node);
 //			response.getWriter().println(output);
 		} catch (NullPointerException e) {
 			response.getWriter().append("Null Pointer Exception.");
 			e.printStackTrace();
 		}
 //		
+		
+		RequestDispatcher rd = request.getRequestDispatcher("welcome");
+		rd.forward(request, response);
+		
 //		RequestDispatcher rd = request.getRequestDispatcher("landingPage.html");
 //		rd.forward(request, response);
 		

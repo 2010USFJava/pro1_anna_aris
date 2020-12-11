@@ -6,31 +6,29 @@
 
 package com.revature.driver;
 
-import java.io.IOException;
-
-import com.fasterxml.jackson.databind.JsonNode;
-import com.revature.meta.JsonHelper;
+import com.revature.driver.EmployeeTestData.TestEmployee;
+import com.revature.model.Employee;
 
 public class Driver {
 	
 	
 	public static void main(String[] args) {
-		EmployeeTestData testData= new EmployeeTestData();
+//		EmployeeTestData testData= new EmployeeTestData();
 		
-		String jsonSource= "{ \"title\": \"Coder From Scratch\"}";
-		try {
-			JsonNode node = JsonHelper.parse(jsonSource);
-			node.get("title");
-			System.out.println(node);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+//		String jsonSource= "{ \"title\": \"Coder From Scratch\"}";
+//		try {
+//			JsonNode node = JsonParserAnna.parse(jsonSource);
+//			node.get("title");
+//			System.out.println(node);
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		
 		
 //		loadTestData();
 //		
-//		Employee testEmp=testEmployeeLogin(TestEmployee.RUFAS);
+		Employee testEmp=EmployeeTestData.testEmployeeLogin(TestEmployee.RUFAS);
 //		System.out.println(testEmp);
 
 		

@@ -20,4 +20,15 @@
     <url-pattern>/LoginServlet</url-pattern>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LandingPageServlet</display-name>
+    <servlet-name>LandingPageServlet</servlet-name>
+    <servlet-class>com.revature.servlet.LandingPageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LandingPageServlet</servlet-name>
+    <url-pattern>/LandingPageServlet</url-pattern>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
 </web-app>

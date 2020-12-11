@@ -2,29 +2,52 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Welcome Page</title>
+<title>Landing Page</title>
 
 <link rel="stylesheet" href="./css/master.css">
 </head>
 <body>
   <header>
-  <h1>Welcome Page</h1>
+  <h1>Landing Page</h1>
 
-		<nav>
-			<a class="navItem" href="home.html">
-					Home
-			</a>
-			<a class="navItem" href="login.html">Login</a>
-		</nav>
+  <nav>
+    <a class="navItem" href="landingPage.html">
+        Home
+    </a>
+    <a class="navItem" href="home.html">Logout</a>
+    <a class="navItem" href="document_upload.html">
+      Document Upload
+    </a>
+    <a class="navItem" href="approve_grade.html">
+      Approve Grade
+    </a>
+
+  </nav>
   </header>
 
 <div id="mainArea">
   <div class="subArea">
+<% string boardSize = request.getAttribute("employeeJson"); %>
+
+	<p id=demo></p>
+	<button onClick="loadDoc()">ClickMe</button>
 
   </div>
 
 </div>
 
+<script>
+function loadDoc() {
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	     document.getElementById("demo").innerHTML = this.responseText;
+	    }
+	  };
+	  xhttp.open("GET", "ajax_info.txt", true);
+	  xhttp.send();
+	}
+</script>
 
 
 </body>

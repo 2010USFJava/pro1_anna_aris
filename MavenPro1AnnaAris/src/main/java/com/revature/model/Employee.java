@@ -1,8 +1,3 @@
-/*Author: Anna Carlson
- * Original Project: Revature BootCamp Project 1: Employee Reimbursement Application
- * Description: Model of an Employee with one supervisor and an unspecified number of subordinates.
- * 
- */
 
 package com.revature.model;
 

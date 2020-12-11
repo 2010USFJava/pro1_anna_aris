@@ -37,15 +37,12 @@ public class LoginServlet extends HttpServlet {
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		response.getWriter().append("In get method");
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
+
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		response.getWriter().append("In Post method");
@@ -68,7 +65,6 @@ public class LoginServlet extends HttpServlet {
 			//expriment later to see if node can be moved without being in stream format
 			session.setAttribute("employeeJson", node);
 			session.setAttribute("employeeJsonString", JsonHelper.stringify(node));
-//			response.getWriter().println(output);
 		} catch (NullPointerException e) {
 			response.getWriter().append("Null Pointer Exception.");
 			e.printStackTrace();
@@ -80,35 +76,6 @@ public class LoginServlet extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("welcome");
 		rd.forward(request, response);
 		
-//		RequestDispatcher rd = request.getRequestDispatcher("landingPage.html");
-//		rd.forward(request, response);
-		
-//		try {
-//			Employee emp = loginHelper(request, response);
-//			ObjectMapper mapper = new ObjectMapper();
-//
-//			try {
-//				mapper.writeValueAsString(emp);
-//
-//			} catch (JsonProcessingException e) {
-////				 e.printStackTrace();
-//				LogThis.logIt(LevelEnum.ERROR, "JsonProcessingException e In LoginServletDoPost");
-//			}
-//
-//			response.getWriter().write(mapper.writeValueAsString(emp));
-//
-//			mapper.writeValue(Paths.get("employee.json").toFile(), emp);
-//		} catch (SQLException e) {
-//			response.getWriter().append("SQLException at: ").append(request.getContextPath());
-//			e.printStackTrace();
-//		} catch (IOException e) {
-//			response.getWriter().append("IOException at: ").append(request.getContextPath());
-//
-//			e.printStackTrace();
-//		}
-
-
-//		
 
 	}
 
@@ -121,14 +88,6 @@ public class LoginServlet extends HttpServlet {
 
 		Employee emp = loginDao.retrieveEmployeeByCredentials(username, password);
 
-//		String output = "";
-//		if (emp != null) {
-//			output = ("Logged in user: " + emp);
-//
-//		} else {
-//			output = "Invalid Login";
-//		}
-//		response.getWriter().println(output);
 		return emp;
 
 	}

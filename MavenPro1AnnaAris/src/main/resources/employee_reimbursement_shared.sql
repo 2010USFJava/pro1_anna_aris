@@ -1,9 +1,11 @@
 create schema if not exists employee_reimbursement_shared authorization annacarl;
-set search_path to employee_reimbursement; 
+set search_path to employee_reimbursement_shared; 
 
 drop table if exists employees cascade;
 drop table if exists departments cascade;
 drop table if exists logins cascade;
+drop table if exists request cascade;
+
 
 
 drop sequence if exists emp_id_seq; 
@@ -58,6 +60,25 @@ start with 200;
 create sequence emp_id_seq
 increment by 1;
 
+--aris's table(s)
+CREATE TABLE request (
+	id serial,
+	employee_id integer,
+	date_made timestamp,
+	event_date varchar(10),
+	event_time varchar(7),
+	event_cost numeric,
+	event_street text,
+	event_city text,
+	event_state varchar(20),
+	event_zip varchar(6),
+	event_type text,
+	event_description text,
+	sup_status varchar(10),
+	head_status varchar(10),
+	ben_status varchar(10)
+);
+
 
 --testdata
 --insert into departments values(1,'Music');
@@ -69,8 +90,8 @@ increment by 1;
 --select sub_id from supervisor_sub_relations;
 select * from logins;
 
-select * from employees;
-select employee_id from logins where username='tinycat' and password='meow';
+--select * from employees;
+--select employee_id from logins where username='tinycat' and password='meow';
 ----select * from supervisors;
 ----select * from supervisor_sub_relations where sup_id=2;
 --select * from departments;

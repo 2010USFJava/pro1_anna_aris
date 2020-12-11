@@ -38,15 +38,19 @@ public class LandingPageServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 //		String output = session.getAttribute("employeeJson").toString();
 //		response.getWriter().print(output);
+
+
 		JsonNode node = (JsonNode)session.getAttribute("employeeJson");
+		//testing to make sure json code is coming through
 		JsonNode fName =node.get("firstName");
 		JsonNode lName=node.get("lastName");
 		response.getWriter().print("\nFirst Name "+fName);
 		response.getWriter().print(" Last Name "+lName);
-//		response.getWriter().print(node.toString());s
+//		response.getWriter().print(node.toString());
 		
-//		RequestDispatcher rd = request.getRequestDispatcher("landingPage.html");
-//		rd.forward(request, response);
+		//redirecting to landing page
+		RequestDispatcher rd = request.getRequestDispatcher("landingPage.html");
+		rd.forward(request, response);
 		
 		
 	}

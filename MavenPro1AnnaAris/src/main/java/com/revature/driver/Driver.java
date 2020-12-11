@@ -1,7 +1,7 @@
 package com.revature.driver;
 
-import com.revature.meta.LogThis;
-import com.revature.meta.LogThis.LevelEnum;
+import com.revature.util.LogThis;
+import com.revature.util.LogThis.LevelEnum;
 
 public class Driver {
 

@@ -1,17 +1,17 @@
-package com.revature.meta;
+package com.revature.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class LogThis {
+	
 	public enum LevelEnum{
 		DEBUG,
 		WARN,
 		ERROR,
 		FATAL,
 		INFO,
-		TRACE;
-		
+		TRACE;	
 	}
 	
 	static Logger logger= LogManager.getLogger();

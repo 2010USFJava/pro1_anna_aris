@@ -18,6 +18,10 @@
   <servlet-mapping>
     <servlet-name>MasterServlet</servlet-name>
     <url-pattern>*.change</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+    <description></description>
     <display-name>LoginServlet</display-name>
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>com.revature.servlet.LoginServlet</servlet-class>

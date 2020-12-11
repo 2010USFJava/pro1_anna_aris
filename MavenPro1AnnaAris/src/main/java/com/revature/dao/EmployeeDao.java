@@ -1,5 +1,4 @@
 
-=======
 /*Author: Anna Carlson
  * Original Project: Revature BootCamp Project 1: Employee Reimbursement Application
  * Description: Interface for receiving and adding EMPLOYEE information to a database

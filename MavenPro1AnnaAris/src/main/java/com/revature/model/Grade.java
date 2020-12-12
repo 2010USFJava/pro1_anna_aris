@@ -12,7 +12,6 @@ public class Grade implements GradeOrPresentation {
 	//different schools may have different grading systems
 	private double numberGrade=0;
 	private LetterGrade letterGrade=LetterGrade.F;
-	private boolean passing=false;
 	
 	public double getNumberGrade() {
 		return numberGrade;
@@ -28,14 +27,7 @@ public class Grade implements GradeOrPresentation {
 		this.letterGrade = letterGrade;
 		numberGrade=convertLetterGradeToNumberGrade(letterGrade);
 	}
-	public boolean isPassing() {
-		if(letterGrade.equals(LetterGrade.F)) {
-			passing=false;
-		} else {
-			passing=true;
-		}
-		return passing;
-	}
+
 	
 	private LetterGrade convertNumberGradeToLetterGrade(double numberGrade) {
 		if (numberGrade>=90) {

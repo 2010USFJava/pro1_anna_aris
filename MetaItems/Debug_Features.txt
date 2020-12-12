@@ -1,0 +1,17 @@
+Debug/Features
+Check if Username is already taken when creating user
+Check up and down the chain of command sub/sup to make  sure no loops exist
+
+
+//Turn JSON data into sesseion data to be passed to front.
+//Login
+//Document Upload Page
+//Approve Grade Page
+//Manger View and Department head As part of Employee Landing Page (Employee Home Page)
+
+
+
+//BINCO page
+///Approve Requests Page
+///List of Requests
+//Request FOrm

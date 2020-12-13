@@ -141,6 +141,7 @@ public class Employee {
 //		return output;
 //		
 //	}
+	
 //	
 //	public String toStringSuperier() {
 //		String output="";
@@ -156,13 +157,20 @@ public class Employee {
 //		
 //	}
 //
-	public String toStringDepartmentHead() {
+//	public String toStringDepartmentHead() {
+//
+//		String output="";
+//		Employee emp =this;
+//			output+="Employee [id=" + emp.getId() + ", firstName=" + emp.getFirstName() + ", lastName=" + emp.getLastName()+"] , ";
+//			
+//		return output;
+//	}
 
-		String output="";
-		Employee emp =this;
-			output+="Employee [id=" + emp.getId() + ", firstName=" + emp.getFirstName() + ", lastName=" + emp.getLastName()+"] , ";
-			
-		return output;
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", department="
+				+ department + ", funds=" + funds + ", title=" + title + "]";
 	}
 //	
 

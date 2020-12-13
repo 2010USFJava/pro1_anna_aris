@@ -900,3 +900,159 @@
 [INFO ] 2020-12-12 21:47:11.251 [main] LogThis - Checking for subordinate for 4
 [DEBUG] 2020-12-12 21:47:11.251 [main] LogThis - Stopping Recursion for 4
 [INFO ] 2020-12-12 21:47:11.252 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 21:55:51.907 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 21:55:51.911 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 21:55:51.911 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 21:55:52.658 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:55:52.658 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 21:55:54.419 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 21:55:54.419 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:55:54.419 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 21:55:54.420 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:55:54.420 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 21:55:54.420 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 21:55:54.420 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 21:56:11.514 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 21:56:11.517 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 21:56:11.517 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 21:56:12.264 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:56:12.264 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 21:56:13.748 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 21:56:13.748 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:56:13.748 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 21:56:13.748 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:56:13.748 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 21:56:13.748 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 21:56:13.748 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 21:56:58.563 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 21:56:58.566 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 21:56:58.566 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 21:56:59.300 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:56:59.300 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 21:57:00.807 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 21:57:00.807 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:57:00.807 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 21:57:00.807 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:57:00.807 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 21:57:00.808 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 21:57:00.808 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 21:57:21.358 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 21:57:21.360 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 21:57:21.361 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 21:57:22.457 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:57:22.457 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 21:57:23.936 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 21:57:23.936 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:57:23.936 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 21:57:23.936 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 21:57:23.936 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 21:57:23.936 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 21:57:23.936 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 22:00:08.735 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:00:08.738 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 22:00:08.738 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 22:00:09.462 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:00:09.462 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 22:00:10.980 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:00:10.980 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:00:10.980 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 22:00:10.980 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:00:10.980 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 22:00:10.980 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 22:00:10.980 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 22:01:10.811 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:01:10.814 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 22:01:10.814 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 22:01:11.693 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:01:11.693 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 22:01:14.397 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:01:14.397 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:01:14.397 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 22:01:14.397 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:01:14.397 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 22:01:14.397 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 22:01:14.397 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 22:01:39.121 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:01:39.124 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 22:01:39.124 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 22:01:39.916 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:01:39.916 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 22:01:42.182 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:01:42.182 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:01:42.182 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 22:01:42.183 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:01:42.183 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 22:01:42.183 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 22:01:42.183 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 22:01:56.757 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:01:56.760 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 22:01:56.760 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 22:01:57.507 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:01:57.507 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 22:01:58.985 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:01:58.985 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:01:58.985 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 22:01:58.985 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:01:58.985 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 22:01:58.986 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 22:01:58.986 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 22:04:42.226 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:04:42.229 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 22:04:42.229 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 22:04:43.371 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:04:43.371 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 22:04:45.003 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:04:45.004 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:04:45.004 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 22:04:45.004 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:04:45.004 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 22:04:45.004 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 22:04:45.004 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 22:04:59.574 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:04:59.576 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 22:04:59.577 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 22:05:00.550 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:05:00.550 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 22:05:02.147 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:05:02.147 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:05:02.147 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 22:05:02.147 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:05:02.147 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 22:05:02.147 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 22:05:02.147 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 22:05:17.401 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:05:17.404 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 22:05:17.404 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 22:05:18.138 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:05:18.139 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 22:05:19.648 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:05:19.648 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:05:19.649 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 22:05:19.649 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:05:19.649 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 22:05:19.649 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 22:05:19.649 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 22:06:07.924 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:06:07.927 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 22:06:07.927 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 22:06:08.897 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:06:08.898 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 22:06:11.455 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:06:11.455 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:06:11.456 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 22:06:11.456 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:06:11.456 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 22:06:11.456 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 22:06:11.456 [main] LogThis - Employee Logged In Emp#:1
+[INFO ] 2020-12-12 22:06:26.052 [main] LogThis - Employee: 1/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:06:26.056 [main] LogThis - Employee Id: 0 Searching for Employee #0 . Number does not go that low in SQL. Skipping
+[INFO ] 2020-12-12 22:06:26.056 [main] LogThis - Employee: 1/t receiving Department Information
+[INFO ] 2020-12-12 22:06:26.890 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:06:26.890 [main] LogThis - Checking for subordinate for 1
+[INFO ] 2020-12-12 22:06:28.495 [main] LogThis - Employee: 4/t Receiving Supervisor Information
+[INFO ] 2020-12-12 22:06:28.495 [main] LogThis - Employee Id: 1 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:06:28.495 [main] LogThis - Employee: 4/t receiving Department Information
+[INFO ] 2020-12-12 22:06:28.496 [main] LogThis - Department Id: 200 information already in runtime data. Runtime Data called instead of database call
+[INFO ] 2020-12-12 22:06:28.496 [main] LogThis - Checking for subordinate for 4
+[DEBUG] 2020-12-12 22:06:28.496 [main] LogThis - Stopping Recursion for 4
+[INFO ] 2020-12-12 22:06:28.496 [main] LogThis - Employee Logged In Emp#:1

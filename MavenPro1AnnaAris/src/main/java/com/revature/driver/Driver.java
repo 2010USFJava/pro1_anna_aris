@@ -25,11 +25,12 @@ public class Driver {
 //		}
 //		
 
-		EmployeeTestData testData= new EmployeeTestData();
+//		EmployeeTestData testData= new EmployeeTestData();
 //		testData.loadTestData();
 //		
 		Employee testEmp=EmployeeTestData.testEmployeeLogin(TestEmployee.RUFAS);
-		System.out.println(testEmp);
+		System.out.println(testEmp.getDepartment());
+		
 
 		
 		System.out.println("*~*~*~*~*~*~*");

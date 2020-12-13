@@ -3,11 +3,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Reimbursement Request</title>
-<link rel="stylesheet" href="./css/master.css">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
+<link rel="stylesheet" href="../css/master.css">
 </head>
 <body>
 	<header>
@@ -19,26 +19,30 @@
 	</header>
 	<div id="mainArea">
 		<div class="subArea">
-			<form method="GET" action="http://localhost:8080/pro1AnnaAris/request.change">
-				<div class="border border-dark" style="width: 80%; margin: auto;">
+			<form method="GET"
+				action="http://localhost:8080/pro1AnnaAris/request.change"
+				style="width: 80%; margin: auto;">
+				<div class="border border-dark">
 					<legend>Event Details: </legend>
 					<div class="container">
 						<div class="row">
 							<div class="col">
-								<label>Event Date: <input type="date" id="date" name="date" 
-									required="required"></label>
+								<label>Event Date: <input type="date" id="date"
+									name="date" required="required"></label>
 							</div>
 							<div class="col">
-								<label>Education Type: <input type="text" id="type" name="type" required="required"></label>
+								<label>Education Type: <input type="text" id="type"
+									name="type" required="required"></label>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col">
-								<label>Event Time: <input type="time" id="time" name="time" required="required"></label>
+								<label>Event Time: <input type="time" id="time"
+									name="time" required="required"></label>
 							</div>
 							<div class="col">
-								<label>Event Cost: $<input type="number" min="0" step="100" id="cost"
-									name="cost" required="required"></label>
+								<label>Event Cost: $<input type="number" min="0"
+									step="100" id="cost" name="cost" required="required"></label>
 							</div>
 						</div>
 						<div class="row">
@@ -62,8 +66,9 @@
 									maxlength="2" required="required"></label>
 							</div>
 							<div class="col">
-								<label>Zip Code: <input type="number" min="10000" max="99999" id="zip" name="zip"
-									maxlength="5" required="required"></label>
+								<label>Zip Code: <input type="number" min="10000"
+									max="99999" id="zip" name="zip" maxlength="5"
+									required="required"></label>
 							</div>
 						</div>
 						<div class="row">
@@ -80,17 +85,13 @@
 					</div>
 				</div>
 				<div class="float-right" style="padding: 10px;">
-					<button type="reset" id="clear" class="btn-primary">Clear
-						Form</button>
-					<input type="submit" id="submit" value="Submit Form"
-						class="btn-primary"><br> <br>
-					<h5 id="submitRes"></h5>
+					<input type="reset" id="clear" value="Clear Form" class="btn-primary"> 
+					<input type="submit" id="submit" value="Submit Form" class="btn-primary">
+					<button type="button" id="docs" class="btn-primary">Upload Documents</button>
 				</div>
-			</form>
-			<form method="Get" action="document.html">
-				<div class="float-left" style="padding: 10px;">
-					<input type="submit" value="Upload Documents" id="docs"
-						class="btn-primary">
+				<div class="float-left" style="padding-left: 10px;">
+					<h6>Attachments:</h6>
+					<p id="attached"></p>
 				</div>
 			</form>
 		</div>

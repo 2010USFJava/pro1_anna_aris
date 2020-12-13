@@ -4,7 +4,7 @@ CREATE TABLE request (
 	date_made timestamp,
 	event_date varchar(10),
 	event_time varchar(7),
-	event_cost numeric,
+	event_cost integer,
 	event_street text,
 	event_city text,
 	event_state varchar(20),
@@ -13,5 +13,16 @@ CREATE TABLE request (
 	event_description text,
 	sup_status varchar(10),
 	head_status varchar(10),
-	ben_status varchar(10)
+	ben_status varchar(10),
+	awarded boolean
+);
+
+CREATE TABLE employee (
+	id serial,
+	first_name varchar(25),
+	last_name varchar(25),
+	title varchar(25),
+	username varchar(18),
+	password varchar(18),
+	yearly_awards integer
 );

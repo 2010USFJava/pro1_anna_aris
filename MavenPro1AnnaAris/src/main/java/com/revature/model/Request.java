@@ -8,21 +8,22 @@ public class Request {
 	private int employeeId;
 	private Timestamp dateMade;
 	private String eventDate;
-	private String eventType;
 	private String eventTime;
-	private double cost;
+	private int cost;
 	private String street;
 	private String city;
 	private String state;
 	private String zip;
+	private String eventType;
 	private String eventDescription;
-	private String supStatus;
-	private String headStatus;
-	private String benStatus;
+	private String supStatus = "pending";
+	private String headStatus = "pending";
+	private String benStatus = "pending";
+	private boolean awarded = false;
 	private List<Document> additionalDocs;
 	
-	public Request(int employeeId, String eventDate, String eventType, String eventTime, double cost, String street,
-			String city, String state, String zip, String eventDescription) {
+	public Request(int employeeId, String eventDate, String eventTime, int cost, String street,
+			String city, String state, String zip, String eventType, String eventDescription) {
 		
 		this.employeeId = employeeId;
 		this.eventDate = eventDate;
@@ -35,8 +36,8 @@ public class Request {
 		this.zip = zip;
 		this.eventDescription = eventDescription;
 	}
-	public Request(int employeeId, String eventDate, String eventType, String eventTime, double cost, String street,
-			String city, String state, String zip, String eventDescription, List<Document> additionalDocs) {
+	public Request(int employeeId, String eventDate, String eventTime, int cost, String street,
+			String city, String state, String zip, String eventType, String eventDescription, List<Document> additionalDocs) {
 		
 		this.employeeId = employeeId;
 		this.eventDate = eventDate;
@@ -50,10 +51,9 @@ public class Request {
 		this.eventDescription = eventDescription;
 		this.additionalDocs = additionalDocs;
 	}
-	public Request(int requestId, int employeeId, Timestamp dateMade, String eventDate, String eventType,
-			String eventTime, double cost, String street, String city, String state, String zip,
-			String eventDescription, String supStatus, String headStatus, String benStatus,
-			List<Document> additionalDocs) {
+	public Request(int requestId, int employeeId, Timestamp dateMade, String eventDate,
+			String eventTime, int cost, String street, String city, String state, String zip, String eventType,
+			String eventDescription, String supStatus, String headStatus, String benStatus, boolean awarded) {
 		
 		this.requestId = requestId;
 		this.employeeId = employeeId;
@@ -70,7 +70,7 @@ public class Request {
 		this.supStatus = supStatus;
 		this.headStatus = headStatus;
 		this.benStatus = benStatus;
-		this.additionalDocs = additionalDocs;
+		this.awarded = awarded;
 	}
 	public int getRequestId() {
 		return requestId;
@@ -108,10 +108,10 @@ public class Request {
 	public void setEventTime(String eventTime) {
 		this.eventTime = eventTime;
 	}
-	public double getCost() {
+	public int getCost() {
 		return cost;
 	}
-	public void setCost(double cost) {
+	public void setCost(int cost) {
 		this.cost = cost;
 	}
 	public String getStreet() {
@@ -162,11 +162,26 @@ public class Request {
 	public void setBenStatus(String benStatus) {
 		this.benStatus = benStatus;
 	}
+	public boolean isAwarded() {
+		return awarded;
+	}
+	public void setAwarded(boolean awarded) {
+		this.awarded = awarded;
+	}
 	public List<Document> getAdditionalDocs() {
 		return additionalDocs;
 	}
 	public void setAdditionalDocs(List<Document> additionalDocs) {
 		this.additionalDocs = additionalDocs;
 	}
+	@Override
+	public String toString() {
+		return "Request [requestId=" + requestId + ", employeeId=" + employeeId + ", dateMade=" + dateMade
+				+ ", eventDate=" + eventDate + ", eventTime=" + eventTime + ", cost=" + cost + ", street=" + street
+				+ ", city=" + city + ", state=" + state + ", zip=" + zip + ", eventType=" + eventType
+				+ ", eventDescription=" + eventDescription + ", supStatus=" + supStatus + ", headStatus=" + headStatus
+				+ ", benStatus=" + benStatus + "]";
+	}
+	
 
 }

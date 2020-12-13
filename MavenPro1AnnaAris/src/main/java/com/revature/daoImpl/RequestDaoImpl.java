@@ -1,11 +1,16 @@
 package com.revature.daoImpl;
 
+import java.sql.Statement;
 import java.sql.Connection;
+
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.revature.dao.RequestDao;
-import com.revature.model.Request;
+import com.revature.model.*;
 import com.revature.util.DBConnection;
 
 public class RequestDaoImpl implements RequestDao{
@@ -20,7 +25,7 @@ public class RequestDaoImpl implements RequestDao{
 			prepStmt.setInt(1, req.getEmployeeId());
 			prepStmt.setString(2, req.getEventDate());
 			prepStmt.setString(3, req.getEventTime());
-			prepStmt.setDouble(4, req.getCost());
+			prepStmt.setInt(4, req.getCost());
 			prepStmt.setString(5, req.getStreet());
 			prepStmt.setString(6, req.getCity());
 			prepStmt.setString(7, req.getState());
@@ -28,5 +33,49 @@ public class RequestDaoImpl implements RequestDao{
 			prepStmt.setString(9, req.getEventType());
 			prepStmt.setString(10, req.getEventDescription());
 			prepStmt.executeUpdate();
+	}
+
+	@Override
+	public void updateRequest(Employee emp, Request reqForm, String decision) throws SQLException {
+		Connection connect = db.getConnection();
+
+		switch (emp.getTitle()) {
+		case "superviser": 
+			String updateQuery = "update request set sup_status=? where id=?";
+			PreparedStatement prepStmt = connect.prepareStatement(updateQuery);
+			prepStmt.setString(1, decision);
+			prepStmt.setInt(2, reqForm.getRequestId());
+			prepStmt.executeUpdate(); 
+			break;
+		case "head": 
+			updateQuery = "update request set head_status=? where id=?";
+			prepStmt = connect.prepareStatement(updateQuery);
+			prepStmt.setString(1, decision);
+			prepStmt.setInt(2, reqForm.getRequestId());
+			prepStmt.executeUpdate(); 
+			break;
+		case "benCo": 
+			updateQuery = "update request set ben_status=? where id=?";
+			prepStmt = connect.prepareStatement(updateQuery);
+			prepStmt.setString(1, decision);
+			prepStmt.setInt(2, reqForm.getRequestId());
+			prepStmt.executeUpdate(); 
+			break;
+		}
+	}
+
+	@Override
+	public List<Request> viewAllRequest() throws SQLException {
+		Connection connect = db.getConnection();
+		Statement stmt = connect.createStatement();
+		ResultSet rs = stmt.executeQuery("select * from request");
+		List<Request> reqList = new ArrayList<>();
+		Request req = null;
+		while (rs.next()) {
+			req = new Request(rs.getInt(1), rs.getInt(2),rs.getTimestamp(3),rs.getString(4),rs.getString(5), rs.getInt(6),rs.getString(7),rs.getString(8),  
+					rs.getString(9), rs.getString(10),rs.getString(11),rs.getString(12),rs.getString(13),rs.getString(14),rs.getString(15),rs.getBoolean(16));
+			reqList.add(req);
+		}
+		return reqList;
 	}
 }

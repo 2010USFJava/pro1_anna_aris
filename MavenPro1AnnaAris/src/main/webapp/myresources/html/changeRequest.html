@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Review Request</title>
+<title>Update Request</title>
 <link rel="stylesheet" href="../css/master.css">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -13,15 +13,17 @@
 	<header>
 		<h1>Review Tuition Reimbursement Request Form</h1>
 		<nav>
-			<a class="navItem" href="home.html"> Home </a> <a id="log" class="navItem"
-				href="login.html">Login</a> <a id="all" class="navItem" href="viewAll"> View Requests </a> <a class="navItem" 
-				id="request" href="request.html">Make Request</a> <a class="navItem" href="changeRequest.html" id="change"></a>
+			<a class="navItem" href="home.html"> Home </a> <a id="log"
+				class="navItem" href="login.html">Login</a> <a id="all"
+				class="navItem" href="viewAll"> View Requests </a> <a
+				class="navItem" id="request" href="request.html">Make Request</a> <a
+				class="navItem" href="changeRequest.html" id="change"></a>
 		</nav>
 	</header>
 	<div id="mainArea">
 		<div class="subArea">
-			<form method="GET"
-				action="http://localhost:8080/ProjectOne/reviewRequest.change" style="width: 80%;">
+			<form method="GET" action="http://localhost:8080/pro1AnnaAris/changeRequest.change"
+				style="width: 80%;">
 				<div class="border border-dark">
 					<legend>Request Details</legend>
 					<div class="container">
@@ -58,7 +60,7 @@
 						<div class="row">
 							<div class="col">
 								<h5>Estimated Award:</h5>
-								<h6 id="est"></h6>
+								<input type="text" id="estimate" name="ecost">
 							</div>
 						</div>
 						<div class="row">
@@ -99,13 +101,13 @@
 				</div>
 				<div class="float-right" style="padding: 10px;">
 					<input type="text" id="answer" name="answer" style="display: none;">
-					<input type="submit" id="approve" value="Approve"
-						class="btn-primary"> <input type="submit" id="deny"
-						value="Deny" class="btn-primary">
+					<input type="submit" id="approve" value="Approve" class="btn-primary"> 
+					<input type="submit" id="deny" value="Deny" class="btn-primary">
+					<button type="button" id="cancel" class="btn-primary">CancelRequest</button>
+					<button type="button" id="docs" class="btn-primary">Upload Documents</button>
 				</div>
 			</form>
 			<script type="text/javascript" src="../js/viewRequest.js"></script>
 		</div>
 	</div>
-</body>
 </html>

@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.revature.controller.LoginController;
 import com.revature.controller.RequestController;
 
 public class RequestHelper {
@@ -25,7 +26,11 @@ public class RequestHelper {
 		case "/pro1AnnaAris/changeRequest.change":
 			return RequestController.changeRequest(req);
 			
-		default: return null;
+		case "/pro1AnnaAris/login.change":
+			System.out.println("in login.change rhelper");
+			return LoginController.login(req);
+			
+		default: return "incomplete.html";
 		}
 	}
 

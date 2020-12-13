@@ -12,7 +12,7 @@ public class RequestController {
 
 	public static String submitRequest(HttpServletRequest req) throws JsonProcessingException, IOException {
 		Employee emp = (Employee) req.getSession().getAttribute("currentEmp");
-		Request reqForm = new Request(1,req.getParameter("date"),req.getParameter("time"),Integer.valueOf(req.getParameter("cost")),req.getParameter("street"),
+		Request reqForm = new Request(emp.getEmployeeId(),req.getParameter("date"),req.getParameter("time"),Integer.valueOf(req.getParameter("cost")),req.getParameter("street"),
 				req.getParameter("city"),req.getParameter("state"),req.getParameter("zip"),req.getParameter("type"),req.getParameter("description"));
 		return Service.addRequest(reqForm);
 	}

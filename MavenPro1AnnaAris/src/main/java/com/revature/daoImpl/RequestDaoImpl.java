@@ -78,4 +78,18 @@ public class RequestDaoImpl implements RequestDao{
 		}
 		return reqList;
 	}
+	
+//	public Employee retrieveEmployeeByCredentials(String username, String password) {
+//		Connection connect = db.getConnection();
+//		String selectQuery = "select * from users where username=?";
+//		PreparedStatement prepStmt = connect.prepareStatement(selectQuery);
+//		prepStmt.setString(1, username);
+//		ResultSet rs = prepStmt.executeQuery();
+//		Employee emp = null;
+//		while (rs.next()) {
+//			emp = new Employee(rs.getInt(1), rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5), rs.getString(6), 
+//				rs.getString(7), rs.getInt(8), rs.getString(9), rs.getString(10),rs.getString(11));
+//		}
+//		return emp;
+//	}
 }

@@ -16,10 +16,10 @@ public class LoginController {
 		String password = req.getParameter("password");
 		Employee emp = Service.loginGetEmployee(username, password);
 		if(emp==null) {
-			return "wrongcreds.change";
+			return "myresources/html/incomplete.html";
 		}else {
 			req.getSession().setAttribute("employee", emp);
-			return "home.change";
+			return "myresources/html/landingPage.html";
 		}
 		
 	}

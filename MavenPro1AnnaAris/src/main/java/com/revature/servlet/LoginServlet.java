@@ -16,7 +16,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+//import com.example.model.SuperVillain;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.dao.LoginDao;
 import com.revature.daoimple.LoginDaoImple;
 import com.revature.meta.JsonHelper;
@@ -24,16 +27,12 @@ import com.revature.meta.LogThis;
 import com.revature.meta.LogThis.LevelEnum;
 import com.revature.model.Employee;
 
-/**
- * Servlet implementation class LoginServlet
- */
+
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static LoginDao loginDao;
 	static {
-
 		loginDao = new LoginDaoImple();
-
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,35 +47,34 @@ public class LoginServlet extends HttpServlet {
 		response.getWriter().append("In Post method");
 		
 		JsonNode node=null;
-		
+		Employee emp=null;
 		try {
-			node =JsonHelper.toJson(loginHelper(request, response));
+			emp = loginHelper(request, response);
+//			node =JsonHelper.toJson(loginHelper(request, response));
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-//		
-
 		try {
-			String output=node.toString();
-			response.getWriter().write(node.toString());
+			
+//			
+//			String output=node.toString();
+//			response.getWriter().write(node.toString());
+//			
+//			
 			HttpSession session = request.getSession();
-			//expriment later to see if node can be moved without being in stream format
-			session.setAttribute("employeeJson", node);
-			session.setAttribute("employeeJsonString", JsonHelper.stringify(node));
+			session.setAttribute("employee", emp);
+//			
+//			
+//			session.setAttribute("employeeJsonString", JsonHelper.stringify(node));
+//			saveJsonFile(node, "loggedInEmployee");
 		} catch (NullPointerException e) {
 			response.getWriter().append("Null Pointer Exception.");
 			e.printStackTrace();
 		}
-
-
-		saveJsonFile(node);
-		
 		RequestDispatcher rd = request.getRequestDispatcher("welcome");
 		rd.forward(request, response);
-		
-
 	}
 
 	private Employee loginHelper(HttpServletRequest request, HttpServletResponse response)
@@ -85,15 +83,31 @@ public class LoginServlet extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		response.getWriter().append(username + " tried to log in with the password " + password+"\n");
-
 		Employee emp = loginDao.retrieveEmployeeByCredentials(username, password);
-
 		return emp;
 
 	}
 	
-	private void saveJsonFile(JsonNode jsonNode) {
-//		JsonHelper.parse(jsonNode);
-	}
+//	public static void getSessionVillain(HttpServletRequest req, HttpServletResponse res) throws JsonProcessingException, IOException{
+//		SuperVillain vill =  (SuperVillain) req.getSession().getAttribute("currentvill");
+//		res.getWriter().write(new ObjectMapper().writeValueAsString(vill));
+//	}
+//	
+//	public static void g(HttpServletRequest req, HttpServletResponse res) throws JsonProcessingException, IOException{
+//		SuperVillain vill =  (SuperVillain) req.getSession().getAttribute("currentvill");
+//		res.getWriter().write(new ObjectMapper().writeValueAsString(vill));
+//	}
+//	private void saveJsonFile(JsonNode jsonNode) {      
+//		try {
+//        FileWriter file = new FileWriter("./loggedInEmployee.json");
+//        file.write(JsonHelper.stringify(jsonNode));
+//        file.close();
+//     } catch (IOException e) {
+//        e.printStackTrace();
+//     }
+//     System.out.println("JSON file created: "+jsonNode);
+//     
+//     
+//  }
 
 }

@@ -26,7 +26,7 @@ public class Driver {
 //		
 
 		EmployeeTestData testData= new EmployeeTestData();
-//		testData.loadTestData();
+		testData.loadTestData();
 //		
 //		Employee testEmp=EmployeeTestData.testEmployeeLogin(TestEmployee.RUFAS);
 //		System.out.println(testEmp);
@@ -35,8 +35,8 @@ public class Driver {
 		System.out.println("*~*~*~*~*~*~*");
 //		System.out.println(RuntimeData.getEmployeeFromMap(9));
 //		System.out.println(RuntimeData.getDepartmentFromMap(207));
-		Employee testEmp=testData.testEmployeeLogin(TestEmployee.HARRY_POTTER);
-		System.out.println(testEmp);
+//		Employee testEmp=testData.testEmployeeLogin(TestEmployee.HARRY_POTTER);
+//		System.out.println(testEmp);
 
 		
 	}

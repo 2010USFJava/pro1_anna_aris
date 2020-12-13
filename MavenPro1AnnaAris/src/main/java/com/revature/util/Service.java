@@ -40,15 +40,15 @@ public class Service {
 		}
 		return reqList;
 	}
-//	public static Employee loginGetEmployee(String username, String password) {
-//		Employee emp = null;
-//		try {
-//			emp = rdi.retrieveEmployeeByCredentials(username, password);
-//			return emp;
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		}
-//		
-//		return emp;
-//	}
+	public static Employee loginGetEmployee(String username, String password) {
+		Employee emp = null;
+		try {
+			emp = rdi.retrieveEmployeeByCredentials(username, password);
+			return emp;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return emp;
+	}
 }

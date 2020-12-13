@@ -20,7 +20,9 @@ public class Request {
 	private String headStatus = "pending";
 	private String benStatus = "pending";
 	private boolean awarded = false;
-	private List<> additionalDocs;
+	
+	//Note: Document class was changed to Presentation class. As document no longer exists
+	private List<Presentation> additionalDocs;
 	
 	public Request(int employeeId, String eventDate, String eventTime, int cost, String street,
 			String city, String state, String zip, String eventType, String eventDescription) {
@@ -37,7 +39,7 @@ public class Request {
 		this.eventDescription = eventDescription;
 	}
 	public Request(int employeeId, String eventDate, String eventTime, int cost, String street,
-			String city, String state, String zip, String eventType, String eventDescription, List<Document> additionalDocs) {
+			String city, String state, String zip, String eventType, String eventDescription, List<Presentation> additionalDocs) {
 		
 		this.employeeId = employeeId;
 		this.eventDate = eventDate;
@@ -168,10 +170,10 @@ public class Request {
 	public void setAwarded(boolean awarded) {
 		this.awarded = awarded;
 	}
-	public List<Document> getAdditionalDocs() {
+	public List<Presentation> getAdditionalDocs() {
 		return additionalDocs;
 	}
-	public void setAdditionalDocs(List<Document> additionalDocs) {
+	public void setAdditionalDocs(List<Presentation> additionalDocs) {
 		this.additionalDocs = additionalDocs;
 	}
 	@Override

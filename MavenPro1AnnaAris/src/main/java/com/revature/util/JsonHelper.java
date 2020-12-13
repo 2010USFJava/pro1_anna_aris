@@ -4,7 +4,7 @@
  */
 
 
-package com.revature.meta;
+package com.revature.util;
 
 import java.io.IOException;
 

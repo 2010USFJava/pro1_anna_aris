@@ -1,16 +1,18 @@
 package com.revature.daoImpl;
 
-import java.sql.Statement;
+import java.io.IOException;
 import java.sql.Connection;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.revature.dao.LoginDao;
 import com.revature.dao.RequestDao;
-import com.revature.model.*;
+import com.revature.model.Employee;
+import com.revature.model.Request;
 import com.revature.util.DBConnection;
 
 public class RequestDaoImpl implements RequestDao{
@@ -79,8 +81,14 @@ public class RequestDaoImpl implements RequestDao{
 		return reqList;
 	}
 	
-//	public Employee retrieveEmployeeByCredentials(String username, String password) {
-//		Connection connect = db.getConnection();
+	public Employee retrieveEmployeeByCredentials(String username, String password) throws SQLException {
+		LoginDao loginDao = new LoginDaoImple();
+		
+		Employee emp=null;
+		emp = loginDao.retrieveEmployeeByCredentials(username, password);
+		return emp;
+
+
 //		String selectQuery = "select * from users where username=?";
 //		PreparedStatement prepStmt = connect.prepareStatement(selectQuery);
 //		prepStmt.setString(1, username);
@@ -91,5 +99,5 @@ public class RequestDaoImpl implements RequestDao{
 //				rs.getString(7), rs.getInt(8), rs.getString(9), rs.getString(10),rs.getString(11));
 //		}
 //		return emp;
-//	}
+	}
 }

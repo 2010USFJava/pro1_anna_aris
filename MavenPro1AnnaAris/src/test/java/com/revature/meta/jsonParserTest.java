@@ -14,12 +14,13 @@ import org.junit.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.revature.meta.LogThis.LevelEnum;
-import com.revature.model.Employee;
 import com.revature.pojo.AuthorPOJO;
 import com.revature.pojo.BookPOJO;
 import com.revature.pojo.DayPOJO;
 import com.revature.pojo.SimpleTestCaseJsonPOJO;
+import com.revature.util.JsonHelper;
+import com.revature.util.LogThis;
+import com.revature.util.LogThis.LevelEnum;
 
 public class jsonParserTest {
 

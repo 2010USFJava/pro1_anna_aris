@@ -5,7 +5,7 @@
  */
 
 
-package com.revature.daoimple;
+package com.revature.daoImpl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,20 +17,19 @@ import java.util.List;
 
 import com.revature.dao.CourseDao;
 import com.revature.dao.EmployeeDao;
-import com.revature.meta.ConnFactory;
-import com.revature.meta.LogThis;
-import com.revature.meta.LogThis.LevelEnum;
-import com.revature.meta.RuntimeData;
 import com.revature.model.Course;
 import com.revature.model.Course.CourseType;
-import com.revature.model.Department;
 import com.revature.model.Employee;
 import com.revature.model.Grade;
 import com.revature.model.Presentation;
+import com.revature.util.DBConnection;
+import com.revature.util.LogThis;
+import com.revature.util.LogThis.LevelEnum;
+import com.revature.util.RuntimeData;
 
 public class CourseDaoImple implements CourseDao {
 
-	public static ConnFactory cf = ConnFactory.getInstance();
+	public static DBConnection cf = DBConnection.getInstance();
 
 	@Override
 	public void addCourse(Course course) throws SQLException {

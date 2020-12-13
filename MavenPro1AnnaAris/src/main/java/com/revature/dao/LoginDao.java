@@ -9,7 +9,6 @@ package com.revature.dao;
 import java.sql.SQLException;
 
 import com.revature.model.Employee;
-import com.revature.model.Login;
 
 public interface LoginDao {
 	

@@ -4,7 +4,7 @@
 
  */
 
-package com.revature.daoimple;
+package com.revature.daoImpl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,19 +15,19 @@ import java.util.ArrayList;
 
 import com.revature.dao.DepartmentDao;
 import com.revature.dao.EmployeeDao;
-import com.revature.meta.ConnFactory;
-import com.revature.meta.LogThis;
-import com.revature.meta.LogThis.LevelEnum;
-import com.revature.meta.RuntimeData;
 import com.revature.model.Department;
 import com.revature.model.Employee;
+import com.revature.util.DBConnection;
+import com.revature.util.LogThis;
+import com.revature.util.LogThis.LevelEnum;
+import com.revature.util.RuntimeData;
 
 //Implementing Lazy Loading. Before calling the database, I will check if the information is already in my Runtime Database.
 //Runtime database info will be lost on exiting the program.
 
 public class EmployeeDaoImple implements EmployeeDao {
 
-	public static ConnFactory cf = ConnFactory.getInstance();
+	public static DBConnection cf = DBConnection.getInstance();
 	private static boolean gotFirstLevelSubordinates;
 	private static boolean checkForBadChainOfCommand = false;
 

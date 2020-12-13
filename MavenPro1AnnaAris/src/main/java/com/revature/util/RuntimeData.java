@@ -6,15 +6,15 @@
  * Updates and modifications are recommended with future skill set.
  */
 
-package com.revature.meta;
+package com.revature.util;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.revature.meta.LogThis.LevelEnum;
 import com.revature.model.Course;
 import com.revature.model.Department;
 import com.revature.model.Employee;
+import com.revature.util.LogThis.LevelEnum;
 
 public class RuntimeData {
 

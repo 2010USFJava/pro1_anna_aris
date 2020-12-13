@@ -1,14 +1,16 @@
 package com.revature.meta;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.revature.meta.LogThis.LevelEnum;
 import com.revature.model.Department;
 import com.revature.model.Employee;
+import com.revature.util.JsonHelper;
+import com.revature.util.LogThis;
+import com.revature.util.LogThis.LevelEnum;
 
 public class JsonParserRevPro1Tests {
 	private Employee [] testEmployees;

@@ -4,7 +4,7 @@
 
  */
 
-package com.revature.daoimple;
+package com.revature.daoImpl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,18 +13,18 @@ import java.sql.SQLException;
 
 import com.revature.dao.EmployeeDao;
 import com.revature.dao.LoginDao;
-import com.revature.meta.ConnFactory;
-import com.revature.meta.LogThis;
-import com.revature.meta.LogThis.LevelEnum;
-import com.revature.meta.RuntimeData;
 import com.revature.model.Employee;
+import com.revature.util.DBConnection;
+import com.revature.util.LogThis;
+import com.revature.util.LogThis.LevelEnum;
+import com.revature.util.RuntimeData;
 
 
 //Right now I'm not utilizing the Login class for any of this,
 //However, that will change if I implment RuntimeData for LoginInfo
 public class LoginDaoImple implements LoginDao {
 
-	public static ConnFactory cf = ConnFactory.getInstance();
+	public static DBConnection cf = DBConnection.getInstance();
 	
 	@Override
 	public Employee retrieveEmployeeByCredentials(String username, String password) throws SQLException {

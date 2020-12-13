@@ -8,13 +8,12 @@ package com.revature.driver;
 
 import java.sql.SQLException;
 
-
 import com.revature.dao.DepartmentDao;
 import com.revature.dao.EmployeeDao;
 import com.revature.dao.LoginDao;
-import com.revature.daoimple.DepartmentDaoImple;
-import com.revature.daoimple.EmployeeDaoImple;
-import com.revature.daoimple.LoginDaoImple;
+import com.revature.daoImpl.DepartmentDaoImple;
+import com.revature.daoImpl.EmployeeDaoImple;
+import com.revature.daoImpl.LoginDaoImple;
 import com.revature.model.Department;
 import com.revature.model.Employee;
 //Titles

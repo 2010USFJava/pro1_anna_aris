@@ -1,0 +1,18 @@
+#applicationView{
+  background: #ffffffc0;
+  border: solid black 2px;
+  border-radius: .3em;
+  margin-bottom: .4em;
+  padding: .4em;
+  display: flex;
+}
+
+.individualApplication{
+  border: solid black 2px;
+  border-radius: .3em;
+  height:10em;
+  max-width: 10em;
+  height: 10em;
+  max-height: 10em;
+
+}

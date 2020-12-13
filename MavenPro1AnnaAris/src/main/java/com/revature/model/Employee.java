@@ -6,8 +6,6 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import lombok.Data;
-import lombok.ToString;
 
 @Data
 public class Employee {
@@ -136,48 +134,41 @@ public class Employee {
 
 	//Will need to go through and connect up methods
 
+	//inheritited methods. Changing employeeId -> id
 	public int getEmployeeId() {
-		return employeeId;
+		return id;
 	}
 	public void setEmployeeId(int employeeId) {
-		this.employeeId = employeeId;
+		this.id = employeeId;
 	}
-	public String getFirstName() {
-		return firstName;
-	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	public String getUsername() {
-		return username;
-	}
-	public void setUsername(String username) {
-		this.username = username;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
+
+	//yearly awards was the same as funds
+	//Since this version has the money stored as doubles, I'll do conversion when these methods are called
 	public int getYearlyAwards() {
-		return yearlyAwards;
+		return (int)funds;
 	}
 	public void setYearlyAwards(int yearlyAwards) {
-		this.yearlyAwards = yearlyAwards;
+		this.funds = yearlyAwards;
 	}
+	
+	/*This implementation is using username and passwords at a database level.
+	*Note: Retaining code in commented out version, in case integration is necessary in the future.
+	*/
+	
+//	public String getUsername() {
+//		return username;
+//	}
+//	public void setUsername(String username) {
+//		this.username = username;
+//	}
+//	public String getPassword() {
+//		return password;
+//	}
+//	public void setPassword(String password) {
+//		this.password = password;
+//	}
+	
+	
 	
 //	
 

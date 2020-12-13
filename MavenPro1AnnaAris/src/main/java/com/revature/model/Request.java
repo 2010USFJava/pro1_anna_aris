@@ -20,7 +20,7 @@ public class Request {
 	private String headStatus = "pending";
 	private String benStatus = "pending";
 	private boolean awarded = false;
-	private List<Document> additionalDocs;
+	private List<> additionalDocs;
 	
 	public Request(int employeeId, String eventDate, String eventTime, int cost, String street,
 			String city, String state, String zip, String eventType, String eventDescription) {

@@ -39,13 +39,13 @@ public class LandingPageServlet extends HttpServlet {
 //		String output = session.getAttribute("employeeJson").toString();
 //		response.getWriter().print(output);
 
-
-		JsonNode node = (JsonNode)session.getAttribute("employeeJson");
-		//testing to make sure json code is coming through
-		JsonNode fName =node.get("firstName");
-		JsonNode lName=node.get("lastName");
-		response.getWriter().print("\nFirst Name "+fName);
-		response.getWriter().print(" Last Name "+lName);
+//
+//		JsonNode node = (JsonNode)session.getAttribute("employeeJson");
+//		//testing to make sure json code is coming through
+//		JsonNode fName =node.get("firstName");
+//		JsonNode lName=node.get("lastName");
+//		response.getWriter().print("\nFirst Name "+fName);
+//		response.getWriter().print(" Last Name "+lName);
 //		response.getWriter().print(node.toString());
 		
 		//redirecting to landing page

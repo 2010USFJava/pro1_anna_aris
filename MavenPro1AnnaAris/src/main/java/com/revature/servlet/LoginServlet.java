@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
 
 		response.getWriter().append("In Post method");
 		
-		JsonNode node=null;
+//		JsonNode node=null;
 		Employee emp=null;
 		try {
 			emp = loginHelper(request, response);

@@ -29,7 +29,10 @@ public class DBConnection {
 		try (InputStream resourceStream = loader.getResourceAsStream(resourceName)) {
 			props.load(resourceStream);
 			Class.forName("org.postgresql.Driver");
-			connect = DriverManager.getConnection(props.getProperty("host"), props.getProperty("user"), props.getProperty("password"));
+			//When Using Aris Credentials
+//			connect = DriverManager.getConnection(props.getProperty("host"), props.getProperty("user"), props.getProperty("password"));
+			//When using Anna Credentials
+			connect = DriverManager.getConnection(props.getProperty("url"), props.getProperty("username"), props.getProperty("password"));
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (FileNotFoundException e) {

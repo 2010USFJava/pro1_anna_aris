@@ -25,14 +25,18 @@ last_name varchar,
 supervisor_id integer,
 department_id integer,
 funds DOUBLE PRECISION,
+title varchar,
 PRIMARY KEY(employee_id)
 );
+
+select * from employees;
 
 create view supervisors
 	as
 	select distinct super.*
 	from employees super, employees sub
 	where sub.supervisor_id=super.employee_id;
+
 
 
 create view supervisor_sub_relations
@@ -43,13 +47,13 @@ create view supervisor_sub_relations
 	on supervisors.employee_id=employees.supervisor_id;
 
 
-
 create table departments(
 department_id SERIAL,
 name varchar,
 head_employee_id integer,
 primary key(department_id)
 );
+
 
 create table logins(
 employee_id integer,

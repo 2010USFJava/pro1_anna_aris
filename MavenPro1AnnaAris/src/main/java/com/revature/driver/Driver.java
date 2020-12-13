@@ -26,10 +26,10 @@ public class Driver {
 //		
 
 		EmployeeTestData testData= new EmployeeTestData();
-		testData.loadTestData();
+//		testData.loadTestData();
 //		
-//		Employee testEmp=EmployeeTestData.testEmployeeLogin(TestEmployee.RUFAS);
-//		System.out.println(testEmp);
+		Employee testEmp=EmployeeTestData.testEmployeeLogin(TestEmployee.RUFAS);
+		System.out.println(testEmp);
 
 		
 		System.out.println("*~*~*~*~*~*~*");

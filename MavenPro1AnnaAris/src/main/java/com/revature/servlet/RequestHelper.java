@@ -16,8 +16,7 @@ public class RequestHelper {
 			
 		case "/pro1AnnaAris/request.change":
 			System.out.println("in request.change rhelper");
-			return RequestController.submitRequest(req);
-			
+			return RequestController.submitRequest(req);			
 		default: return null;
 		}
 	}

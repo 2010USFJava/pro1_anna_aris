@@ -8,6 +8,7 @@ package com.revature.driver;
 
 import java.sql.SQLException;
 
+
 import com.revature.dao.DepartmentDao;
 import com.revature.dao.EmployeeDao;
 import com.revature.dao.LoginDao;
@@ -16,13 +17,19 @@ import com.revature.daoimple.EmployeeDaoImple;
 import com.revature.daoimple.LoginDaoImple;
 import com.revature.model.Department;
 import com.revature.model.Employee;
+//Titles
+//manager, supervisor, dept_head, ben_co
+//employee
+
 
 public class EmployeeTestData {
 	public enum TestEmployee{
-		CORA,
-		UNDERFOOT,
-		RUFAS,
-		HARRY_POTTER
+		CORA, //title=employee
+		UNDERFOOT, //title=manager
+		RUFAS, //title =supervisor
+		HARRY_POTTER, //title = dept_head
+		RON_WEASLY //title ben_co
+		
 		
 	}
 	
@@ -41,8 +48,22 @@ public class EmployeeTestData {
 				new Employee("Hermonie","Granger"),
 				new Employee("Percy","Weasley")
 		};
+		
+//		CORA, //title=employee
+//		UNDERFOOT, //title=manager
+//		RUFAS, //title =supervisor
+//		HARRY_POTTER, //title = dept_head
+//		RON_WEASLY //title ben_co
+		empList[0].setTitle("manager");
+		empList[2].setTitle("supervisor");
+		empList[3].setTitle("dept_head");
+		empList[3].setTitle("ben_co");
+		
+		
 		empList[1].setSupervisor(empList[0]); //Underfoot is Cora's Boss
 		empList[0].setSupervisor(empList[2]);//Rufas is Underfoot's boss
+
+
 		
 		empList[4].setSupervisor(empList[5]);//Hermine is Ron's Boss
 		empList[5].setSupervisor(empList[6]);//Percy is Herminies Boss
@@ -77,6 +98,7 @@ public class EmployeeTestData {
 			loginDao.createNewLogin(empList[1], "greenonion", "strAwberry");
 			loginDao.createNewLogin(empList[2], "grumpy_old_man", "meow");
 			loginDao.createNewLogin(empList[3], "potter_harry4", "theOneAndOnly");
+			loginDao.createNewLogin(empList[4], "admin", "pass");
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -90,6 +112,12 @@ public class EmployeeTestData {
 		String password="";
 
 		switch(testEmployee) {
+		
+//		CORA, //title=employee
+//		UNDERFOOT, //title=manager
+//		RUFAS, //title =supervisor
+//		HARRY_POTTER, //title = dept_head
+//		RON_WEASLY //title ben_co
 			case CORA:
 				username="greenonion";
 				password="strAwberry";
@@ -106,6 +134,11 @@ public class EmployeeTestData {
 				username="potter_harry4";
 				password="theOneAndOnly";
 				break;
+			case RON_WEASLY:
+				username="admin";
+				password="pass";
+				break;
+				
 		}
 		
 		

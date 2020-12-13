@@ -17,13 +17,19 @@ public class Employee {
 	@JsonIgnore
 	private Employee supervisor;
 	private Department department;
-	private double funds=10000.00;
+	private double funds=1000.00;
 	@JsonIgnore
 	private List<Employee> subordinates;
+	private String title="employee";
+
+//	Titles
+//	manager, supervisor, dept_head, ben_co
+//	employee
 
 	public Employee() {
 		super();
 	}
+
 
 	public Employee(String firstName, String lastName) {
 		super();
@@ -42,6 +48,14 @@ public class Employee {
 		return firstName;
 	}
 
+	public String getTitle() {
+		return title;
+	}
+	
+	public void setTitle(String title) {
+		this.title=title;
+	}
+	
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}

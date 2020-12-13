@@ -66,6 +66,7 @@ public class EmployeeDaoImple implements EmployeeDao {
 					supervisorId = (rs.getInt(4));
 					departId = (rs.getInt(5));
 					emp.setFunds(rs.getDouble(6));
+					emp.setTitle(rs.getString(7));
 					break;
 				}
 
@@ -142,7 +143,7 @@ public class EmployeeDaoImple implements EmployeeDao {
 
 			Connection conn = cf.getConnection();
 
-			String sql = "insert into employees values(nextval('emp_id_seq'),?,?,?,?,?);";
+			String sql = "insert into employees values(nextval('emp_id_seq'),?,?,?,?,?,?);";
 
 			PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
@@ -163,7 +164,7 @@ public class EmployeeDaoImple implements EmployeeDao {
 			}
 			
 			ps.setDouble(5, employee.getFunds());
-
+			ps.setString(6,employee.getTitle());
 			// update database
 			ps.executeUpdate();
 

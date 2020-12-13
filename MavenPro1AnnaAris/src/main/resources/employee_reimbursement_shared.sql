@@ -1,9 +1,9 @@
---create schema if not exists employee_reimbursement_shared authorization annacarl;
---set search_path to employee_reimbursement_shared; 
+create schema if not exists employee_reimbursement_shared authorization annacarl;
+set search_path to employee_reimbursement_shared; 
 
 
-create schema if not exists employee_reimbursement authorization annacarl;
-set search_path to employee_reimbursement; 
+--create schema if not exists employee_reimbursement authorization annacarl;
+--set search_path to employee_reimbursement; 
 
 drop table if exists employees cascade;
 drop table if exists departments cascade;
@@ -107,15 +107,19 @@ primary key(course_id)
 );
 
 
+insert into course values(nextval('course_id_seq'),1,2,'Hang-Gliding','Arsospace',false);
+select * from course;
 
 CREATE TABLE grade(
 course_id integer,
 letter_grade varchar(1),
-number_grade integer
+number_grade double precision
 --foreign key(course_id)
 --references course_type(course_id)
 --on delete cascade
 );
+--
+--insert into grade values(1,'a',77);
 
 create table presentation(
 course_id integer,
@@ -139,8 +143,11 @@ create view course_grade as
 	inner join course
 	on course.course_id=p.course_id;
 
-select * from course_presentations;
-select * from course_grade;
+
+
+--select * from course_presentations;
+--select * from course_grade;
+
 	
 --aris's table(s)
 CREATE TABLE request (
@@ -168,9 +175,13 @@ CREATE TABLE request (
 --insert into employees values(nextval('emp_id_seq'),'Brittney','Spears',1,1);
 --insert into employees values(nextval('emp_id_seq'),'Aretha','Franklin',2,1);
 --insert into employees values(nextval('emp_id_seq'),'John','Fogerty',2,1);
+
+
 --insert into logins values(1,'testuser','password');
 --select sub_id from supervisor_sub_relations;
 select * from logins;
+
+select * from course where employee_id =1;
 
 --select * from employees;
 --select employee_id from logins where username='tinycat' and password='meow';

@@ -11,7 +11,7 @@ public class Grade implements GradeOrPresentation {
 	
 	//different schools may have different grading systems
 	private double numberGrade=0;
-	private LetterGrade letterGrade=LetterGrade.F;
+	private LetterGrade letterGrade;
 	
 	public double getNumberGrade() {
 		return numberGrade;
@@ -21,11 +21,14 @@ public class Grade implements GradeOrPresentation {
 		letterGrade=convertNumberGradeToLetterGrade(numberGrade);
 	}
 	public LetterGrade getLetterGrade() {
+		if(letterGrade==null) {
+			letterGrade=convertNumberGradeToLetterGrade(numberGrade);
+		}
 		return letterGrade;
 	}
 	public void setLetterGrade(LetterGrade letterGrade) {
 		this.letterGrade = letterGrade;
-		numberGrade=convertLetterGradeToNumberGrade(letterGrade);
+//		numberGrade=convertLetterGradeToNumberGrade(letterGrade);
 	}
 
 	
@@ -43,20 +46,20 @@ public class Grade implements GradeOrPresentation {
 		}
 	}
 	
-	private double convertLetterGradeToNumberGrade(LetterGrade letterGrade) {
-		if (letterGrade.equals(LetterGrade.A)) {
-			return 100;
-		} else if(letterGrade.equals(LetterGrade.B)) {
-			return 89;
-		}else if(letterGrade.equals(LetterGrade.C)) {
-			return 79;
-		}else if(letterGrade.equals(LetterGrade.D)) {
-			return 69;
-		}else {
-			return 59;
-		}
-		
-	}
+//	private double convertLetterGradeToNumberGrade(LetterGrade letterGrade) {
+//		if (letterGrade.equals(LetterGrade.A)) {
+//			return 100;
+//		} else if(letterGrade.equals(LetterGrade.B)) {
+//			return 89;
+//		}else if(letterGrade.equals(LetterGrade.C)) {
+//			return 79;
+//		}else if(letterGrade.equals(LetterGrade.D)) {
+//			return 69;
+//		}else {
+//			return 59;
+//		}
+//		
+//	}
 	
 	
 }

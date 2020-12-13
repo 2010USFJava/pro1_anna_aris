@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.revature.meta.LogThis.LevelEnum;
+import com.revature.model.Course;
 import com.revature.model.Department;
 import com.revature.model.Employee;
 
@@ -19,6 +20,7 @@ public class RuntimeData {
 
 	private static Map<Integer, Employee> EmployeeMap = new HashMap<>();
 	private static Map<Integer, Department> DepartmentMap = new HashMap<>();
+	private static Map<Integer, Course> CourseMap = new HashMap<>();
 
 	// check if items in runtime data cashe
 	public static boolean checkIfInEmployeeMap(int id) {
@@ -32,6 +34,14 @@ public class RuntimeData {
 
 	public static boolean checkIfInDepartmentMap(int id) {
 		if (DepartmentMap.containsKey(id)) {
+			return true;
+		}
+		return false;
+
+	}
+	
+	public static boolean checkIfInCourseMap(int id) {
+		if (CourseMap.containsKey(id)) {
 			return true;
 		}
 		return false;
@@ -55,6 +65,14 @@ public class RuntimeData {
 		return dept;
 	}
 
+	public static Course getCourseFromMap(int id) {
+		Course c = null;
+		if (checkIfInCourseMap(id)) {
+			c = CourseMap.get(id);
+		}
+		return c;
+	}
+
 	// put items in Map
 	public static void addEmployeeToMap(Employee emp) {
 		try {
@@ -70,6 +88,14 @@ public class RuntimeData {
 			DepartmentMap.put(dept.getId(), dept);
 		} catch (Exception e) {
 			LogThis.logIt(LevelEnum.ERROR, "Failure Adding Department To Map: " + dept.getId());
+		}
+	}
+	
+	public static void addCourseToMap(Course course) {
+		try {
+			CourseMap.put(course.getId(), course);
+		} catch (Exception e) {
+			LogThis.logIt(LevelEnum.ERROR, "Failure Adding Department To Map: " + course.getId());
 		}
 	}
 }

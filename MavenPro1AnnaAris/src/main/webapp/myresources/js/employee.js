@@ -25,6 +25,6 @@ function loadEmployee(employee){
 }
 
 function clickMe(){
-    document.getElementById("json_fname").innerHTML=currentEmp;
+    document.getElementById("json_fname").innerHTML=emp[0];
     // getEmployee();
 }

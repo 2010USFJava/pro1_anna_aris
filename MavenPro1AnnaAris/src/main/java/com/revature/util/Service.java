@@ -4,8 +4,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.revature.dao.EmployeeDao;
+import com.revature.daoImpl.EmployeeDaoImple;
 import com.revature.daoImpl.RequestDaoImpl;
-import com.revature.model.*;
+import com.revature.model.Employee;
+import com.revature.model.Request;
 
 public class Service {
 	public static RequestDaoImpl rdi = new RequestDaoImpl();
@@ -41,6 +44,8 @@ public class Service {
 		return reqList;
 	}
 	public static Employee loginGetEmployee(String username, String password) {
+
+		
 		Employee emp = null;
 		try {
 			emp = rdi.retrieveEmployeeByCredentials(username, password);
@@ -51,4 +56,6 @@ public class Service {
 		
 		return emp;
 	}
+	
+
 }

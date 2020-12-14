@@ -45,6 +45,20 @@ public class Grade implements GradeOrPresentation {
 			return letterGrade.F;
 		}
 	}
+	public void setLetterGrade(String parameter) {
+		if (parameter.toLowerCase().equals("a")) {
+			letterGrade= LetterGrade.A;
+		} else if (parameter.toLowerCase().equals("b")) {
+			letterGrade= LetterGrade.B;
+		} else if (parameter.toLowerCase().equals("c")) {
+			letterGrade=LetterGrade.C;
+		} else if (parameter.toLowerCase().equals("d")) {
+			letterGrade=LetterGrade.D;
+		} else {
+			letterGrade=letterGrade.F;
+		}
+		
+	}
 	
 //	private double convertLetterGradeToNumberGrade(LetterGrade letterGrade) {
 //		if (letterGrade.equals(LetterGrade.A)) {

@@ -4,7 +4,11 @@ window.onload=function(){
     // document.getElementById("digisubmit").addEventListener("click",getDigimon, false);
     document.getElementById("json_fname").innerHTML="HelloWorld";
     // getEmployee();
-    //console.log(currentEmp);
+    console.log(emp);
+    
+    if(sessionStorage.getItem("successful commit")==true){
+        
+    }
 
 
 }

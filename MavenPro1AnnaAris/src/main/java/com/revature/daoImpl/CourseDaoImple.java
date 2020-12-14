@@ -33,14 +33,25 @@ public class CourseDaoImple implements CourseDao {
 
 	@Override
 	public void addCourse(Course course) throws SQLException {
-		if (!course.getInstitution().isEmpty() && !course.getName().isEmpty()) {
+
 			Connection conn = cf.getConnection();
-			String sql = "insert into course(nextval('course_id_seq'),?,?,?,?,?)";
+			String sql = "insert into course values(nextval('course_id_seq'),?,?,?,?,?)";
 			PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+			
+			if(course.getEmployee()!=null) {
 			ps.setInt(1, course.getEmployee().getId());
+			} else {
+				ps.setNull(1, java.sql.Types.INTEGER);
+			}
+			
+			
 			// convert endum
-			int courseTypeNum = course.getCourseType().ordinal();
-			ps.setInt(1, course.getEmployee().getId());
+			int courseTypeNum=0;
+			if(course.getCourseType()==null) {
+				courseTypeNum=CourseType.OTHER.ordinal();
+			}else {
+				courseTypeNum = course.getCourseType().ordinal();
+			}
 			ps.setInt(2, courseTypeNum);
 			ps.setString(3, course.getName());
 			ps.setString(4, course.getInstitution());
@@ -56,9 +67,7 @@ public class CourseDaoImple implements CourseDao {
 			addToGradOrPresTable(course);
 			// update runtime data
 			RuntimeData.addCourseToMap(course);
-		} else {
-			LogThis.logIt(LevelEnum.ERROR, "Did not add course. As either name or institutaion name were missing");
-		}
+		
 
 	}
 

@@ -18,7 +18,10 @@ public class LoginController {
 		if(emp==null) {
 			return "myresources/html/incomplete.html";
 		}else {
+			//there appear to be calls to this in two different names
+			req.getSession().setAttribute("currentemp", emp);
 			req.getSession().setAttribute("employee", emp);
+			
 			return "myresources/html/landingPage.html";
 		}
 		

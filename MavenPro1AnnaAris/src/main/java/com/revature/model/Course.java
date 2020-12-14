@@ -34,6 +34,25 @@ public class Course {
 	private GradeOrPresentation gradOrPres;
 	private boolean pass;
 	
+	public void setCourseType(CourseType courseType) {
+		this.courseType=courseType;
+	}
+	public void setCourseType(String string) {
+		if(string.toLowerCase().equals("university")) {
+			courseType= CourseType.UNIVERSITY;
+		} else if(string.toLowerCase().equals("seminar")) {
+			courseType= CourseType.SEMINAR;
+		} else if(string.toLowerCase().equals("cert_prep")) {
+			courseType= CourseType.CERT_PREP;
+		} else if(string.toLowerCase().equals("cert")) {
+			courseType= CourseType.CERTIFICATION;
+		} else if(string.toLowerCase().equals("technical")) {
+			courseType=CourseType.TECHINICAL;
+		} else {
+			courseType=CourseType.OTHER;
+		}
+	}
+	
 	public Grade.LetterGrade getGradeLetter() {
 		if((gradOrPres.getClass().isInstance(Grade.class))) {
 			Grade grade = (Grade)gradOrPres;

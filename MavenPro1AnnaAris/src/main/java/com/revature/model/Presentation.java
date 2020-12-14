@@ -5,7 +5,7 @@ import lombok.ToString;
 
 @Data
 @ToString
-public class Presentation {
+public class Presentation implements GradeOrPresentation {
 	private String document;
 	
 	

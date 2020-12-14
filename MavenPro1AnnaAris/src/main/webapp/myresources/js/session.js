@@ -1,3 +1,4 @@
+var emp;
 function getEmployee() {
 	let xhttp = new XMLHttpRequest();
 	
@@ -10,6 +11,7 @@ function getEmployee() {
 	xhttp.open("GET","http://localhost:8080/pro1AnnaAris/currentEmployee.json");
 	
 	xhttp.send();
+
 }
 function navbarDisplay() {
 	var anchors = "";
@@ -45,5 +47,6 @@ function navbarDisplay() {
 
 }
 window.onload = function() {
+
 	getEmployee;
 }

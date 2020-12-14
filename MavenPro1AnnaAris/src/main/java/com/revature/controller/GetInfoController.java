@@ -17,7 +17,10 @@ public class GetInfoController {
 	}
 	
 	public static void getCurrentEmployee(HttpServletRequest req, HttpServletResponse res) throws JsonProcessingException, IOException {
+		System.out.println("Getting Current Employee ");
 		Employee emp = (Employee) req.getSession().getAttribute("currentemp");
+
+		
 		res.getWriter().write(new ObjectMapper().writeValueAsString(emp));
 	}
 }

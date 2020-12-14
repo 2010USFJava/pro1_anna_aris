@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Grade/Presentation Upload</title>
+
+<link rel="stylesheet" href="./css/master.css">
+<link rel="stylesheet" href="./css/grade_upload.css">
+<link rel="stylesheet" href="myresources/css/master.css">
+</head>
+<body>
+	<header>
+		<h1>Grade/Presentation Upload</h1>
+
+      <nav>
+        <a class="navItem" href="landingPage.html">
+            Home
+        </a>
+        <a class="navItem" href="home.html">Logout</a>
+        <a class="navItem" href="grade_upload.html">
+          Document Upload
+        </a>
+        <a class="navItem" href="approve_grade.html">
+          Approve Grade
+        </a>
+
+      </nav>
+
+	</header>
+	<div id="mainArea">
+		<div class="subArea">
+			<h2>Document Upload</h2>
+			<form action="http://localhost:8080/pro1AnnaAris/grade_add.change" method="POST">
+        <table>
+          <tr>
+            <td>
+              Course type
+            </td>
+            <td>
+              <select name="course_type">
+                <option value="university">University Course</option>
+                <option value="seminar">Seminars</option>
+                <option value="cert_prep">Certififation Preperation Class</option>
+                <option value="cert">Certification</option>
+                <option value="technical">Technical Training</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Institution</td>
+            <td>
+              <input type="text" name="institution">
+            </td>
+          </tr>
+          <tr>
+            <td>Course Name</td>
+            <td>
+              <input type="text" name="course_name">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="grade_or_presentation" value="radio_grade" checked="checked">Grade
+            </td>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                    <input type="radio" name="type_of_grade" value="radio_num_grade">Number Grade
+                  </td>
+                  <td>
+                    <input type="number" name=number_grade>
+                  </td>
+                 </tr>
+                 <tr>
+                   <td>
+                    <input type="radio" name="type_of_grade" value="radio_letter_grade">Letter Grade
+                   </td>
+                  <td>
+                    <select name="letter_grade">
+                      <option value="a">A</option>
+                      <option value="b">B</option>
+                      <option value="c">C</option>
+                      <option value="d">D</option>
+                      <option vDlue="f">F</option>
+                    </select>
+                  </td>
+                 </tr>
+                 <tr>
+                   <td rowspan="2">
+                     <input type="radio"  name="type_of_grade" value="radio_na" checked="checked">NA
+                   </td>
+                 </tr>
+
+              </table>
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="grade_or_presentation">Presentation
+            </td>
+            <td>
+              <input type="file" name="presentation">
+            </td>
+            
+          </tr>
+          <tr>
+            <td rowspan="2"><button type="submit">Submit</button></td>
+          </tr>
+
+
+
+
+        </table>
+				
+			</form>
+		</div>
+
+
+</div>
+
+<script src="JavaScript/grade_upload.js"></script>
+
+</body>
+</html>

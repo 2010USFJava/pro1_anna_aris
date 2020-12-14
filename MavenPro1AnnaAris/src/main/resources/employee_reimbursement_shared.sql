@@ -113,6 +113,7 @@ primary key(course_id)
 
 insert into course values(nextval('course_id_seq'),1,2,'Hang-Gliding','Arsospace',false);
 select * from course;
+"insert into course(nextval('course_id_seq'),?,?,?,?)";
 
 CREATE TABLE grade(
 course_id integer,

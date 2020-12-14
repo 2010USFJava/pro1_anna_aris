@@ -18,8 +18,8 @@ public class JsonRequestHelper {
 		case "/pro1AnnaAris/requests.json":
 			GetInfoController.getAllRequests(req, res);
 			break;
-			
 		case "/pro1AnnaAris/currentEmployee.json":
+//		case "/pro1AnnaAris/currentEmployee.json":
 			System.out.println("in rs.json");
 			GetInfoController.getCurrentEmployee(req, res);
 			break;

@@ -6,7 +6,12 @@
 
 package com.revature.driver;
 
+import java.sql.SQLException;
+
+import com.revature.dao.CourseDao;
+import com.revature.daoImpl.CourseDaoImple;
 import com.revature.driver.EmployeeTestData.TestEmployee;
+import com.revature.model.Course;
 import com.revature.model.Employee;
 
 public class Driver_Anna {
@@ -30,7 +35,16 @@ public class Driver_Anna {
 //		
 		Employee testEmp=EmployeeTestData.testEmployeeLogin(TestEmployee.RUFAS);
 		System.out.println(testEmp.getDepartment());
+		Course course = new Course();
+		course.setEmployee(testEmp);
 		
+		CourseDao courseDao = new CourseDaoImple();
+		try {
+			courseDao.addCourse(course);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		
 		System.out.println("*~*~*~*~*~*~*");

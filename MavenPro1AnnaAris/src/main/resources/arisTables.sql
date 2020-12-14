@@ -5,6 +5,7 @@ CREATE TABLE request (
 	event_date varchar(10),
 	event_time varchar(7),
 	event_cost integer,
+	estimated_award integer,
 	event_street text,
 	event_city text,
 	event_state varchar(20),
@@ -14,7 +15,9 @@ CREATE TABLE request (
 	sup_status varchar(10),
 	head_status varchar(10),
 	ben_status varchar(10),
-	awarded boolean
+	awarded boolean,
+	amount_awarded integer,
+	reason text
 );
 
 CREATE TABLE employee (

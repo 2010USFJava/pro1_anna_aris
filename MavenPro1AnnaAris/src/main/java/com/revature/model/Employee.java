@@ -15,7 +15,7 @@ public class Employee {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
-	public Employee(int employeeId, String firstName, String lastName, String title, String username, String password, int yearlyAwards) {
+	public Employee(int employeeId, String firstName, String lastName, String title, String username, String password) {
 		
 		this.employeeId = employeeId;
 		this.firstName = firstName;
@@ -23,7 +23,6 @@ public class Employee {
 		this.title = title;
 		this.username = username;
 		this.password = password;
-		this.yearlyAwards = yearlyAwards;
 	}
 	public int getEmployeeId() {
 		return employeeId;

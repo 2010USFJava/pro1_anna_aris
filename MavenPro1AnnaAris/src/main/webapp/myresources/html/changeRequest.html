@@ -31,6 +31,12 @@
 						</div>
 						<div class="row">
 							<div class="col">
+								<h5>Request Id:</h5>
+								<h6 id="id"></h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
 								<h5>Event Date:</h5>
 								<h6 id="edate"></h6>
 							</div>
@@ -56,7 +62,14 @@
 						<div class="row">
 							<div class="col">
 								<h5>Estimated Award:</h5>
-								<input type="text" id="estimate" name="ecost">
+								<h6 id="est"></h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<h5>Amount Awarded:</h5>
+								<label>Amount Awarded: $<input type="number" id="award" name="award" placeholder="Enter amount to reimburse" min="0"
+									step="100" required="required"></label>
 							</div>
 						</div>
 						<div class="row">
@@ -89,6 +102,13 @@
 								<h6 id="edescription"></h6>
 							</div>
 						</div>
+						<div class="row">
+							<div class="col">
+								<h5>Additional comments:</h5>
+								<textarea id="description" name="description" cols="60" rows="3"
+									placeholder="Enter text here"></textarea>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="float-left" style="padding-left: 10px;">
@@ -96,10 +116,9 @@
 					<p id="attached"></p>
 				</div>
 				<div class="float-right" style="padding: 10px;">
-					<input type="text" id="answer" name="answer" style="display: none;">
-					<input type="submit" id="approve" value="Approve" class="btn-primary"> 
-					<input type="submit" id="deny" value="Deny" class="btn-primary">
-					<button type="button" id="cancel" class="btn-primary">CancelRequest</button>
+					<input type="submit" id="?" value="Approve" class="btn-primary"> 
+					<input type="submit" id="?" value="Deny" class="btn-primary">
+					<input type="submit" id="?" value="Cancel Request" class="btn-primary">
 				</div>
 			</form>
 			<script type="text/javascript" src="../js/viewRequest.js"></script>

@@ -18,6 +18,12 @@ public class RequestHelper {
 		
 		switch(req.getRequestURI()) {
 			
+		case "/pro1AnnaAris/request_start.change":
+			return RequestController.goToReimbursementForm(req);
+			
+		case "/pro1AnnaAris/view_request.change":
+			return RequestController.goToViewAllReimbersmentForms(req);
+			
 		case "/pro1AnnaAris/request.change":
 			return RequestController.submitRequest(req);
 			
@@ -44,6 +50,8 @@ public class RequestHelper {
 			
 		case "/pro1AnnaAris/landing_page.change":
 			return SimpleController.goHome(req);
+			
+
 			
 		default: return "incomplete.html";
 		}

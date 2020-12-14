@@ -189,9 +189,9 @@ CREATE TABLE request (
 
 --insert into logins values(1,'testuser','password');
 --select sub_id from supervisor_sub_relations;
-select * from logins;
+--select * from logins;
 
-select * from course where employee_id =1;
+select * from course;
 
 --select * from employees;
 --select employee_id from logins where username='tinycat' and password='meow';

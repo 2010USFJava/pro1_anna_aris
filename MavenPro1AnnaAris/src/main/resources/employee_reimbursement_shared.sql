@@ -29,7 +29,7 @@ title varchar,
 PRIMARY KEY(employee_id)
 );
 
-select * from employees;
+--select * from employees;
 
 create view supervisors
 	as
@@ -101,6 +101,9 @@ course_type_id integer,
 name varchar,
 institution varchar,
 pass boolean,
+letter_grade varchar(1),
+number_grade double precision,
+document text,
 primary key(course_id)
 --foreign key(employee_id)
 --references employees(employee_id)
@@ -113,46 +116,48 @@ primary key(course_id)
 
 insert into course values(nextval('course_id_seq'),1,2,'Hang-Gliding','Arsospace',false);
 select * from course;
-"insert into course(nextval('course_id_seq'),?,?,?,?)";
+--"insert into course(nextval('course_id_seq'),?,?,?,?)";
 
-CREATE TABLE grade(
-course_id integer,
-letter_grade varchar(1),
-number_grade double precision
---foreign key(course_id)
---references course_type(course_id)
---on delete cascade
-);
+--CREATE TABLE grade(
+--course_id integer,
+--letter_grade varchar(1),
+--number_grade double precision
+----foreign key(course_id)
+----references course_type(course_id)
+----on delete cascade
+--);
 --
 --insert into grade values(1,'a',77);
 
-create table presentation(
-course_id integer,
-document_file text
---foreign key(course_id)
---references course_type(course_id)
---on delete cascade
-);
+--create table presentation(
+--course_id integer,
+--document_file text
+----foreign key(course_id)
+----references course_type(course_id)
+----on delete cascade
+--);
 
 
 
-create view course_presentations as
-	select c.*,p.document_file
-	from course as c, presentation as p
-	inner join course
-	on course.course_id=p.course_id;
+--create view course_presentations as
+--	select c.*,p.document_file
+--	from course as c, presentation as p
+--	inner join course
+--	on course.course_id=p.course_id;
+--
+--create view course_grade as
+--	select c.*,p.letter_grade, p.number_grade
+--	from course as c, grade as p
+--	inner join course
+--	on course.course_id=p.course_id;
 
-create view course_grade as
-	select c.*,p.letter_grade, p.number_grade
-	from course as c, grade as p
-	inner join course
-	on course.course_id=p.course_id;
 
 
-
+--select * from course_grade where employee_id=1;
 --select * from course_presentations;
 --select * from course_grade;
 
+--select * from course;
 	
 --aris's table(s)
 CREATE TABLE request (

@@ -9,7 +9,9 @@
 package com.revature.util;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Map;
+import java.util.Queue;
 
 import com.revature.model.Course;
 import com.revature.model.Department;
@@ -21,7 +23,16 @@ public class RuntimeData {
 	private static Map<Integer, Employee> EmployeeMap = new HashMap<>();
 	private static Map<Integer, Department> DepartmentMap = new HashMap<>();
 	private static Map<Integer, Course> CourseMap = new HashMap<>();
-
+	private static Queue<Course> CourseQueue = new LinkedList<>();
+	
+	public static Course popCourseQueue() {
+		return CourseQueue.poll();
+	}
+	
+	public static void addToCourseQueue(Course course) {
+		CourseQueue.add(course);
+	}
+	
 	// check if items in runtime data cashe
 	public static boolean checkIfInEmployeeMap(int id) {
 		if (EmployeeMap.containsKey(id)) {

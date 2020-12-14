@@ -13,6 +13,7 @@ import com.revature.daoImpl.CourseDaoImple;
 import com.revature.driver.EmployeeTestData.TestEmployee;
 import com.revature.model.Course;
 import com.revature.model.Employee;
+import com.revature.model.GradeOrPresentation.LetterGrade;
 
 public class Driver_Anna {
 	
@@ -30,14 +31,14 @@ public class Driver_Anna {
 //		}
 //		
 
-//		EmployeeTestData testData= new EmployeeTestData();
-//		testData.loadTestData();
+		EmployeeTestData testData= new EmployeeTestData();
+		testData.loadTestData();
 //		
 		Employee testEmp=EmployeeTestData.testEmployeeLogin(TestEmployee.RUFAS);
 		System.out.println(testEmp.getDepartment());
 		Course course = new Course();
 		course.setEmployee(testEmp);
-		
+		course.getGradOrPres().setLetterGrade(LetterGrade.A);
 		CourseDao courseDao = new CourseDaoImple();
 		try {
 			courseDao.addCourse(course);

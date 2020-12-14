@@ -22,7 +22,7 @@ public class Request {
 	private boolean awarded = false;
 	
 	//Note: Document class was changed to Presentation class. As document no longer exists
-	private List<Presentation> additionalDocs;
+	private List<String> additionalDocs;
 	
 	public Request(int employeeId, String eventDate, String eventTime, int cost, String street,
 			String city, String state, String zip, String eventType, String eventDescription) {
@@ -39,7 +39,7 @@ public class Request {
 		this.eventDescription = eventDescription;
 	}
 	public Request(int employeeId, String eventDate, String eventTime, int cost, String street,
-			String city, String state, String zip, String eventType, String eventDescription, List<Presentation> additionalDocs) {
+			String city, String state, String zip, String eventType, String eventDescription, List<String> additionalDocs) {
 		
 		this.employeeId = employeeId;
 		this.eventDate = eventDate;
@@ -170,10 +170,10 @@ public class Request {
 	public void setAwarded(boolean awarded) {
 		this.awarded = awarded;
 	}
-	public List<Presentation> getAdditionalDocs() {
+	public List<String> getAdditionalDocs() {
 		return additionalDocs;
 	}
-	public void setAdditionalDocs(List<Presentation> additionalDocs) {
+	public void setAdditionalDocs(List<String> additionalDocs) {
 		this.additionalDocs = additionalDocs;
 	}
 	@Override

@@ -17,6 +17,6 @@ public interface CourseDao {
 	Course retrieveCourseByCourseId (int id) throws SQLException;
 	List<Course> retrieveCourseByEmployeeId (int id) throws SQLException;
 	void addCourse(Course course) throws SQLException;
-	void addToGradOrPresTable(Course course) throws SQLException;
+	List<Course> retriveAllCourses() throws SQLException;
 
 }

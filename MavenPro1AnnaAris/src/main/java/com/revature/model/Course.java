@@ -7,6 +7,8 @@
 
 package com.revature.model;
 
+import com.revature.model.GradeOrPresentation.LetterGrade;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -31,7 +33,7 @@ public class Course {
 	private CourseType courseType;
 	private String name;
 	private String institution;
-	private GradeOrPresentation gradOrPres;
+	private GradeOrPresentation gradOrPres=new GradeOrPresentation();
 	private boolean pass;
 	
 	public void setCourseType(CourseType courseType) {
@@ -53,37 +55,18 @@ public class Course {
 		}
 	}
 	
-	public Grade.LetterGrade getGradeLetter() {
-		if((gradOrPres.getClass().isInstance(Grade.class))) {
-			Grade grade = (Grade)gradOrPres;
-			return grade.getLetterGrade();
-		} else {
-
-			return null;
-				
-		}
+	public LetterGrade getGradeLetter() {
+			return gradOrPres.getLetterGrade();
 	}
 	
 	public Double getGradeNumber() {
-		if((gradOrPres.getClass().isInstance(Grade.class))) {
-			Grade grade = (Grade)gradOrPres;
-			return grade.getNumberGrade();
-		} else {
 
-			return null;
-				
+			return gradOrPres.getNumberGrade();
 		}
-	}
+	
 	
 	public String getPresentationDocument() {
-		if((gradOrPres.getClass().isInstance(Presentation.class))) {
-			Presentation pres = (Presentation)gradOrPres;
-			return pres.getDocument();
-		} else {
-
-			return null;
-				
-		}		
+			return gradOrPres.getDocument();
 	}
 	
 	

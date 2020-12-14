@@ -8,9 +8,7 @@ import com.revature.dao.CourseDao;
 import com.revature.daoImpl.CourseDaoImple;
 import com.revature.model.Course;
 import com.revature.model.Employee;
-import com.revature.model.Grade;
 import com.revature.model.GradeOrPresentation;
-import com.revature.model.Presentation;
 import com.revature.util.LogThis;
 import com.revature.util.LogThis.LevelEnum;
 
@@ -42,9 +40,8 @@ public class GradeController {
 		String institution = req.getParameter("institution");
 		course.setInstitution(institution);
 		String grade_or_presentation = req.getParameter("grade_or_presentation");
-		GradeOrPresentation gradeOrPres;
+		
 		if(grade_or_presentation.equals("radio_grade")) {
-			Grade grade=new Grade();
 			String type_of_grade=req.getParameter("type_of_grade");
 			
 			if(type_of_grade.equals("radio_num_grade")) {
@@ -55,17 +52,16 @@ public class GradeController {
 					LogThis.logIt(LevelEnum.ERROR,"Not a vaild number. Setting to 0");
 					number_grade=0;
 				}
-				grade.setNumberGrade(number_grade);
+				course.getGradOrPres().setNumberGrade(number_grade);
 			}else if(type_of_grade.equals("radio_letter_grade")) {
-				grade.setLetterGrade(req.getParameter("letter_grade"));
+				course.getGradOrPres().setLetterGrade(req.getParameter("letter_grade"));
 			}else {
 				//NA
 			}
-			course.setGradOrPres(grade);
 		} else {
-			Presentation pres = new Presentation();
-			pres.setDocument((req.getParameter("presentation")));
-			course.setGradOrPres(pres);
+
+			course.getGradOrPres().setDocument((req.getParameter("presentation")));
+//			course.setGradOrPres(pres);
 		}
 		
 		CourseDao courseDao= new CourseDaoImple();

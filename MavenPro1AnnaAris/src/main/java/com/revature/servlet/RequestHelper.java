@@ -8,6 +8,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.revature.controller.GradeController;
 import com.revature.controller.LoginController;
 import com.revature.controller.RequestController;
+import com.revature.controller.SimpleController;
 
 public class RequestHelper {
 	
@@ -38,6 +39,11 @@ public class RequestHelper {
 
 			System.out.println("in Add Grade");
 			return GradeController.addGrade(req);
+		case "/pro1AnnaAris/grade_approve.change":
+			return GradeController.goToGradeApprovel(req);
+			
+		case "/pro1AnnaAris/landing_page.change":
+			return SimpleController.goHome(req);
 			
 		default: return "incomplete.html";
 		}

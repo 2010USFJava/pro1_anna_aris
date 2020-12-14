@@ -8,13 +8,21 @@ import com.revature.dao.CourseDao;
 import com.revature.daoImpl.CourseDaoImple;
 import com.revature.model.Course;
 import com.revature.model.Employee;
-import com.revature.model.GradeOrPresentation;
 import com.revature.util.LogThis;
 import com.revature.util.LogThis.LevelEnum;
 
 public class GradeController {
 	
-
+	
+	public static String goToGradeApprovel(HttpServletRequest req){
+		Employee emp = (Employee) req.getSession().getAttribute("currentEmp");
+		CourseDao courseDao = new CourseDaoImple();
+		//For now I'm going to set it up to pull all requests
+		
+		
+		return "myresources/html/approve_grade.html";
+		
+	}
 	public static String changeRequest(HttpServletRequest req) {
 		Employee emp = (Employee) req.getSession().getAttribute("currentEmp");
 		

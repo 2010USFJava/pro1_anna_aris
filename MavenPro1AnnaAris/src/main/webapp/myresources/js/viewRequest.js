@@ -1,6 +1,6 @@
 function buildTable() {
 	var rows = "";
-	if (currentEmp.title == "benCo") {
+	if (currentEmp.title == "ben_co") {
 		for (var i = 0; i < requests.length; i++) {
 			empId = requests[i].employeeId;
 			type = requests[i].eventType;
@@ -16,7 +16,7 @@ function buildTable() {
 			rows += "<td>" + head + "</td>";
 			rows += "<td>" + ben + "</td>";
 			rows += "<td>" + awarded + "</td>";
-			rows += "<td><a id='view' href='changeRequest.html' class='btn btn-primary'>view</a></td>";
+			rows += "<td><button onclick()='function() { var req = " + request[i] + "; localStorage.setItem('request', req); window.location.href='changeRequest.html';}'>view</button></td>";
 			rows += "</tr>";
 		}
 		document.getElementById("list").innerHTML = rows;
@@ -31,7 +31,7 @@ function buildTable() {
 		rows += "<td>" + requests[i].headStatus + "</td>";
 		rows += "<td>" + requests[i].benStatus + "</td>";
 		rows += "<td>" + requests[i].awarded + "</td>";
-		rows += "<td><a id='view' href='approveRequest.html' class='btn btn-primary'>view</a></td>";
+		rows += "<td><button onclick()='function() { var req = " + requests[i] + "; localStorage.setItem('request', req); window.location.href='approveRequest.html';}'>view</button></td>";
 		rows += "</tr>";
 	}
 	document.getElementById("list").innerHTML = rows;
@@ -39,10 +39,13 @@ function buildTable() {
 
 function viewDetails() {
 	document.getElementById("employee").innerHTML = "Name: " + requests[i].firstName + " " + requests[i].lastName + " Id:" + emp;
-	document.getElementById("edate").innerHTML = requests[i].eventdate;
+	document.getElementById("id").value = requests[i].requestId;
+	document.getElementById("edate").innerHTML = requests[i].eventDate;
 	document.getElementById("etype").innerHTML = requests[i].eventType;
 	document.getElementById("etime").innerHTML = requests[i].eventTime;
 	document.getElementById("ecost").innerHTML = requests[i].cost;
+	document.getElementById("est").innerHTML = requests[i].estimatedAward;
+	document.getElementById("award").innerHTML = requests[i].amountAwarded;
 	document.getElementById("estreet").innerHTML = requests[i].street;
 	document.getElementById("ecity").innerHTML = requests[i].city;
 	document.getElementById("estate").innerHTML = requests[i].state;

@@ -1,6 +1,7 @@
 function buildTable() {
 	var rows = "";
-	if (currentEmp.title == "ben_co") {
+	console.log(currentEmp.title)
+	if (currentEmp.title == "benCo") {
 		for (var i = 0; i < requests.length; i++) {
 			empId = requests[i].employeeId;
 			type = requests[i].eventType;
@@ -16,22 +17,28 @@ function buildTable() {
 			rows += "<td>" + head + "</td>";
 			rows += "<td>" + ben + "</td>";
 			rows += "<td>" + awarded + "</td>";
-			rows += "<td><button onclick()='function() { var req = " + request[i] + "; localStorage.setItem('request', req); window.location.href='changeRequest.html';}'>view</button></td>";
+			rows += "<td><a id='view' href='changeRequest.html' class='btn btn-primary'>view</a></td>";
 			rows += "</tr>";
 		}
 		document.getElementById("list").innerHTML = rows;
 		return;
 	}
 	for (var i = 0; i < requests.length; i++) {
+		empId = requests[i].employeeId;
+		type = requests[i].eventType;
+		sup = requests[i].supStatus;
+		head = requests[i].headStatus;
+		ben = requests[i].benStatus;
+		awarded = requests[i].awarded;
 
 		rows += "<tr>";
-		rows += "<td>" + requests[i].employeeId + "</td>";
-		rows += "<td>" + requests[i].eventType + "</td>";
-		rows += "<td>" + requests[i].supStatus + "</td>";
-		rows += "<td>" + requests[i].headStatus + "</td>";
-		rows += "<td>" + requests[i].benStatus + "</td>";
-		rows += "<td>" + requests[i].awarded + "</td>";
-		rows += "<td><button onclick()='function() { var req = " + requests[i] + "; localStorage.setItem('request', req); window.location.href='approveRequest.html';}'>view</button></td>";
+		rows += "<td>" + empId + "</td>";
+		rows += "<td>" + type + "</td>";
+		rows += "<td>" + sup + "</td>";
+		rows += "<td>" + head + "</td>";
+		rows += "<td>" + ben + "</td>";
+		rows += "<td>" + awarded + "</td>";
+		rows += "<td><a id='view' href='approveRequest.html' class='btn btn-primary'>view</a></td>";
 		rows += "</tr>";
 	}
 	document.getElementById("list").innerHTML = rows;
@@ -39,13 +46,10 @@ function buildTable() {
 
 function viewDetails() {
 	document.getElementById("employee").innerHTML = "Name: " + requests[i].firstName + " " + requests[i].lastName + " Id:" + emp;
-	document.getElementById("id").value = requests[i].requestId;
-	document.getElementById("edate").innerHTML = requests[i].eventDate;
-	document.getElementById("etype").innerHTML = requests[i].eventType;
+	document.getElementById("edate").innerHTML = requests[i].eventdate;
+	document.getElementById("etype").innerHTML = type;
 	document.getElementById("etime").innerHTML = requests[i].eventTime;
 	document.getElementById("ecost").innerHTML = requests[i].cost;
-	document.getElementById("est").innerHTML = requests[i].estimatedAward;
-	document.getElementById("award").innerHTML = requests[i].amountAwarded;
 	document.getElementById("estreet").innerHTML = requests[i].street;
 	document.getElementById("ecity").innerHTML = requests[i].city;
 	document.getElementById("estate").innerHTML = requests[i].state;
@@ -85,6 +89,5 @@ function getCurrentEmp() {
 window.onload = function() {
 	getRequests;
 	getCurrentEmp;
-	viewDetails;
+	// document.getElementById('view').addEventListener("click", viewDetails);
 }
-

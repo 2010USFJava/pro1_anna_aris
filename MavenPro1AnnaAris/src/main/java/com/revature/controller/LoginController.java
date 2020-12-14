@@ -21,6 +21,7 @@ public class LoginController {
 			//there appear to be calls to this in two different names
 			req.getSession().setAttribute("currentemp", emp);
 			req.getSession().setAttribute("employee", emp);
+			req.getSession().setAttribute("currentEmp", emp);
 			
 			return "myresources/html/landingPage.html";
 		}

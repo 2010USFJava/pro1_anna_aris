@@ -3,13 +3,14 @@ import java.sql.Timestamp;
 import java.util.List;
 
 public class Request {
-	
+
 	private int requestId;
 	private int employeeId;
 	private Timestamp dateMade;
 	private String eventDate;
 	private String eventTime;
 	private int cost;
+	private int estimatedAward;
 	private String street;
 	private String city;
 	private String state;
@@ -20,11 +21,11 @@ public class Request {
 	private String headStatus = "pending";
 	private String benStatus = "pending";
 	private boolean awarded = false;
+	private int amountAwarded = 0;
+	private String reason;
+//	private List<String> additionalDocs;
 	
-	//Note: Document class was changed to Presentation class. As document no longer exists
-	private List<String> additionalDocs;
-	
-	public Request(int employeeId, String eventDate, String eventTime, int cost, String street,
+	public Request(int employeeId, String eventDate, String eventTime, int cost, int estimatedAward, String street,
 			String city, String state, String zip, String eventType, String eventDescription) {
 		
 		this.employeeId = employeeId;
@@ -32,13 +33,14 @@ public class Request {
 		this.eventType = eventType;
 		this.eventTime = eventTime;
 		this.cost = cost;
+		this.estimatedAward = estimatedAward;
 		this.street = street;
 		this.city = city;
 		this.state = state;
 		this.zip = zip;
 		this.eventDescription = eventDescription;
 	}
-	public Request(int employeeId, String eventDate, String eventTime, int cost, String street,
+	public Request(int employeeId, String eventDate, String eventTime, int cost, int estimatedAward, String street,
 			String city, String state, String zip, String eventType, String eventDescription, List<String> additionalDocs) {
 		
 		this.employeeId = employeeId;
@@ -46,16 +48,17 @@ public class Request {
 		this.eventType = eventType;
 		this.eventTime = eventTime;
 		this.cost = cost;
+		this.estimatedAward = estimatedAward;
 		this.street = street;
 		this.city = city;
 		this.state = state;
 		this.zip = zip;
 		this.eventDescription = eventDescription;
-		this.additionalDocs = additionalDocs;
+//		this.additionalDocs = additionalDocs;
 	}
 	public Request(int requestId, int employeeId, Timestamp dateMade, String eventDate,
-			String eventTime, int cost, String street, String city, String state, String zip, String eventType,
-			String eventDescription, String supStatus, String headStatus, String benStatus, boolean awarded) {
+			String eventTime, int cost, int estimatedAward, String street, String city, String state, String zip, String eventType,
+			String eventDescription, String supStatus, String headStatus, String benStatus, boolean awarded, int amountAwarded, String reason) {
 		
 		this.requestId = requestId;
 		this.employeeId = employeeId;
@@ -64,6 +67,7 @@ public class Request {
 		this.eventType = eventType;
 		this.eventTime = eventTime;
 		this.cost = cost;
+		this.estimatedAward = estimatedAward;
 		this.street = street;
 		this.city = city;
 		this.state = state;
@@ -73,6 +77,8 @@ public class Request {
 		this.headStatus = headStatus;
 		this.benStatus = benStatus;
 		this.awarded = awarded;
+		this.reason = reason;
+		this.amountAwarded = amountAwarded;
 	}
 	public int getRequestId() {
 		return requestId;
@@ -115,6 +121,12 @@ public class Request {
 	}
 	public void setCost(int cost) {
 		this.cost = cost;
+	}
+	public int getEstimatedAward() {
+		return estimatedAward;
+	}
+	public void setEstimatedAward(int estimatedAward) {
+		this.estimatedAward = estimatedAward;
 	}
 	public String getStreet() {
 		return street;
@@ -170,12 +182,24 @@ public class Request {
 	public void setAwarded(boolean awarded) {
 		this.awarded = awarded;
 	}
-	public List<String> getAdditionalDocs() {
-		return additionalDocs;
+	public int getAmountAwarded() {
+		return amountAwarded;
 	}
-	public void setAdditionalDocs(List<String> additionalDocs) {
-		this.additionalDocs = additionalDocs;
+	public void setAmountAwarded(int amountAwarded) {
+		this.amountAwarded = amountAwarded;
 	}
+	public String getReason() {
+		return reason;
+	}
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
+//	public List<String> getAdditionalDocs() {
+//		return additionalDocs;
+//	}
+//	public void setAdditionalDocs(List<String> additionalDocs) {
+//		this.additionalDocs = additionalDocs;
+//	}
 	@Override
 	public String toString() {
 		return "Request [requestId=" + requestId + ", employeeId=" + employeeId + ", dateMade=" + dateMade
@@ -184,6 +208,5 @@ public class Request {
 				+ ", eventDescription=" + eventDescription + ", supStatus=" + supStatus + ", headStatus=" + headStatus
 				+ ", benStatus=" + benStatus + "]";
 	}
-	
 
 }

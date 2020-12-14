@@ -1,6 +1,5 @@
 package com.revature.daoImpl;
 
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -38,7 +37,7 @@ public class RequestDaoImpl implements RequestDao{
 	}
 
 	@Override
-	public void updateRequest(Employee emp, Request reqForm, String decision) throws SQLException {
+	public void updateRequestStatus(Employee emp, Request reqForm, String decision) throws SQLException {
 		Connection connect = db.getConnection();
 
 		switch (emp.getTitle()) {
@@ -65,6 +64,27 @@ public class RequestDaoImpl implements RequestDao{
 			break;
 		}
 	}
+	
+	@Override
+	public void updateRequestAward(int reqId, int award, String reason) throws SQLException {
+		Connection connect = db.getConnection();
+		String updateQuery = "update request set amount_awarded=?, reason=? where id=?";
+		PreparedStatement prepStmt = connect.prepareStatement(updateQuery);
+		prepStmt.setInt(1, award);
+		prepStmt.setString(2, reason);
+		prepStmt.setInt(3, reqId);
+		prepStmt.executeUpdate();
+		
+	}
+	
+	@Override
+	public void cancelRequest(int requestId) throws SQLException {
+		Connection connect = db.getConnection();
+		String deleteQuery = "delete from request where id=?";
+		PreparedStatement prepStmt = connect.prepareStatement(deleteQuery);
+		prepStmt.setInt(1, requestId);
+		int rows = prepStmt.executeUpdate();
+	}
 
 	@Override
 	public List<Request> viewAllRequest() throws SQLException {
@@ -74,11 +94,26 @@ public class RequestDaoImpl implements RequestDao{
 		List<Request> reqList = new ArrayList<>();
 		Request req = null;
 		while (rs.next()) {
-			req = new Request(rs.getInt(1), rs.getInt(2),rs.getTimestamp(3),rs.getString(4),rs.getString(5), rs.getInt(6),rs.getString(7),rs.getString(8),  
-					rs.getString(9), rs.getString(10),rs.getString(11),rs.getString(12),rs.getString(13),rs.getString(14),rs.getString(15),rs.getBoolean(16));
+			req = new Request(rs.getInt(1), rs.getInt(2),rs.getTimestamp(3),rs.getString(4),rs.getString(5), rs.getInt(6),rs.getInt(7),rs.getString(8),rs.getString(9),  
+					rs.getString(10), rs.getString(11),rs.getString(12),rs.getString(13),rs.getString(14),rs.getString(15),rs.getString(16),rs.getBoolean(17),rs.getInt(18),rs.getString(20));
 			reqList.add(req);
 		}
 		return reqList;
+	}
+
+	@Override
+	public Request getRequestByRequestId(int requestId) throws SQLException {
+		Connection connect = db.getConnection();
+		String selectQuery = "select * from request where id=?";
+		PreparedStatement prepStmt = connect.prepareStatement(selectQuery);
+		prepStmt.setInt(1, requestId);
+		ResultSet rs = prepStmt.executeQuery();
+		Request req = null;
+		while (rs.next()) {
+			req = new Request(rs.getInt(1), rs.getInt(2),rs.getTimestamp(3),rs.getString(4),rs.getString(5), rs.getInt(6),rs.getInt(7),rs.getString(8),rs.getString(9),  
+					rs.getString(10), rs.getString(11),rs.getString(12),rs.getString(13),rs.getString(14),rs.getString(15),rs.getString(16),rs.getBoolean(17),rs.getInt(18),rs.getString(20));
+		}
+		return req;
 	}
 	
 	public Employee retrieveEmployeeByCredentials(String username, String password) throws SQLException {
@@ -100,4 +135,6 @@ public class RequestDaoImpl implements RequestDao{
 //		}
 //		return emp;
 	}
+
+	
 }

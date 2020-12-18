@@ -19,10 +19,6 @@ public class RequestController {
 	}
 	
 	public static String reviewRequest(HttpServletRequest req) throws JsonProcessingException, IOException {
-//		Employee emp = (Employee) req.getSession().getAttribute("currentemp");
-//		Request reqForm = (Request) req.getSession().getAttribute("currentReqForm");
-//		String decision = req.getParameter("answer");
-//		return Service.insertReviewStatus(emp, reqForm, decision);
 		Employee emp = (Employee) req.getSession().getAttribute("currentemp");
 		Request reqForm = Service.getRequest(Integer.valueOf(req.getParameter("cost")));
 		String decision = req.getParameter("?");

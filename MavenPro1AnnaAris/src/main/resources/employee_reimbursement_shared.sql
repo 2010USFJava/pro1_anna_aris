@@ -1,6 +1,10 @@
 create schema if not exists employee_reimbursement_shared authorization annacarl;
 set search_path to employee_reimbursement_shared; 
 
+select * from logins;
+select * from request;
+select * from employees;
+select * from course;
 
 --create schema if not exists employee_reimbursement authorization annacarl;
 --set search_path to employee_reimbursement; 
@@ -63,6 +67,8 @@ foreign key(employee_id)
 references employees(employee_id)
 on delete cascade
 );
+
+SELECT * FROM logins;
 
 create sequence dep_id_seq
 increment by 1
@@ -177,6 +183,8 @@ CREATE TABLE request (
 	head_status varchar(10),
 	ben_status varchar(10)
 );
+
+select * from request;
 
 
 --testdata

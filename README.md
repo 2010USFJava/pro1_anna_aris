@@ -6,7 +6,7 @@ This is a system for employees to request an expense reimbursement for tuition t
 ## Technologies Used
 Java 1.8,
 Maven, 
-Tomcat 9,
+Tomcat,
 PostgreSQL 12,
 DBeaver,
 Spring Tools Suite
